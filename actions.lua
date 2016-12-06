@@ -3,6 +3,27 @@ NextMarker = 40173
 GoProjectBeginning = 40042
 GoProjectEnd = 40043
 Play = 40044
+ShowActionList = 40605
+NextMeasure = 41040
+PrevMeasure = 41041
+NextItem = 40417
+PrevItem = 40416
+NextTrack = 40285
+PrevTrack = 40286
+NextTrackKeepSelection = 40287
+PrevTrackKeepSelection = 49288
+NewMidiItem = 40214
+RemoveTrack = 40005
+AddTrack = 40001
+
+
+function rep(repeatCount, fun)
+  return defCount(1, function(count)
+    for i=0, repeatCount-1 do
+      fun(count)
+    end
+  end)
+end
 
 
 function requireCount(fun)
