@@ -27,5 +27,5 @@ for (( i=0; i<${#letters};i++ )) ; do
   gen "big_$c" "$upper"
 done
 
-gen "<esc>"
-gen "<space>"
+gen "<esc>" "<esc>"
+gen "<space>" "<space>"

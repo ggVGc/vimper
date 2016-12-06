@@ -6,4 +6,4 @@ end
 
 include('mapper')
 
-doInput('')
+doInput('<space>')
