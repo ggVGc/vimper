@@ -11,10 +11,18 @@ PrevItem = 40416
 NextTrack = 40285
 PrevTrack = 40286
 NextTrackKeepSelection = 40287
-PrevTrackKeepSelection = 49288
+PrevTrackKeepSelection = 40288
 NewMidiItem = 40214
 RemoveTrack = 40005
 AddTrack = 40001
+SetLoopStart = 40222
+SetLoopEnd = 40223
+ZoomHorizIn = 1012
+ZoomHorizOut = 1011
+ZoomVertIn = 40111
+ZoomVertOut =  40112
+ZoomProject = 40295
+SelectItemsInTrack = 40421
 
 
 function rep(repeatCount, fun)
@@ -40,14 +48,18 @@ function defCount(default, fun)
   end
 end
 
-function runAction(id)
+function runAction(...)
+  local args = table.pack(...)
   return defCount(1, function(count)
     for i=0, count-1 do
       -- reaper.ShowConsoleMsg('running action: '..id.."\n")
-      reaper.Main_OnCommand(id, 0)
+      for _,id in ipairs(args) do
+        reaper.Main_OnCommand(id, 0)
+      end
     end
   end)
 end
+
 
 
 Marker = { }

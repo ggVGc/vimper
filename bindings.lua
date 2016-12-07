@@ -7,28 +7,39 @@ end
 include('actions')
 
 return {
-  mg = Marker.Go
+  ['<space>a'] = runAction(ShowActionList)
+  ,mg = Marker.Go
   ,ma = Marker.Add
   ,md = Marker.Delete
   ,mn = runAction(NextMarker)
   ,mN = runAction(PrevMarker)
-  ,pp = runAction(GoProjectBeginning)
-  ,pP = runAction(GoProjectEnd)
-  ,A = runAction(ShowActionList)
-  ,k = runAction(NextMeasure)
-  ,j = runAction(PrevMeasure)
-  ,K = rep(4, runAction(NextMeasure))
-  ,J = rep(4, runAction(PrevMeasure))
-  ,h = runAction(PrevTrack)
-  ,l = runAction(NextTrack)
-  ,H = runAction(PrevTrackKeepSelection)
-  ,L = runAction(NextTrackKeepSelection)
+  ,gg = runAction(GoProjectBeginning)
+  ,G = runAction(GoProjectEnd)
+  ,k = runAction(PrevTrack, SelectItemsInTrack)
+  ,j = runAction(NextTrack, SelectItemsInTrack)
+  ,K = runAction(PrevTrackKeepSelection)
+  ,J = runAction(NextTrackKeepSelection)
   ,nm = runAction(NewMidiItem)
   
+  ,a = runAction(PrevMeasure)
+  ,s = runAction(NextMeasure)
+  ,A = rep(4, runAction(PrevMeasure))
+  ,S = rep(4, runAction(NextMeasure))
+
+  ,q = runAction(ZoomHorizOut)
+  ,w = runAction(ZoomHorizIn)
+  ,Q = runAction(ZoomVertOut)
+  ,W = runAction(ZoomVertIn)
+  ,pz = runAction(ZoomProject)
+
+  ,z = runAction(SetLoopStart)
+  ,x = runAction(SetLoopEnd)
+
   ,td = runAction(RemoveTrack)
   ,tn = runAction(AddTrack)
 
-  ,['in'] = runAction(NextItem)
-  ,iN = runAction(PrevItem)
+
+  ,l= runAction(NextItem)
+  ,h = runAction(PrevItem)
   ,['<space>p'] = runAction(Play)
 }
