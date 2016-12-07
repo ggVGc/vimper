@@ -6,5 +6,6 @@ end
 
 include('mapper')
 
+reaper.Undo_OnStateChange('');
 doInput('<ctrl>')
 doInput('a')

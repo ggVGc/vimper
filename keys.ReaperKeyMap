@@ -114,6 +114,7 @@ SCR 4 0 "vimper_ctrl_z" "[vimper] ctrl_z" ./reaper-vim/mapper_scripts/mapper_ctr
 SCR 4 0 "vimper_alt_z" "[vimper] alt_z" ./reaper-vim/mapper_scripts/mapper_alt_z.lua
 SCR 4 0 "vimper_esc" "[vimper] esc" ./reaper-vim/mapper_scripts/mapper_esc.lua
 SCR 4 0 "vimper_space" "[vimper] space" ./reaper-vim/mapper_scripts/mapper_space.lua
+SCR 4 0 "vimper_period" "[vimper] period" ./reaper-vim/mapper_scripts/mapper_period.lua
 KEY 1 48 _vimper_0 0
 KEY 1 49 _vimper_1 0
 KEY 1 50 _vimper_2 0
@@ -230,3 +231,4 @@ KEY 33 90 _vimper_ctrl_z 0
 KEY 17 90 _vimper_alt_z 0
 KEY 1 27 _vimper_esc 0
 KEY 1 32 _vimper_space 0
+KEY 0 46 _vimper_period 0

@@ -32,12 +32,20 @@ ZoomVertOut =  40112
 ZoomProject = 40295
 SelectItemsInTrack = 40421
 ExpandSelectedTrackCollapseOthers = 40723
+CollapseAllTracks = 40727
 ClearAllRecordArm = 40491
 RecordArmCurrent = 9
 Undo = 40029
 Redo = 40030
 OpenMidiEditor = 40153
+ToggleFloatingWindows = 41074
+ToggleTrackMute = 6
+UnmuteAllTracks = 40339
+ViewFxChainCurrentTrack = 40291
+ViewFxChainMaster = 40846
+ViewFxChainInputCurrentTrack = 40844
 
+SM_FloatFirstFxCurrentTrack= externalAction('_S&M_FLOATFX1')
 SWS_RenameCurrentTrack = externalAction('_XENAKIOS_RENAMETRAXDLG')
 
 
@@ -64,9 +72,18 @@ function defCount(default, fun)
   end
 end
 
+function withUndo(f)
+  return function(count)
+    reaper.Undo_BeginBlock()
+    f(count)
+    reaper.Undo_EndBlock('vimper', 0)
+  end
+end
+
 function runAction(...)
   local args = table.pack(...)
   return defCount(1, function(count)
+    reaper.Undo_EndBlock('', 0)
     for i=0, count-1 do
       -- reaper.ShowConsoleMsg('running action: '..id.."\n")
       for _,id in ipairs(args) do
@@ -79,6 +96,12 @@ function runAction(...)
   end)
 end
 
+function noStore(f)
+  return function(count)
+    f(count)
+    return DO_NOT_STORE_LAST
+  end
+end
 
 
 Marker = { }
@@ -94,5 +117,27 @@ end)
 Marker.Delete = requireCount(function(count)
   reaper.DeleteProjectMarker(0, count, false)
 end)
+
+
+
+function scriptPath()
+  local info = debug.getinfo(1,'S');
+  return info.source:match[[^@?(.*[\/])[^\/]-$]]
+end
+
+function include(path)
+  return dofile(scriptPath() .. path .. '.lua')
+end
+
+
+include('state_io')
+include('action_codes')
+
+Core = {}
+function Core.repeatLastAction()
+  clearQuery()
+  doInput(getLastAction())
+  return DO_NOT_STORE_LAST
+end
 
 

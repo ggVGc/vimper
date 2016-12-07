@@ -1,4 +1,9 @@
 
+local log = function(msg) reaper.ShowConsoleMsg(msg .. '\n') end
+local clearLog = reaper.ClearConsole
+
+local bindingsPath = reaper.GetResourcePath() .. '/vimper_bindings.lua'
+
 function scriptPath()
   local info = debug.getinfo(1,'S');
   return info.source:match[[^@?(.*[\/])[^\/]-$]]
@@ -9,66 +14,34 @@ function include(path)
 end
 
 
+include('state_io')
+include('action_codes')
+
+function mergeInclude(...)
+  local tmp = scriptPath() .. "tmp_actions"
+  local args = table.pack(...)
+  withFile(tmp, 'w', function(f)
+    for _,v in ipairs(args) do
+      f:write(readFile(v))
+    end
+  end)
+  return dofile(tmp)
+end
+
 local timeOut = 2
 
-local stateDir = scriptPath() .. "/state"
-local queryFile = stateDir .. "/query"
-local timeFile = stateDir .. "/last_time"
-
-
-local log = function(msg) reaper.ShowConsoleMsg(msg .. '\n') end
-local clearLog = reaper.ClearConsole
 
 
 
-function withFile(path, mode, fun)
-  local f = io.open(path, mode)
-  local ret
-  if f then
-    ret = fun(f)
-    f:close()
-  end
-  return ret
-end
-
-function clearQuery()
-  withFile(queryFile, 'w', function(f)
-    f:write('')
-  end)
-end
-
-function updateQuery(ch)
-  withFile(queryFile, 'a', function(f)
-    f:write(ch)
-  end)
-end
-
-function getQuery()
-  return withFile(queryFile, 'r', function(f)
-    return f:read()
-  end)
-end
 
 function tryTriggerAction(actions, curInput, count)
   actionFun = actions[curInput]
   if actionFun then
-    actionFun(count)
-    return true
+    local ret = actionFun(count)
+    return ret or true
   else
     return false
   end
-end
-
-function updateLastTime(t)
-  withFile(timeFile, 'w', function(f)
-    f:write(t)
-  end)
-end
-
-function getLastTime(t)
-  return withFile(timeFile, 'r', function(f)
-    return f:read()
-  end)
 end
 
 function timeoutState()
@@ -121,15 +94,23 @@ function tooLong(actions, query)
   return longestTableKeyLen(shortenKeys(actions)) <= string.len(shortenSpecial(query))
 end
 
-function doInput(ch)
+
+
+function doInput(ch, dontStore)
   timeoutState()
   local st = getQuery() or ''
-  local actions = include('bindings')
+  local actions = mergeInclude(scriptPath()..'actions.lua', bindingsPath)
+
   local originalQuery = st .. ch
   local curCount = getCount(shortenSpecial(originalQuery))
   local query =  stripNumbers(originalQuery)
   -- log(query .. " | " .. ch)
-  if ch == "<esc>" or tryTriggerAction(actions, query, curCount) or tooLong(actions, query) then
+  local actionRet = tryTriggerAction(actions, query, curCount)
+  if actionRet and actionRet ~= DO_NOT_STORE_LAST then
+    setLastAction(originalQuery)
+  end
+
+  if ch == "<esc>" or actionRet or tooLong(actions, query) then
     -- log 'clearQuery'
     clearQuery()
   else

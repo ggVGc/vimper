@@ -1,2 +1,4 @@
 build
 state/*
+tmp_actions
+bindings.lua
