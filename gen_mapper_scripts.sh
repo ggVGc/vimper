@@ -30,12 +30,12 @@ function gen() {
 
   id="vimper_$c"
   desc="[vimper] $c"
-  printf "SCR 4 0 \"%s\" \"%s\" %s%s\r\n" "$id" "$desc" "$scriptRoot" "$f" >> "$tmpScripts"
+  printf "SCR 4 0 \"%s\" \"%s\" %s%s\n" "$id" "$desc" "$scriptRoot" "$f" >> "$tmpScripts"
   if [[ "$shiftCode" != "" ]]; then
-    printf "KEY 5 %s %s 0\r\n" "$keycode" "_$id" >> "$tmpKeys"
-    printf "KEY 1 %s %s 0\r\n" "$shiftCode" "$id" >> "$keymapFile"
+    printf "KEY 5 %s %s 0\n" "$keycode" "_$id" >> "$tmpKeys"
+    printf "KEY 1 %s %s 0\n" "$shiftCode" "$id" >> "$keymapFile"
   else
-    printf "KEY 1 %s %s 0\r\n" "$keycode" "_$id" >> "$tmpKeys"
+    printf "KEY 1 %s %s 0\n" "$keycode" "_$id" >> "$tmpKeys"
   fi
 }
 

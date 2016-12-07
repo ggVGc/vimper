@@ -1,14 +1,19 @@
-function include(path)
+
+function scriptPath()
   local info = debug.getinfo(1,'S');
-  script_path = info.source:match[[^@?(.*[\/])[^\/]-$]]
-  return dofile(script_path .. path .. '.lua')
+  return info.source:match[[^@?(.*[\/])[^\/]-$]]
+end
+
+function include(path)
+  return dofile(scriptPath() .. path .. '.lua')
 end
 
 
 local timeOut = 2
 
-local stateFile="/tmp/reaper_mapper_state"
-local timeFile="/tmp/reaper_mapper_last_time"
+local stateDir = scriptPath() .. "/state"
+local queryFile = stateDir .. "/query"
+local timeFile = stateDir .. "/last_time"
 
 
 local log = function(msg) reaper.ShowConsoleMsg(msg .. '\n') end
@@ -26,20 +31,20 @@ function withFile(path, mode, fun)
   return ret
 end
 
-function clearState()
-  withFile(stateFile, 'w', function(f)
+function clearQuery()
+  withFile(queryFile, 'w', function(f)
     f:write('')
   end)
 end
 
-function updateState(ch)
-  withFile(stateFile, 'a', function(f)
+function updateQuery(ch)
+  withFile(queryFile, 'a', function(f)
     f:write(ch)
   end)
 end
 
-function getState()
-  return withFile(stateFile, 'r', function(f)
+function getQuery()
+  return withFile(queryFile, 'r', function(f)
     return f:read()
   end)
 end
@@ -71,7 +76,7 @@ function timeoutState()
   local lastTime = getLastTime() or 0
   updateLastTime(curTime)
   if curTime - lastTime >= timeOut then
-    clearState()
+    clearQuery()
   end
 end
 
@@ -118,17 +123,17 @@ end
 
 function doInput(ch)
   timeoutState()
-  local st = getState() or ''
+  local st = getQuery() or ''
   local actions = include('bindings')
   local originalQuery = st .. ch
   local curCount = getCount(shortenSpecial(originalQuery))
   local query =  stripNumbers(originalQuery)
   -- log(query .. " | " .. ch)
   if ch == "<esc>" or tryTriggerAction(actions, query, curCount) or tooLong(actions, query) then
-    -- log 'clearState'
-    clearState()
+    -- log 'clearQuery'
+    clearQuery()
   else
-    updateState(ch)
+    updateQuery(ch)
   end
 end
 
