@@ -41,5 +41,18 @@ return {
 
   ,l= runAction(NextItem)
   ,h = runAction(PrevItem)
+
+  ,x = runAction(ExpandSelectedTrackCollapseOthers)
+  
+  ,r = runAction(ClearAllRecordArm, RecordArmCurrent)
+  ,R = runAction(RecordArmCurrent)
+  ,['<space>r'] = runAction(ClearAllRecordArm)
+  ,['<space>R'] = runAction(SWS_RenameCurrentTrack)
+
+  ,['<ctrl>m'] = runAction(OpenMidiEditor)
+
+  ,u = runAction(Undo)
+  ,U = runAction(Redo)
+
   ,['<space>p'] = runAction(Play)
 }

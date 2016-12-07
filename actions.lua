@@ -1,3 +1,11 @@
+function externalAction(id)
+  return function()
+    return  reaper.NamedCommandLookup(id)
+  end
+end
+
+
+
 PrevMarker = 40172
 NextMarker = 40173
 GoProjectBeginning = 40042
@@ -23,6 +31,14 @@ ZoomVertIn = 40111
 ZoomVertOut =  40112
 ZoomProject = 40295
 SelectItemsInTrack = 40421
+ExpandSelectedTrackCollapseOthers = 40723
+ClearAllRecordArm = 40491
+RecordArmCurrent = 9
+Undo = 40029
+Redo = 40030
+OpenMidiEditor = 40153
+
+SWS_RenameCurrentTrack = externalAction('_XENAKIOS_RENAMETRAXDLG')
 
 
 function rep(repeatCount, fun)
@@ -54,6 +70,9 @@ function runAction(...)
     for i=0, count-1 do
       -- reaper.ShowConsoleMsg('running action: '..id.."\n")
       for _,id in ipairs(args) do
+        if type(id) == 'function' then
+          id = id()
+        end
         reaper.Main_OnCommand(id, 0)
       end
     end

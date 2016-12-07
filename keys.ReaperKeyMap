@@ -10,56 +10,108 @@ SCR 4 0 "vimper_8" "[vimper] 8" ./reaper-vim/mapper_scripts/mapper_8.lua
 SCR 4 0 "vimper_9" "[vimper] 9" ./reaper-vim/mapper_scripts/mapper_9.lua
 SCR 4 0 "vimper_a" "[vimper] a" ./reaper-vim/mapper_scripts/mapper_a.lua
 SCR 4 0 "vimper_big_a" "[vimper] big_a" ./reaper-vim/mapper_scripts/mapper_big_a.lua
+SCR 4 0 "vimper_ctrl_a" "[vimper] ctrl_a" ./reaper-vim/mapper_scripts/mapper_ctrl_a.lua
+SCR 4 0 "vimper_alt_a" "[vimper] alt_a" ./reaper-vim/mapper_scripts/mapper_alt_a.lua
 SCR 4 0 "vimper_b" "[vimper] b" ./reaper-vim/mapper_scripts/mapper_b.lua
 SCR 4 0 "vimper_big_b" "[vimper] big_b" ./reaper-vim/mapper_scripts/mapper_big_b.lua
+SCR 4 0 "vimper_ctrl_b" "[vimper] ctrl_b" ./reaper-vim/mapper_scripts/mapper_ctrl_b.lua
+SCR 4 0 "vimper_alt_b" "[vimper] alt_b" ./reaper-vim/mapper_scripts/mapper_alt_b.lua
 SCR 4 0 "vimper_c" "[vimper] c" ./reaper-vim/mapper_scripts/mapper_c.lua
 SCR 4 0 "vimper_big_c" "[vimper] big_c" ./reaper-vim/mapper_scripts/mapper_big_c.lua
+SCR 4 0 "vimper_ctrl_c" "[vimper] ctrl_c" ./reaper-vim/mapper_scripts/mapper_ctrl_c.lua
+SCR 4 0 "vimper_alt_c" "[vimper] alt_c" ./reaper-vim/mapper_scripts/mapper_alt_c.lua
 SCR 4 0 "vimper_d" "[vimper] d" ./reaper-vim/mapper_scripts/mapper_d.lua
 SCR 4 0 "vimper_big_d" "[vimper] big_d" ./reaper-vim/mapper_scripts/mapper_big_d.lua
+SCR 4 0 "vimper_ctrl_d" "[vimper] ctrl_d" ./reaper-vim/mapper_scripts/mapper_ctrl_d.lua
+SCR 4 0 "vimper_alt_d" "[vimper] alt_d" ./reaper-vim/mapper_scripts/mapper_alt_d.lua
 SCR 4 0 "vimper_e" "[vimper] e" ./reaper-vim/mapper_scripts/mapper_e.lua
 SCR 4 0 "vimper_big_e" "[vimper] big_e" ./reaper-vim/mapper_scripts/mapper_big_e.lua
+SCR 4 0 "vimper_ctrl_e" "[vimper] ctrl_e" ./reaper-vim/mapper_scripts/mapper_ctrl_e.lua
+SCR 4 0 "vimper_alt_e" "[vimper] alt_e" ./reaper-vim/mapper_scripts/mapper_alt_e.lua
 SCR 4 0 "vimper_f" "[vimper] f" ./reaper-vim/mapper_scripts/mapper_f.lua
 SCR 4 0 "vimper_big_f" "[vimper] big_f" ./reaper-vim/mapper_scripts/mapper_big_f.lua
+SCR 4 0 "vimper_ctrl_f" "[vimper] ctrl_f" ./reaper-vim/mapper_scripts/mapper_ctrl_f.lua
+SCR 4 0 "vimper_alt_f" "[vimper] alt_f" ./reaper-vim/mapper_scripts/mapper_alt_f.lua
 SCR 4 0 "vimper_g" "[vimper] g" ./reaper-vim/mapper_scripts/mapper_g.lua
 SCR 4 0 "vimper_big_g" "[vimper] big_g" ./reaper-vim/mapper_scripts/mapper_big_g.lua
+SCR 4 0 "vimper_ctrl_g" "[vimper] ctrl_g" ./reaper-vim/mapper_scripts/mapper_ctrl_g.lua
+SCR 4 0 "vimper_alt_g" "[vimper] alt_g" ./reaper-vim/mapper_scripts/mapper_alt_g.lua
 SCR 4 0 "vimper_h" "[vimper] h" ./reaper-vim/mapper_scripts/mapper_h.lua
 SCR 4 0 "vimper_big_h" "[vimper] big_h" ./reaper-vim/mapper_scripts/mapper_big_h.lua
+SCR 4 0 "vimper_ctrl_h" "[vimper] ctrl_h" ./reaper-vim/mapper_scripts/mapper_ctrl_h.lua
+SCR 4 0 "vimper_alt_h" "[vimper] alt_h" ./reaper-vim/mapper_scripts/mapper_alt_h.lua
 SCR 4 0 "vimper_i" "[vimper] i" ./reaper-vim/mapper_scripts/mapper_i.lua
 SCR 4 0 "vimper_big_i" "[vimper] big_i" ./reaper-vim/mapper_scripts/mapper_big_i.lua
+SCR 4 0 "vimper_ctrl_i" "[vimper] ctrl_i" ./reaper-vim/mapper_scripts/mapper_ctrl_i.lua
+SCR 4 0 "vimper_alt_i" "[vimper] alt_i" ./reaper-vim/mapper_scripts/mapper_alt_i.lua
 SCR 4 0 "vimper_j" "[vimper] j" ./reaper-vim/mapper_scripts/mapper_j.lua
 SCR 4 0 "vimper_big_j" "[vimper] big_j" ./reaper-vim/mapper_scripts/mapper_big_j.lua
+SCR 4 0 "vimper_ctrl_j" "[vimper] ctrl_j" ./reaper-vim/mapper_scripts/mapper_ctrl_j.lua
+SCR 4 0 "vimper_alt_j" "[vimper] alt_j" ./reaper-vim/mapper_scripts/mapper_alt_j.lua
 SCR 4 0 "vimper_k" "[vimper] k" ./reaper-vim/mapper_scripts/mapper_k.lua
 SCR 4 0 "vimper_big_k" "[vimper] big_k" ./reaper-vim/mapper_scripts/mapper_big_k.lua
+SCR 4 0 "vimper_ctrl_k" "[vimper] ctrl_k" ./reaper-vim/mapper_scripts/mapper_ctrl_k.lua
+SCR 4 0 "vimper_alt_k" "[vimper] alt_k" ./reaper-vim/mapper_scripts/mapper_alt_k.lua
 SCR 4 0 "vimper_l" "[vimper] l" ./reaper-vim/mapper_scripts/mapper_l.lua
 SCR 4 0 "vimper_big_l" "[vimper] big_l" ./reaper-vim/mapper_scripts/mapper_big_l.lua
+SCR 4 0 "vimper_ctrl_l" "[vimper] ctrl_l" ./reaper-vim/mapper_scripts/mapper_ctrl_l.lua
+SCR 4 0 "vimper_alt_l" "[vimper] alt_l" ./reaper-vim/mapper_scripts/mapper_alt_l.lua
 SCR 4 0 "vimper_m" "[vimper] m" ./reaper-vim/mapper_scripts/mapper_m.lua
 SCR 4 0 "vimper_big_m" "[vimper] big_m" ./reaper-vim/mapper_scripts/mapper_big_m.lua
+SCR 4 0 "vimper_ctrl_m" "[vimper] ctrl_m" ./reaper-vim/mapper_scripts/mapper_ctrl_m.lua
+SCR 4 0 "vimper_alt_m" "[vimper] alt_m" ./reaper-vim/mapper_scripts/mapper_alt_m.lua
 SCR 4 0 "vimper_n" "[vimper] n" ./reaper-vim/mapper_scripts/mapper_n.lua
 SCR 4 0 "vimper_big_n" "[vimper] big_n" ./reaper-vim/mapper_scripts/mapper_big_n.lua
+SCR 4 0 "vimper_ctrl_n" "[vimper] ctrl_n" ./reaper-vim/mapper_scripts/mapper_ctrl_n.lua
+SCR 4 0 "vimper_alt_n" "[vimper] alt_n" ./reaper-vim/mapper_scripts/mapper_alt_n.lua
 SCR 4 0 "vimper_o" "[vimper] o" ./reaper-vim/mapper_scripts/mapper_o.lua
 SCR 4 0 "vimper_big_o" "[vimper] big_o" ./reaper-vim/mapper_scripts/mapper_big_o.lua
+SCR 4 0 "vimper_ctrl_o" "[vimper] ctrl_o" ./reaper-vim/mapper_scripts/mapper_ctrl_o.lua
+SCR 4 0 "vimper_alt_o" "[vimper] alt_o" ./reaper-vim/mapper_scripts/mapper_alt_o.lua
 SCR 4 0 "vimper_p" "[vimper] p" ./reaper-vim/mapper_scripts/mapper_p.lua
 SCR 4 0 "vimper_big_p" "[vimper] big_p" ./reaper-vim/mapper_scripts/mapper_big_p.lua
+SCR 4 0 "vimper_ctrl_p" "[vimper] ctrl_p" ./reaper-vim/mapper_scripts/mapper_ctrl_p.lua
+SCR 4 0 "vimper_alt_p" "[vimper] alt_p" ./reaper-vim/mapper_scripts/mapper_alt_p.lua
 SCR 4 0 "vimper_q" "[vimper] q" ./reaper-vim/mapper_scripts/mapper_q.lua
 SCR 4 0 "vimper_big_q" "[vimper] big_q" ./reaper-vim/mapper_scripts/mapper_big_q.lua
+SCR 4 0 "vimper_ctrl_q" "[vimper] ctrl_q" ./reaper-vim/mapper_scripts/mapper_ctrl_q.lua
+SCR 4 0 "vimper_alt_q" "[vimper] alt_q" ./reaper-vim/mapper_scripts/mapper_alt_q.lua
 SCR 4 0 "vimper_r" "[vimper] r" ./reaper-vim/mapper_scripts/mapper_r.lua
 SCR 4 0 "vimper_big_r" "[vimper] big_r" ./reaper-vim/mapper_scripts/mapper_big_r.lua
+SCR 4 0 "vimper_ctrl_r" "[vimper] ctrl_r" ./reaper-vim/mapper_scripts/mapper_ctrl_r.lua
+SCR 4 0 "vimper_alt_r" "[vimper] alt_r" ./reaper-vim/mapper_scripts/mapper_alt_r.lua
 SCR 4 0 "vimper_s" "[vimper] s" ./reaper-vim/mapper_scripts/mapper_s.lua
 SCR 4 0 "vimper_big_s" "[vimper] big_s" ./reaper-vim/mapper_scripts/mapper_big_s.lua
+SCR 4 0 "vimper_ctrl_s" "[vimper] ctrl_s" ./reaper-vim/mapper_scripts/mapper_ctrl_s.lua
+SCR 4 0 "vimper_alt_s" "[vimper] alt_s" ./reaper-vim/mapper_scripts/mapper_alt_s.lua
 SCR 4 0 "vimper_t" "[vimper] t" ./reaper-vim/mapper_scripts/mapper_t.lua
 SCR 4 0 "vimper_big_t" "[vimper] big_t" ./reaper-vim/mapper_scripts/mapper_big_t.lua
+SCR 4 0 "vimper_ctrl_t" "[vimper] ctrl_t" ./reaper-vim/mapper_scripts/mapper_ctrl_t.lua
+SCR 4 0 "vimper_alt_t" "[vimper] alt_t" ./reaper-vim/mapper_scripts/mapper_alt_t.lua
 SCR 4 0 "vimper_u" "[vimper] u" ./reaper-vim/mapper_scripts/mapper_u.lua
 SCR 4 0 "vimper_big_u" "[vimper] big_u" ./reaper-vim/mapper_scripts/mapper_big_u.lua
+SCR 4 0 "vimper_ctrl_u" "[vimper] ctrl_u" ./reaper-vim/mapper_scripts/mapper_ctrl_u.lua
+SCR 4 0 "vimper_alt_u" "[vimper] alt_u" ./reaper-vim/mapper_scripts/mapper_alt_u.lua
 SCR 4 0 "vimper_v" "[vimper] v" ./reaper-vim/mapper_scripts/mapper_v.lua
 SCR 4 0 "vimper_big_v" "[vimper] big_v" ./reaper-vim/mapper_scripts/mapper_big_v.lua
+SCR 4 0 "vimper_ctrl_v" "[vimper] ctrl_v" ./reaper-vim/mapper_scripts/mapper_ctrl_v.lua
+SCR 4 0 "vimper_alt_v" "[vimper] alt_v" ./reaper-vim/mapper_scripts/mapper_alt_v.lua
 SCR 4 0 "vimper_w" "[vimper] w" ./reaper-vim/mapper_scripts/mapper_w.lua
 SCR 4 0 "vimper_big_w" "[vimper] big_w" ./reaper-vim/mapper_scripts/mapper_big_w.lua
+SCR 4 0 "vimper_ctrl_w" "[vimper] ctrl_w" ./reaper-vim/mapper_scripts/mapper_ctrl_w.lua
+SCR 4 0 "vimper_alt_w" "[vimper] alt_w" ./reaper-vim/mapper_scripts/mapper_alt_w.lua
 SCR 4 0 "vimper_x" "[vimper] x" ./reaper-vim/mapper_scripts/mapper_x.lua
 SCR 4 0 "vimper_big_x" "[vimper] big_x" ./reaper-vim/mapper_scripts/mapper_big_x.lua
+SCR 4 0 "vimper_ctrl_x" "[vimper] ctrl_x" ./reaper-vim/mapper_scripts/mapper_ctrl_x.lua
+SCR 4 0 "vimper_alt_x" "[vimper] alt_x" ./reaper-vim/mapper_scripts/mapper_alt_x.lua
 SCR 4 0 "vimper_y" "[vimper] y" ./reaper-vim/mapper_scripts/mapper_y.lua
 SCR 4 0 "vimper_big_y" "[vimper] big_y" ./reaper-vim/mapper_scripts/mapper_big_y.lua
+SCR 4 0 "vimper_ctrl_y" "[vimper] ctrl_y" ./reaper-vim/mapper_scripts/mapper_ctrl_y.lua
+SCR 4 0 "vimper_alt_y" "[vimper] alt_y" ./reaper-vim/mapper_scripts/mapper_alt_y.lua
 SCR 4 0 "vimper_z" "[vimper] z" ./reaper-vim/mapper_scripts/mapper_z.lua
 SCR 4 0 "vimper_big_z" "[vimper] big_z" ./reaper-vim/mapper_scripts/mapper_big_z.lua
+SCR 4 0 "vimper_ctrl_z" "[vimper] ctrl_z" ./reaper-vim/mapper_scripts/mapper_ctrl_z.lua
+SCR 4 0 "vimper_alt_z" "[vimper] alt_z" ./reaper-vim/mapper_scripts/mapper_alt_z.lua
 SCR 4 0 "vimper_esc" "[vimper] esc" ./reaper-vim/mapper_scripts/mapper_esc.lua
 SCR 4 0 "vimper_space" "[vimper] space" ./reaper-vim/mapper_scripts/mapper_space.lua
 KEY 1 48 _vimper_0 0
@@ -74,55 +126,107 @@ KEY 1 56 _vimper_8 0
 KEY 1 57 _vimper_9 0
 KEY 1 65 _vimper_a 0
 KEY 5 65 _vimper_big_a 0
+KEY 33 65 _vimper_ctrl_a 0
+KEY 17 65 _vimper_alt_a 0
 KEY 1 66 _vimper_b 0
 KEY 5 66 _vimper_big_b 0
+KEY 33 66 _vimper_ctrl_b 0
+KEY 17 66 _vimper_alt_b 0
 KEY 1 67 _vimper_c 0
 KEY 5 67 _vimper_big_c 0
+KEY 33 67 _vimper_ctrl_c 0
+KEY 17 67 _vimper_alt_c 0
 KEY 1 68 _vimper_d 0
 KEY 5 68 _vimper_big_d 0
+KEY 33 68 _vimper_ctrl_d 0
+KEY 17 68 _vimper_alt_d 0
 KEY 1 69 _vimper_e 0
 KEY 5 69 _vimper_big_e 0
+KEY 33 69 _vimper_ctrl_e 0
+KEY 17 69 _vimper_alt_e 0
 KEY 1 70 _vimper_f 0
 KEY 5 70 _vimper_big_f 0
+KEY 33 70 _vimper_ctrl_f 0
+KEY 17 70 _vimper_alt_f 0
 KEY 1 71 _vimper_g 0
 KEY 5 71 _vimper_big_g 0
+KEY 33 71 _vimper_ctrl_g 0
+KEY 17 71 _vimper_alt_g 0
 KEY 1 72 _vimper_h 0
 KEY 5 72 _vimper_big_h 0
+KEY 33 72 _vimper_ctrl_h 0
+KEY 17 72 _vimper_alt_h 0
 KEY 1 73 _vimper_i 0
 KEY 5 73 _vimper_big_i 0
+KEY 33 73 _vimper_ctrl_i 0
+KEY 17 73 _vimper_alt_i 0
 KEY 1 74 _vimper_j 0
 KEY 5 74 _vimper_big_j 0
+KEY 33 74 _vimper_ctrl_j 0
+KEY 17 74 _vimper_alt_j 0
 KEY 1 75 _vimper_k 0
 KEY 5 75 _vimper_big_k 0
+KEY 33 75 _vimper_ctrl_k 0
+KEY 17 75 _vimper_alt_k 0
 KEY 1 76 _vimper_l 0
 KEY 5 76 _vimper_big_l 0
+KEY 33 76 _vimper_ctrl_l 0
+KEY 17 76 _vimper_alt_l 0
 KEY 1 77 _vimper_m 0
 KEY 5 77 _vimper_big_m 0
+KEY 33 77 _vimper_ctrl_m 0
+KEY 17 77 _vimper_alt_m 0
 KEY 1 78 _vimper_n 0
 KEY 5 78 _vimper_big_n 0
+KEY 33 78 _vimper_ctrl_n 0
+KEY 17 78 _vimper_alt_n 0
 KEY 1 79 _vimper_o 0
 KEY 5 79 _vimper_big_o 0
+KEY 33 79 _vimper_ctrl_o 0
+KEY 17 79 _vimper_alt_o 0
 KEY 1 80 _vimper_p 0
 KEY 5 80 _vimper_big_p 0
+KEY 33 80 _vimper_ctrl_p 0
+KEY 17 80 _vimper_alt_p 0
 KEY 1 81 _vimper_q 0
 KEY 5 81 _vimper_big_q 0
+KEY 33 81 _vimper_ctrl_q 0
+KEY 17 81 _vimper_alt_q 0
 KEY 1 82 _vimper_r 0
 KEY 5 82 _vimper_big_r 0
+KEY 33 82 _vimper_ctrl_r 0
+KEY 17 82 _vimper_alt_r 0
 KEY 1 83 _vimper_s 0
 KEY 5 83 _vimper_big_s 0
+KEY 33 83 _vimper_ctrl_s 0
+KEY 17 83 _vimper_alt_s 0
 KEY 1 84 _vimper_t 0
 KEY 5 84 _vimper_big_t 0
+KEY 33 84 _vimper_ctrl_t 0
+KEY 17 84 _vimper_alt_t 0
 KEY 1 85 _vimper_u 0
 KEY 5 85 _vimper_big_u 0
+KEY 33 85 _vimper_ctrl_u 0
+KEY 17 85 _vimper_alt_u 0
 KEY 1 86 _vimper_v 0
 KEY 5 86 _vimper_big_v 0
+KEY 33 86 _vimper_ctrl_v 0
+KEY 17 86 _vimper_alt_v 0
 KEY 1 87 _vimper_w 0
 KEY 5 87 _vimper_big_w 0
+KEY 33 87 _vimper_ctrl_w 0
+KEY 17 87 _vimper_alt_w 0
 KEY 1 88 _vimper_x 0
 KEY 5 88 _vimper_big_x 0
+KEY 33 88 _vimper_ctrl_x 0
+KEY 17 88 _vimper_alt_x 0
 KEY 1 89 _vimper_y 0
 KEY 5 89 _vimper_big_y 0
+KEY 33 89 _vimper_ctrl_y 0
+KEY 17 89 _vimper_alt_y 0
 KEY 1 90 _vimper_z 0
 KEY 5 90 _vimper_big_z 0
+KEY 33 90 _vimper_ctrl_z 0
+KEY 17 90 _vimper_alt_z 0
 KEY 1 27 _vimper_esc 0
 KEY 1 32 _vimper_space 0
