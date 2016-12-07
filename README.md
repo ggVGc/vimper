@@ -8,7 +8,7 @@ When triggering Reaper actions, the count indicates repitition, which is very us
 
 # Usage
 * Put this repository in your `Scripts` directory
-* Import the keymap `keys.ReaperKeyMap`
+* Import the keymap `keys.ReaperKeyMap`. BACKUP YOUR KEYMAP FIRST. This will overwrite any mappings you have for letters and numbers.
 
 # Customization
 Set up your mappings in `bindings.lua`
