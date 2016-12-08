@@ -9,16 +9,17 @@ return {
   ,mN = runAction(PrevMarker)
   ,gg = runAction(GoProjectBeginning)
   ,G = runAction(GoProjectEnd)
+  ,nm = runAction(NewMidiItem)
+  
   ,k = noStore(runAction(PrevTrack, SelectItemsInTrack))
   ,j = noStore(runAction(NextTrack, SelectItemsInTrack))
   ,K = noStore(runAction(PrevTrackKeepSelection))
   ,J = noStore(runAction(NextTrackKeepSelection))
-  ,nm = noStore(runAction(NewMidiItem))
-  
+
   ,a = noStore(runAction(PrevMeasure))
   ,s = noStore(runAction(NextMeasure))
-  ,A = rep(4, runAction(PrevMeasure))
-  ,S = rep(4, runAction(NextMeasure))
+  ,A = times(4, runAction(PrevMeasure))
+  ,S = times(4, runAction(NextMeasure))
 
   ,q = runAction(ZoomHorizOut)
   ,w = runAction(ZoomHorizIn)
@@ -29,7 +30,7 @@ return {
   ,z = runAction(SetLoopStart)
   ,x = runAction(SetLoopEnd)
 
-  ,td = withUndo(runAction(RemoveTrack, PrevTrack, NextTrack))
+  ,td = runAction(RemoveTrack, PrevTrack, NextTrack)
   ,tn = runAction(AddTrack)
 
   ,l = runAction(NextItem)

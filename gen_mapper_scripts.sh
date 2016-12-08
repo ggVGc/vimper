@@ -45,11 +45,14 @@ function gen() {
   fi
   f="mapper_scripts/mapper_$c.lua"
   cp char_template.lua "$f"
-  echo "reaper.Undo_OnStateChange('');" >> "$f"
+  # echo "reaper.Undo_OnStateChange('');" >> "$f"
+  echo "reaper.defer(function()" >> "$f"
   if [[ "$extraInput" != "" ]]; then
     echo "doInput('$extraInput')" >> "$f"
   fi
   echo "doInput('$out')" >> "$f"
+  echo "end)" >> "$f"
+
 
   id="vimper_$c"
   desc="[vimper] $c"

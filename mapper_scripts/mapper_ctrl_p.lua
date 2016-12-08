@@ -6,6 +6,7 @@ end
 
 include('mapper')
 
-reaper.Undo_OnStateChange('');
+reaper.defer(function()
 doInput('<ctrl>')
 doInput('p')
+end)

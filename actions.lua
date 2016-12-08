@@ -49,7 +49,7 @@ SM_FloatFirstFxCurrentTrack= externalAction('_S&M_FLOATFX1')
 SWS_RenameCurrentTrack = externalAction('_XENAKIOS_RENAMETRAXDLG')
 
 
-function rep(repeatCount, fun)
+function times(repeatCount, fun)
   return defCount(1, function(count)
     for i=0, repeatCount-1 do
       fun(count)
@@ -72,18 +72,11 @@ function defCount(default, fun)
   end
 end
 
-function withUndo(f)
-  return function(count)
-    reaper.Undo_BeginBlock()
-    f(count)
-    reaper.Undo_EndBlock('vimper', 0)
-  end
-end
 
 function runAction(...)
   local args = table.pack(...)
-  return defCount(1, function(count)
-    reaper.Undo_EndBlock('', 0)
+  local f = defCount(1, function(count)
+    reaper.Undo_BeginBlock()
     for i=0, count-1 do
       -- reaper.ShowConsoleMsg('running action: '..id.."\n")
       for _,id in ipairs(args) do
@@ -93,8 +86,12 @@ function runAction(...)
         reaper.Main_OnCommand(id, 0)
       end
     end
+    reaper.Undo_EndBlock('vimper: runAction', 0)
   end)
+  return f
 end
+
+
 
 function noStore(f)
   return function(count)
