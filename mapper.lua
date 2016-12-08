@@ -1,5 +1,9 @@
 
-local log = function(msg) reaper.ShowConsoleMsg(msg .. '\n') end
+-- local log = function(msg) reaper.ShowConsoleMsg(msg .. '\n') end
+local log = function(msg) end
+
+local msg = function(msg) reaper.ShowConsoleMsg("[Vimper] ".. msg .. '\n') end
+
 local clearLog = reaper.ClearConsole
 
 local bindingsPath = reaper.GetResourcePath() .. '/vimper_bindings.lua'
@@ -20,12 +24,23 @@ include('action_codes')
 function mergeInclude(...)
   local tmp = scriptPath() .. "tmp_actions"
   local args = table.pack(...)
+  local fail = false
   withFile(tmp, 'w', function(f)
     for _,v in ipairs(args) do
-      f:write(readFile(v))
+      local content = readFile(v)
+      if content == nil then
+          msg("File missing: " .. v)
+          fail = true
+        else
+          f:write(content)
+      end
     end
   end)
-  return dofile(tmp)
+  if fail then
+    return {}
+  else
+    return dofile(tmp)
+  end
 end
 
 local timeOut = 2
@@ -104,14 +119,14 @@ function doInput(ch, dontStore)
   local originalQuery = st .. ch
   local curCount = getCount(shortenSpecial(originalQuery))
   local query =  stripNumbers(originalQuery)
-  -- log(query .. " | " .. ch)
+  log(query .. " | " .. ch)
   local actionRet = tryTriggerAction(actions, query, curCount)
   if actionRet and actionRet ~= DO_NOT_STORE_LAST then
     setLastAction(originalQuery)
   end
 
   if ch == "<esc>" or actionRet or tooLong(actions, query) then
-    -- log 'clearQuery'
+    log 'clearQuery'
     clearQuery()
   else
     updateQuery(ch)

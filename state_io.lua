@@ -27,7 +27,11 @@ end
 
 function readFile(file)
   return withFile(file, 'r', function(f)
-    return f:read('*a')
+    if f then return 
+      f:read('*a')
+      else
+        return nil
+      end
   end)
 end
 

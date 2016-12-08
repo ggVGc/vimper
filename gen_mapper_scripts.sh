@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-scriptRoot="./reaper-vim/"
+scriptRoot="./vimper/"
 
 
 keymapFile="keys.ReaperKeyMap"
@@ -43,7 +43,7 @@ function gen() {
   if [[ "$keyType" == "" ]]; then
     keyType=1
   fi
-  f="mapper_scripts/mapper_$c.lua"
+  f="mapper_scripts/$c.lua"
   cp char_template.lua "$f"
   # echo "reaper.Undo_OnStateChange('');" >> "$f"
   echo "reaper.defer(function()" >> "$f"
@@ -55,7 +55,7 @@ function gen() {
 
 
   id="vimper_$c"
-  desc="[vimper] $c"
+  desc="Script: [vimper] $c"
   genScript "$id" "$desc" "$f"
   genKey "$keyType" "$keyCode" "_$id">> "$tmpKeys"
 }
