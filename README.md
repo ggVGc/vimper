@@ -1,4 +1,4 @@
-# reaper-vim
+# Vimper
 
 An attempt at a new shortcut mapping system for Reaper, based on modal input sequences rather than key chords, and repetition counts for actions.
 Shortcuts are mapped to Lua functions, each taking a count as argument.
