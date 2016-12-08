@@ -75,6 +75,7 @@ for (( i=0; i<${#letters};i++ )) ; do
   gen $c $c $(( 65 + i ))
   gen "big_$c" "$upper" "$n" 5
   gen "ctrl_$c" "$c" "$n"  33 "<ctrl>"
+  gen "mod_$c" "$c" "$n"  9 "<mod>"
   gen "alt_$c" "$c" "$n"  17 "<alt>"
 done
 

@@ -1,3 +1,11 @@
+
+--[[
+Special keys:
+  <space>
+  <ctrl>
+  <alt>
+  <mod> (windows key)
+--]]
 return {
   ['.'] = Core.repeatLastAction
 
