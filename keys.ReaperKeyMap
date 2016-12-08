@@ -141,6 +141,8 @@ SCR 4 0 "vimper_alt_z" "Script: [vimper] alt_z" ./vimper/mapper_scripts/alt_z.lu
 SCR 4 0 "vimper_esc" "Script: [vimper] esc" ./vimper/mapper_scripts/esc.lua
 SCR 4 0 "vimper_space" "Script: [vimper] space" ./vimper/mapper_scripts/space.lua
 SCR 4 0 "vimper_period" "Script: [vimper] period" ./vimper/mapper_scripts/period.lua
+SCR 4 0 "vimper_left_shift" "Script: [vimper] left_shift" ./vimper/mapper_scripts/left_shift.lua
+SCR 4 0 "vimper_right_shift" "Script: [vimper] right_shift" ./vimper/mapper_scripts/right_shift.lua
 KEY 1 48 _vimper_0 0
 KEY 1 49 _vimper_1 0
 KEY 1 50 _vimper_2 0
@@ -284,3 +286,5 @@ KEY 17 90 _vimper_alt_z 0
 KEY 1 27 _vimper_esc 0
 KEY 1 32 _vimper_space 0
 KEY 0 46 _vimper_period 0
+KEY 0 60 _vimper_left_shift 0
+KEY 0 62 _vimper_right_shift 0

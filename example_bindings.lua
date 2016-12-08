@@ -9,7 +9,7 @@ Special keys:
 return {
   ['.'] = Core.repeatLastAction
 
-  ,['<space>a'] = runAction(ShowActionList)
+  ,['<ctrl>a'] = runAction(ShowActionList)
   ,mg = Marker.Go
   ,ma = Marker.Add
   ,md = Marker.Delete
@@ -19,37 +19,68 @@ return {
   ,G = runAction(GoProjectEnd)
   ,nm = runAction(NewMidiItem)
   
-  ,k = noStore(runAction(PrevTrack, SelectItemsInTrack))
-  ,j = noStore(runAction(NextTrack, SelectItemsInTrack))
-  ,K = noStore(runAction(PrevTrackKeepSelection))
-  ,J = noStore(runAction(NextTrackKeepSelection))
+  ,w = noStore(runAction(PrevTrack, SelectItemsInTrack))
+  ,s = noStore(runAction(NextTrack, SelectItemsInTrack))
+  ,['<alt>w'] = noStore(runAction(PrevTrackKeepSelection))
+  ,['<alt>s'] = noStore(runAction(NextTrackKeepSelection))
 
   ,a = noStore(runAction(PrevMeasure))
-  ,s = noStore(runAction(NextMeasure))
-  ,A = times(4, runAction(PrevMeasure))
-  ,S = times(4, runAction(NextMeasure))
+  ,['<alt>a'] = noStore(times(4, runAction(PrevMeasure)))
+  ,d = noStore(runAction(NextMeasure))
+  ,['<alt>d'] = noStore(times(4, runAction(NextMeasure)))
 
-  ,q = runAction(ZoomHorizOut)
-  ,w = runAction(ZoomHorizIn)
-  ,Q = runAction(ZoomVertOut)
-  ,W = runAction(ZoomVertIn)
+  ,q = noStore(runAction(BackOneBeat))
+  ,e = noStore(runAction(ForwardOneBeat))
+
+  ,iy = runAction(CopyItem)
+  ,ip = runAction(PasteItem)
+  ,is = runAction(SplitItem)
+  ,id = runAction(CopyItem, DeleteItem)
+  ,ix = runAction(CutItem)
+  ,il = runAction(SetLoopPointsToItem)
+  -- ,ig = runAction(GrowItemRight)
+  -- ,iG = runAction(GrowItemLeft)
+  -- ,is = runAction(ShrinkItemRight)
+  -- ,iS = runAction(ShrinkItemLeft)
+  ,iZ= runAction(MoveItemLeftToEditCursor)
+  ,iX = runAction(MoveItemRightToEditCursor)
+  ,iz = runAction(TrimItemLeftToEditCursor)
+  ,ix = runAction(TrimItemRightToEditCursor)
+
+  ,td = runAction(DelteActiveTake)
+  ,['<'] = noStore(runAction(PrevTake))
+  ,['>'] = noStore(runAction(NextTake))
+
+  ,['L'] = runAction(ToggleLoop)
+  ,['<space>M'] = runAction(ToggleMetronome)
+  ,['<ctrl>m'] = runAction(ToggleViewMixer)
+  ,['<space>r'] = runAction(ToggleRecording)
+
+  ,Q = noStore(runAction(ZoomHorizOut))
+  ,E = noStore(runAction(ZoomHorizIn))
+  -- ,D = runAction(ZoomVertOut)
+  -- ,E = runAction(ZoomVertIn)
   ,pz = runAction(ZoomProject)
 
   ,z = runAction(SetLoopStart)
   ,x = runAction(SetLoopEnd)
 
-  ,td = runAction(RemoveTrack, PrevTrack, NextTrack)
-  ,tn = runAction(AddTrack)
+  ,trd = runAction(RemoveTrack, PrevTrack, NextTrack)
+  ,trn = runAction(AddTrack)
+  ,try = runAction(CopyTrack)
+  ,trp = runAction(PasteTrack)
 
-  ,l = runAction(NextItem)
-  ,h = runAction(PrevItem)
+  ,['<alt>d'] = runAction(NextItem)
+  ,['<alt>a'] = runAction(PrevItem)
+
+  ,['l'] = SetLoop
 
   ,c = runAction(ExpandSelectedTrackCollapseOthers)
   ,C = runAction(CollapseAllTracks)
   
   ,r = runAction(ClearAllRecordArm, RecordArmCurrent)
   ,R = runAction(RecordArmCurrent)
-  ,['<space>r'] = runAction(ClearAllRecordArm)
+  ,['<alt>r'] = runAction(ClearAllRecordArm)
   ,['<space>R'] = runAction(SWS_RenameCurrentTrack)
 
   ,['<space>e'] = runAction(OpenMidiEditor)
@@ -67,5 +98,5 @@ return {
   ,u = runAction(Undo)
   ,U = runAction(Redo)
 
-  ,['<space>p'] = runAction(Play)
+  ,['p'] = runAction(Play)
 }

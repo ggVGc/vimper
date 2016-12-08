@@ -82,6 +82,8 @@ done
 gen "esc" "<esc>" 27
 gen "space" "<space>" 32
 gen "period" "." 46 0
+gen "left_shift" "<" 60 0
+gen "right_shift" ">" 62 0
 
 cat "$tmpScripts" "$tmpKeys" > "$keymapFile"
 

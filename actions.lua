@@ -44,6 +44,31 @@ UnmuteAllTracks = 40339
 ViewFxChainCurrentTrack = 40291
 ViewFxChainMaster = 40846
 ViewFxChainInputCurrentTrack = 40844
+BackOneBeat = 41045
+ForwardOneBeat = 41044
+SplitItem = 40757
+DeleteItem = 40006
+DelteActiveTake = 40129
+NextTake = 40125
+PrevTake = 40126
+ToggleLoop = 1068
+ToggleMetronome = 40364
+ToggleViewMixer = 40078
+ToggleRecording = 1013
+CopyTrack = 40210
+PasteTrack = 40058
+CopyItem = 40698
+PasteItem = 40058
+CutItem = 40699
+GrowItemLeft = 40225
+GrowItemRight = 40228
+ShrinkItemLeft = 40226
+ShrinkItemRight = 40228
+MoveItemLeftToEditCursor = 41306
+MoveItemRightToEditCursor = 41307
+TrimItemLeftToEditCursor = 41305
+TrimItemRightToEditCursor = 41311
+SetLoopPointsToItem = 41039
 
 SM_FloatFirstFxCurrentTrack= externalAction('_S&M_FLOATFX1')
 SWS_RenameCurrentTrack = externalAction('_XENAKIOS_RENAMETRAXDLG')
@@ -99,6 +124,14 @@ function noStore(f)
     return DO_NOT_STORE_LAST
   end
 end
+
+
+SetLoop = defCount(1, function(count)
+  runAction(SetLoopStart)(1)
+  runAction(ForwardOneBeat)(4*count)
+  runAction(SetLoopEnd)(1)
+  runAction(BackOneBeat)(4*count)
+end)
 
 
 Marker = { }
