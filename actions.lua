@@ -44,6 +44,8 @@ UnmuteAllTracks = 40339
 ViewFxChainCurrentTrack = 40291
 ViewFxChainMaster = 40846
 ViewFxChainInputCurrentTrack = 40844
+ClearFxChainCurrentTrack = externalAction('_S&M_CLRFXCHAIN3')
+ClearFxChainInputCurrentTrack = externalAction('_S&M_CLR_INFXCHAIN')
 BackOneBeat = 41045
 ForwardOneBeat = 41044
 SplitItem = 40757
@@ -69,10 +71,42 @@ MoveItemRightToEditCursor = 41307
 TrimItemLeftToEditCursor = 41305
 TrimItemRightToEditCursor = 41311
 SetLoopPointsToItem = 41039
-
 SM_FloatFirstFxCurrentTrack= externalAction('_S&M_FLOATFX1')
 SWS_RenameCurrentTrack = externalAction('_XENAKIOS_RENAMETRAXDLG')
-
+SelectFxCurrentTrack_1 = externalAction('_S&M_SELFX1')
+SelectFxCurrentTrack_2 = externalAction('_S&M_SELFX2')
+SelectFxCurrentTrack_3 = externalAction('_S&M_SELFX3')
+SelectFxCurrentTrack_4 = externalAction('_S&M_SELFX4')
+SelectFxCurrentTrack_5 = externalAction('_S&M_SELFX5')
+SelectFxCurrentTrack_6 = externalAction('_S&M_SELFX6')
+SelectFxCurrentTrack_7 = externalAction('_S&M_SELFX7')
+SelectFxCurrentTrack_8 = externalAction('_S&M_SELFX8')
+CycleTrackFolderState = 1041
+SetTrackMidiAllChannels = externalAction('_S&M_MIDI_INPUT_ALL_CH')
+SetTrackMidiChannel_1 = externalAction('_S&M_MIDI_INPUT_CH1')
+SetTrackMidiChannel_2 = externalAction('_S&M_MIDI_INPUT_CH2')
+SetTrackMidiChannel_3 = externalAction('_S&M_MIDI_INPUT_CH3')
+SetTrackMidiChannel_4 = externalAction('_S&M_MIDI_INPUT_CH4')
+SetTrackMidiChannel_5 = externalAction('_S&M_MIDI_INPUT_CH5')
+SetTrackMidiChannel_6 = externalAction('_S&M_MIDI_INPUT_CH6')
+SetTrackMidiChannel_7 = externalAction('_S&M_MIDI_INPUT_CH7')
+SetTrackMidiChannel_8 = externalAction('_S&M_MIDI_INPUT_CH8')
+SetTrackMidiChannel_9 = externalAction('_S&M_MIDI_INPUT_CH9')
+SetTrackMidiChannel_10 = externalAction('_S&M_MIDI_INPUT_CH10')
+SetTrackMidiChannel_11 = externalAction('_S&M_MIDI_INPUT_CH11')
+SetTrackMidiChannel_12 = externalAction('_S&M_MIDI_INPUT_CH12')
+SetTrackMidiChannel_13 = externalAction('_S&M_MIDI_INPUT_CH13')
+SetTrackMidiChannel_14 = externalAction('_S&M_MIDI_INPUT_CH14')
+SetTrackMidiChannel_15 = externalAction('_S&M_MIDI_INPUT_CH15')
+SetTrackMidiChannel_16 = externalAction('_S&M_MIDI_INPUT_CH16')
+SetTrackRecordMode_Input = 40496
+SetTrackRecordMode_MidiOutput = 40500
+SetTrackRecordMode_MidiOverdub= 40503
+SetTrackRecordMode_MidiTouchReplace = 40852
+SetTrackRecordMode_MidiReplace = 40504
+IncreaseBPM = 41129
+DecreaseBPM = 41130
+-- SetTrackInput_Mono =    
 
 function times(repeatCount, fun)
   return defCount(1, function(count)
@@ -97,25 +131,36 @@ function defCount(default, fun)
   end
 end
 
+function _doRunAction(count, args)
+  reaper.Undo_BeginBlock()
+  for i=0, count-1 do
+    -- reaper.ShowConsoleMsg('running action: '..id.."\n")
+    for _,id in ipairs(args) do
+      if type(id) == 'function' then
+        id = id()
+      end
+      reaper.Main_OnCommand(id, 0)
+    end
+  end
+  reaper.Undo_EndBlock('vimper: runAction', 0)
+end
+
+
+function runActionWithCount(count, ...)
+  local args = table.pack(...)
+  return function()
+    return _doRunAction(count, args)
+  end
+end
+
+
 
 function runAction(...)
   local args = table.pack(...)
-  local f = defCount(1, function(count)
-    reaper.Undo_BeginBlock()
-    for i=0, count-1 do
-      -- reaper.ShowConsoleMsg('running action: '..id.."\n")
-      for _,id in ipairs(args) do
-        if type(id) == 'function' then
-          id = id()
-        end
-        reaper.Main_OnCommand(id, 0)
-      end
-    end
-    reaper.Undo_EndBlock('vimper: runAction', 0)
+  return defCount(1, function(count)
+    _doRunAction(count, args)
   end)
-  return f
 end
-
 
 
 function noStore(f)

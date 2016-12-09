@@ -17,7 +17,7 @@ return {
   ,mN = runAction(PrevMarker)
   ,gg = runAction(GoProjectBeginning)
   ,G = runAction(GoProjectEnd)
-  ,nm = runAction(NewMidiItem)
+  ,nm = runAction(NewMidiItem, PrevItem)
   
   ,w = noStore(runAction(PrevTrack, SelectItemsInTrack))
   ,s = noStore(runAction(NextTrack, SelectItemsInTrack))
@@ -34,7 +34,7 @@ return {
 
   ,iy = runAction(CopyItem)
   ,ip = runAction(PasteItem)
-  ,is = runAction(SplitItem)
+  ,is = runAction(SplitItem, PrevItem, NextItem)
   ,id = runAction(CopyItem, DeleteItem)
   ,ix = runAction(CutItem)
   ,il = runAction(SetLoopPointsToItem)
@@ -60,15 +60,21 @@ return {
   ,E = noStore(runAction(ZoomHorizIn))
   -- ,D = runAction(ZoomVertOut)
   -- ,E = runAction(ZoomVertIn)
-  ,pz = runAction(ZoomProject)
+  ,['<space>z'] = runAction(ZoomProject)
+  ,['<ctrl>t'] = runAction(IncreaseBPM)
+  ,['<ctrl>T'] = runAction(DecreaseBPM)
 
   ,z = runAction(SetLoopStart)
   ,x = runAction(SetLoopEnd)
 
-  ,trd = runAction(RemoveTrack, PrevTrack, NextTrack)
+  ,trd = runAction(CopyTrack, RemoveTrack, PrevTrack, NextTrack)
   ,trn = runAction(AddTrack)
   ,try = runAction(CopyTrack)
   ,trp = runAction(PasteTrack)
+  ,trm = runAction(SetTrackMidiAllChannels)
+  -- ,trim = runActionWithCount(SetTrackInput_Mono)
+  -- ,tris = runActionWithCount(SetTrackInput_Stereo)
+  ,['<space>f'] = runAction(CycleTrackFolderState)
 
   ,['<alt>d'] = runAction(NextItem)
   ,['<alt>a'] = runAction(PrevItem)
@@ -91,12 +97,16 @@ return {
   ,M = runAction(UnmuteAllTracks)
 
   ,fx = runAction(ViewFxChainCurrentTrack)
+  ,fX = runAction(ClearFxChainCurrentTrack)
   ,fi = runAction(ViewFxChainInputCurrentTrack)
+  ,fI = runAction(ClearFxChainInputCurrentTrack)
   ,fm = runAction(ViewFxChainMaster)
   ,ff = runAction(SM_FloatFirstFxCurrentTrack)
 
   ,u = runAction(Undo)
   ,U = runAction(Redo)
 
-  ,['p'] = runAction(Play)
+  ,fs = runAction(SelectFxCurrentTrack_1)
+
+  ,p = runAction(Play)
 }
