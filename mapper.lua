@@ -7,6 +7,7 @@ local msg = function(msg) reaper.ShowConsoleMsg("[Vimper] ".. msg .. '\n') end
 local clearLog = reaper.ClearConsole
 
 local bindingsPath = reaper.GetResourcePath() .. '/vimper_bindings.lua'
+local timeOut = 2
 
 function scriptPath()
   local info = debug.getinfo(1,'S');
@@ -43,11 +44,6 @@ function mergeInclude(...)
   end
 end
 
-local timeOut = 2
-
-
-
-
 
 function tryTriggerAction(actions, curInput, count)
   actionFun = actions[curInput]
@@ -58,6 +54,7 @@ function tryTriggerAction(actions, curInput, count)
     return false
   end
 end
+
 
 function timeoutState()
   local curTime = os.time()
@@ -80,63 +77,11 @@ function longestTableKeyLen(t)
   return longestLen
 end
 
+
 -- Replaces all instances of special keys, e.g <space>, with a single character
 function shortenSpecial(str)
   return string.gsub(str, '<.->', '_')
 end
-
-function shortenKeys(t)
-  return mapTableKeys(t, function(k)
-    return shortenSpecial(k)
-  end)
-end
-
-function stripNumbers(str)
-  -- return string.gsub(str, '%d', '')
-  return str:gsub("[0-9]*(.-)$", "%1")
-
-end
-
-function getCount(str)
-  local count = 0
-  for d in str:gmatch '%d' do
-    count = count*10 + tonumber(d)
-  end
-  return count
-end
-
-
-
-function tooLong(actions, query)
-  return longestTableKeyLen(shortenKeys(actions)) <= string.len(shortenSpecial(query))
-end
-
-
-
-function doInput(ch, context)
-  timeoutState()
-  local st = getQuery() or ''
-  local actions = mergeInclude(scriptPath()..'actions.lua', bindingsPath)
-
-  local originalQuery = st .. ch
-  local curCount = getCount(shortenSpecial(originalQuery))
-  local query =  stripNumbers(originalQuery)
-  log(query .. " | " .. ch)
-  local actionRet = tryTriggerAction(actions[context], query, curCount)
-  log(context)
-  if actionRet and actionRet ~= DO_NOT_STORE_LAST then
-    setLastAction(originalQuery)
-    setLastContext(context)
-  end
-
-  if ch == "<esc>" or actionRet or tooLong(actions[context], query) then
-    log 'clearQuery'
-    clearQuery()
-  else
-    updateQuery(ch)
-  end
-end
-
 
 
 function mapTableKeys(t, f)
@@ -148,6 +93,62 @@ function mapTableKeys(t, f)
 
   return out
 end
+
+
+function shortenKeys(t)
+  return mapTableKeys(t, function(k)
+    return shortenSpecial(k)
+  end)
+end
+
+
+function stripNumbers(str)
+  -- return string.gsub(str, '%d', '')
+  return str:gsub("[0-9]*(.-)$", "%1")
+end
+
+
+function getCount(str)
+  local count = 0
+  for d in str:gmatch '%d' do
+    count = count*10 + tonumber(d)
+  end
+  return count
+end
+
+
+function tooLong(actions, query)
+  return longestTableKeyLen(shortenKeys(actions)) <= string.len(shortenSpecial(query))
+end
+
+
+function doInput(ch, context)
+  timeoutState()
+  local st = getQuery() or ''
+  local allActions = mergeInclude(scriptPath()..'actions.lua', bindingsPath)
+  local actions = allActions.global
+  for k,v in pairs(allActions[context]) do actions[k] = v end
+
+  local originalQuery = st .. ch
+  local curCount = getCount(shortenSpecial(originalQuery))
+  local query =  stripNumbers(originalQuery)
+  log(query .. " | " .. ch)
+  local actionRet = tryTriggerAction(actions, query, curCount)
+  log(context)
+  if actionRet and actionRet ~= DO_NOT_STORE_LAST then
+    setLastAction(originalQuery)
+    setLastContext(context)
+  end
+
+  if ch == "<esc>" or actionRet or tooLong(actions, query) then
+    log 'clearQuery'
+    clearQuery()
+  else
+    updateQuery(ch)
+  end
+end
+
+
 
 --[[
 

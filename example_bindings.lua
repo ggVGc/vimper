@@ -6,10 +6,18 @@ Special keys:
   <alt>
   <mod> (windows key)
 --]]
+
+globalBindings = {
+  ['<cr>'] = runAction(Play)
+  ,['<bs>'] = runAction(ToggleRecording)
+  ,['<ctrl>a'] = runAction(ShowActionList)
+  ,u = runAction(Undo)
+  ,U = runAction(Redo)
+}
+
 mainBindings = {
   ['.'] = Core.repeatLastAction
 
-  ,['<ctrl>a'] = runAction(ShowActionList)
   ,mg = Marker.Go
   ,ma = Marker.Add
   ,md = Marker.Delete
@@ -27,13 +35,13 @@ mainBindings = {
   ,['<alt>s'] = noStore(runAction(NextFolder))
 
 
-  ,a = noStore(runAction(PrevMeasure))
+  ,q = noStore(runAction(PrevMeasure))
   ,['<alt>a'] = noStore(times(4, runAction(PrevMeasure)))
-  ,d = noStore(runAction(NextMeasure))
+  ,e = noStore(runAction(NextMeasure))
   ,['<alt>d'] = noStore(times(4, runAction(NextMeasure)))
 
-  ,q = noStore(runAction(BackOneBeat))
-  ,e = noStore(runAction(ForwardOneBeat))
+  ,['<alt>q'] = noStore(runAction(BackOneBeat))
+  ,['<alt>e'] = noStore(runAction(ForwardOneBeat))
 
   ,iy = runAction(CopyItem)
   ,ip = runAction(PasteItem)
@@ -49,16 +57,15 @@ mainBindings = {
   ,iX = runAction(MoveItemRightToEditCursor)
   ,iz = runAction(TrimItemLeftToEditCursor)
   ,ix = runAction(TrimItemRightToEditCursor)
-  ,ic = runAction(CropToActiveTake)
 
-  ,dd = runAction(DelteActiveTake)
-  ,['<'] = noStore(runAction(PrevTake))
-  ,['>'] = noStore(runAction(NextTake))
+  ,['\\'] = runAction(DelteActiveTake)
+  ,['['] = noStore(runAction(PrevTake))
+  ,[']'] = noStore(runAction(NextTake))
+  ,['|'] = runAction(CropToActiveTake)
 
   ,['L'] = runAction(ToggleLoop)
   ,['<space>m'] = runAction(ToggleMetronome)
   ,['<ctrl>m'] = runAction(ToggleViewMixer)
-  ,['<bs>'] = runAction(ToggleRecording)
 
 
   ,Q = noStore(runAction(ZoomHorizOut))
@@ -69,8 +76,11 @@ mainBindings = {
   ,['<ctrl>t'] = runAction(IncreaseBPM)
   ,['<ctrl>T'] = runAction(DecreaseBPM)
 
-  ,z = runAction(SetLoopStart)
-  ,x = runAction(SetLoopEnd)
+
+  ,['`'] = runAction(MaximizeTrack)
+
+  ,['-'] = runAction(SetLoopStart)
+  ,['='] = runAction(SetLoopEnd)
 
   ,td = runAction(CopyTrack, RemoveTrack, PrevTrack, NextTrack)
   ,tn = runAction(AddTrack)
@@ -83,8 +93,11 @@ mainBindings = {
   ,tl = runAction(IncreaseTrackHeight)
   ,tL = runAction(DecreaseTrackHeight)
   ,tS = runAction(SelectAllTracks)
-  ,['<alt>g<alt>g'] = runAction(SelectFirstTrack, NextTrack, PrevTrack)
+  ,['<space>g'] = runAction(SelectFirstTrack, NextTrack, PrevTrack)
   ,['<space>p'] = runAction(SelectParentFolder)
+
+  ,['<space>-'] = runAction(GoToLoopStart)
+  ,['<space>='] = runAction(GoToLoopEnd)
 
   ,o = chain(Group.Select, runAction(ScrollToSelectedTrack))
   ,tc = runAction(ClearTrackSelection)
@@ -94,17 +107,17 @@ mainBindings = {
   -- ,tris = runActionWithCount(SetTrackInput_Stereo)
   ,tf = runAction(CycleTrackFolderState)
 
-  ,['<alt>d'] = runAction(NextItem)
-  ,['<alt>a'] = runAction(PrevItem)
+  ,k = runAction(NextItem)
+  ,j = runAction(PrevItem)
 
   ,l = SetLoop
 
   ,['§'] = runAction(ExpandSelectedTrackCollapseOthers)
-  ,['<alt>§'] = runAction(CollapseAllTracks)
+  ,['<space>§'] = runAction(CollapseAllTracks)
   
   ,r = runAction(ClearAllRecordArm, RecordArmCurrent)
   ,R = runAction(RecordArmCurrent)
-  ,['<alt>r'] = runAction(ClearAllRecordArm)
+  ,['<space>r'] = runAction(ClearAllRecordArm)
   ,['<space>R'] = runAction(SWS_RenameCurrentTrack)
 
   ,['<space>e'] = runAction(OpenMidiEditor)
@@ -121,12 +134,8 @@ mainBindings = {
   ,fm = runAction(ViewFxChainMaster)
   ,ff = runAction(ClearAllRecordArm, RecordArmCurrent, SM_FloatFirstFxCurrentTrack)
 
-  ,u = runAction(Undo)
-  ,U = runAction(Redo)
 
   ,fs = runAction(SelectFxCurrentTrack_1)
-
-  ,['<cr>'] = runAction(Play)
 
   ,['<space><cr>'] = runAction(SaveProject)
   ,['<space>c'] = runAction(ReaConsole)
@@ -161,11 +170,44 @@ mainBindings = {
 midiBindings = {
   q = MidiEditor.runAction(MidiEditor.CloseWindow)
   ,['§'] = MidiEditor.runAction(MidiEditor.Quantize)
+  ,n = MidiEditor.runAction(MidiEditor.InsertNote)
+  ,K = MidiEditor.runAction(MidiEditor.SelectNextNote)
+  ,J = MidiEditor.runAction(MidiEditor.SelectPrevNote)
+  ,['k'] = MidiEditor.runAction(MidiEditor.SelectNextNote_SamePitch)
+  ,['j'] = MidiEditor.runAction(MidiEditor.SelectPrevNote_SamePitch)
+  ,w = MidiEditor.runAction(MidiEditor.PitchCursorUp)
+  ,s = MidiEditor.runAction(MidiEditor.PitchCursorDown)
+  ,['<alt>w'] = MidiEditor.runAction(MidiEditor.PitchCursorUp_Octave)
+  ,['<alt>s'] = MidiEditor.runAction(MidiEditor.PitchCursorDown_Octave)
+  ,gg = MidiEditor.runAction(MidiEditor.GoToStart)
+  ,G = MidiEditor.runAction(MidiEditor.GoToEnd)
+  ,e = MidiEditor.runAction(MidiEditor.EditCursorRight)
+  ,q = MidiEditor.runAction(MidiEditor.EditCursorLeft)
+  -- ,['<alt>e'] = MidiEditor.runAction(MidiEditor.EditCursorRight_Measure)
+  -- ,['<alt>q'] = MidiEditor.runAction(MidiEditor.EditCursorLeft_Measure)
+  ,['='] = MidiEditor.runAction(MidiEditor.DoubleGridSize)
+  ,['+'] = MidiEditor.runAction(MidiEditor.HalfGridSize)
+  ,a = MidiEditor.runAction(MidiEditor.AddNearestNoteToSelection)
+  ,c = MidiEditor.runAction(MidiEditor.ClearNoteSelection)
+  ,['['] = MidiEditor.runAction(MidiEditor.MoveNoteUp_Semitone)
+  ,[']'] = MidiEditor.runAction(MidiEditor.MoveNoteDown_Semitone)
+  ,['{'] = MidiEditor.runAction(MidiEditor.MoveNoteUp_Octave)
+  ,['}'] = MidiEditor.runAction(MidiEditor.MoveNoteDown_Octave)
+  ,V = MidiEditor.runAction(MidiEditor.SelectAllNotesAtPitchCursor)
+  ,['<alt>k'] = MidiEditor.runAction(MidiEditor.MoveNoteRight)
+  ,['<alt>j'] = MidiEditor.runAction(MidiEditor.MoveNoteLeft)
+  ,d = MidiEditor.runAction(MidiEditor.DeleteNote)
+  ,n = MidiEditor.runAction(MidiEditor.EditCursorToSelectedEvent)
+  ,['<alt>e'] = MidiEditor.runAction(MidiEditor.ZoomIn_Horiz)
+  ,['<alt>q'] = MidiEditor.runAction(MidiEditor.ZoomOut_Horiz)
+  ,['E'] = MidiEditor.runAction(MidiEditor.ZoomIn_Vert)
+  ,['Q'] = MidiEditor.runAction(MidiEditor.ZoomOut_Vert)
 }
 
 
 return {
-  main = mainBindings
+  global = globalBindings
+  ,main = mainBindings
   ,midi = midiBindings
 }
 

@@ -96,6 +96,7 @@ for (( i=0; i<${#letters};i++ )) ; do
   gen $c $c $(( 65 + i ))
   gen "big_$c" "$upper" "$n" 5
   gen "ctrl_big_$c" "$upper" "$n" 37 "<ctrl>"
+  gen "alt_big_$c" "$upper" "$n" 21 "<alt>"
   gen "ctrl_$c" "$c" "$n"  33 "<ctrl>"
   gen "mod_$c" "$c" "$n"  9 "<mod>"
   gen "alt_$c" "$c" "$n"  17 "<alt>"
@@ -111,18 +112,24 @@ gen "cr" "<cr>" 13
 gen "tab" "<tab>" 9
 gen "backspace" "<bs>" 8
 gen "comma" "," 44 0
-gen "hyphen" "-"  35 0
+gen "hyphen" "-"  45 0
 gen "underscore" "_" 95 0
 gen "semicolon" ";" 59 0 
 gen "questionmark" "?"  63 0
 gen "plus" "+" 43 0
-gen "backslash" "\\" 92 0
+gen "backslash" "\\\\" 92 0
 gen "slash" "/" 47 0
 gen "numbersign" "#" 35 0
 gen "at" "@" 64 0
 gen "sectionsign" "§" 167 0
 gen "tilde" "~" 126 0
 gen "plusminus" "±" 177 0
+gen "closebracket" "]" 93 0
+gen "openbracket" "[" 91 0
+gen "closewing" "}" 125 0
+gen "openwing" "{" 123 0
+gen "pipe" "|" 124 0
+gen "equals" "=" 61 0
 
 
 
