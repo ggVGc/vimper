@@ -254,6 +254,14 @@ MidiEditor = {
   ,ZoomOut_Horiz = 1011
   ,ZoomIn_Vert = 40111
   ,ZoomOut_Vert = 40112
+  ,SetNoteLength_128 = 41714
+  ,SetNoteLength_64 = 41715
+  ,SetNoteLength_32 = 41716
+  ,SetNoteLength_16 = 41717
+  ,SetNoteLength_8 = 41718
+  ,SetNoteLength_4 = 41719
+  ,SetNoteLength_2 = 41720
+  ,SetNoteLength_1 = 41721
 }
 
 
@@ -330,6 +338,4 @@ function Core.repeatLastAction()
   clearQuery()
   doInput(getLastAction(), getLastContext())
   return DO_NOT_STORE_LAST
-end
-
-
+end 
