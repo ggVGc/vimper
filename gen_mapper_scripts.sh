@@ -21,17 +21,47 @@ function genScript() {
   id="$1"
   desc="$2"
   file="$3"
-  printf "SCR 4 0 \"%s\" \"%s\" %s%s\n" "$id" "$desc" "$scriptRoot" "$file" >> "$tmpScripts"
+  contextID="$4"
+  printf "SCR 4 $contextID \"%s\" \"%s\" %s%s\n" "$id" "$desc" "$scriptRoot" "$file" >> "$tmpScripts"
 }
 
 function genKey() {
-  local keyType keyCode target
+  local keyType keyCode target contextID
   keyType="$1"
   keyCode="$2"
   target="$3"
-  printf "KEY %s %s %s 0\n" "$keyType" "$keyCode" "$target"
+  contextID="$4"
+  printf "KEY %s %s %s %s\n" "$keyType" "$keyCode" "$target" "$contextID"
 }
 
+
+function genContext() {
+  local contextName
+  tmpFile="$1"
+  context="$2"
+  contextID="$3"
+  c="$4"
+  out="$5"
+  keyCode="$6"
+  keyType="$7"
+  extraInput="$8"
+
+  f="mapper_scripts/_$c$context.lua"
+  cp char_template.lua "$f"
+  echo "reaper.Undo_OnStateChange('');" >> "$f"
+  # echo "reaper.defer(function()" >> "$f"
+  if [[ "$extraInput" != "" ]]; then
+    echo "doInput('$extraInput', '$context')" >> "$f"
+  fi
+  echo "doInput('$out', '$context')" >> "$f"
+  # echo "end)" >> "$f"
+
+
+  id="vimper_$c$context"
+  desc="Script: [vimper] [$context] $c"
+  genScript "$id" "$desc" "$f" "$contextID"
+  genKey "$keyType" "$keyCode" "_$id" "$contextID" >> "$tmpFile"
+}
 
 function gen() {
   local c out keyCode keyType extraInput
@@ -43,21 +73,9 @@ function gen() {
   if [[ "$keyType" == "" ]]; then
     keyType=1
   fi
-  f="mapper_scripts/$c.lua"
-  cp char_template.lua "$f"
-  # echo "reaper.Undo_OnStateChange('');" >> "$f"
-  echo "reaper.defer(function()" >> "$f"
-  if [[ "$extraInput" != "" ]]; then
-    echo "doInput('$extraInput')" >> "$f"
-  fi
-  echo "doInput('$out')" >> "$f"
-  echo "end)" >> "$f"
 
-
-  id="vimper_$c"
-  desc="Script: [vimper] $c"
-  genScript "$id" "$desc" "$f"
-  genKey "$keyType" "$keyCode" "_$id">> "$tmpKeys"
+  genContext  "$tmpKeys" "main" 0 "$c" "$out" "$keyCode" "$keyType" "$extraInput"
+  genContext "$tmpKeys" "midi" 32060 "$c" "$out" "$keyCode" "$keyType" "$extraInput"
 }
 
 numbers="0123456789"
@@ -66,6 +84,9 @@ letters="abcdefghijklmnopqrstuvwxyz"
 for (( i=0; i<${#numbers};i++ )) ; do
   c="${numbers:$i:1}"
   gen "$c" "$c" $(( 48 + i ))
+  gen "num_$c" "<num$c>" $(( 96 + i ))
+  gen "alt_num_$c" "<num$c>" $(( 96 + i )) 17 "<alt>"
+  gen "ctrl_num_$c" "<num$c>" $(( 96 + i )) 33 "<ctrl>"
 done
 
 for (( i=0; i<${#letters};i++ )) ; do
@@ -85,6 +106,25 @@ gen "space" "<space>" 32
 gen "period" "." 46 0
 gen "left_shift" "<" 60 0
 gen "right_shift" ">" 62 0
+gen "colon" ":" 58 0
+gen "cr" "<cr>" 13
+gen "tab" "<tab>" 9
+gen "backspace" "<bs>" 8
+gen "comma" "," 44 0
+gen "hyphen" "-"  35 0
+gen "underscore" "_" 95 0
+gen "semicolon" ";" 59 0 
+gen "questionmark" "?"  63 0
+gen "plus" "+" 43 0
+gen "backslash" "\\" 92 0
+gen "slash" "/" 47 0
+gen "numbersign" "#" 35 0
+gen "at" "@" 64 0
+gen "sectionsign" "§" 167 0
+gen "tilde" "~" 126 0
+gen "plusminus" "±" 177 0
+
+
 
 cat "$tmpScripts" "$tmpKeys" > "$keymapFile"
 

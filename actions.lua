@@ -106,7 +106,49 @@ SetTrackRecordMode_MidiTouchReplace = 40852
 SetTrackRecordMode_MidiReplace = 40504
 IncreaseBPM = 41129
 DecreaseBPM = 41130
--- SetTrackInput_Mono =    
+SaveProject = 40026
+NextFolder = externalAction('_SWS_SELNEXTFOLDER')
+PrevFolder = externalAction('_SWS_SELPREVFOLDER')
+CropToActiveTake = 40131
+SelectGroup_1 = 40804
+ReaConsole = externalAction('_SWSCONSOLE')
+ScrollToSelectedTrack = 40913
+ClearTrackSelection = 40297
+ReaConsole_SelectTrack = externalAction('_SWSCONSOLEEXSEL')
+ShowTrackManager = 40906
+IncreaseTrackHeight = 41325
+DecreaseTrackHeight = 41326
+SelectAllTracks = 40296
+SelectFirstTrack = externalAction('_SWS_SEL1')
+SelectParentFolder = externalAction('_SWS_SELPARENTS')
+
+WindowSet = {}
+WindowSet.Load_1 = 40454
+WindowSet.Load_2 = 40455
+WindowSet.Load_3 = 40456
+WindowSet.Load_4 = 40457
+WindowSet.Load_5 = 40458
+WindowSet.Load_6 = 40459
+WindowSet.Load_7 = 40460
+WindowSet.Load_8 = 40461
+WindowSet.Load_9 = 40462
+WindowSet.Load_10 = 40463
+
+
+TrackView = {}
+TrackView.Load_1 = 40444
+TrackView.Load_2 = 40445
+TrackView.Load_3 = 40446
+TrackView.Load_4 = 40447
+TrackView.Load_5 = 40448
+TrackView.Load_6 = 40449
+TrackView.Load_7 = 40450
+TrackView.Load_8 = 40451
+TrackView.Load_9 = 40452
+TrackView.Load_10 = 40453
+
+
+
 
 function times(repeatCount, fun)
   return defCount(1, function(count)
@@ -131,7 +173,7 @@ function defCount(default, fun)
   end
 end
 
-function _doRunAction(count, args)
+function _doRunAction(commandRunner, count, args)
   reaper.Undo_BeginBlock()
   for i=0, count-1 do
     -- reaper.ShowConsoleMsg('running action: '..id.."\n")
@@ -139,13 +181,15 @@ function _doRunAction(count, args)
       if type(id) == 'function' then
         id = id()
       end
-      reaper.Main_OnCommand(id, 0)
+      commandRunner(id)
+      
     end
   end
   reaper.Undo_EndBlock('vimper: runAction', 0)
 end
 
 
+--[[
 function runActionWithCount(count, ...)
   local args = table.pack(...)
   return function()
@@ -153,14 +197,31 @@ function runActionWithCount(count, ...)
   end
 end
 
-
+--]]
 
 function runAction(...)
   local args = table.pack(...)
   return defCount(1, function(count)
-    _doRunAction(count, args)
+    _doRunAction(function(id) reaper.Main_OnCommand(id, 0) end, count, args)
   end)
 end
+
+
+
+MidiEditor = {
+  CloseWindow = 2
+  ,EventList = 40056
+  ,Quantize = 40009
+}
+
+
+function MidiEditor.runAction(...)
+  local args = table.pack(...)
+  return defCount(1, function(count)
+    _doRunAction(function(id) reaper.MIDIEditor_OnCommand(reaper.MIDIEditor_GetActive(), id) end, count, args)
+  end)
+end
+
 
 
 function noStore(f)
@@ -193,6 +254,11 @@ Marker.Delete = requireCount(function(count)
   reaper.DeleteProjectMarker(0, count, false)
 end)
 
+Group = {}
+Group.Select = defCount(1, function (id)
+  runAction(SelectGroup_1+id-1)(1)
+end)
+
 
 
 function scriptPath()
@@ -205,13 +271,22 @@ function include(path)
 end
 
 
+function chain(...)
+  local args = table.pack(...)
+  return function(count)
+    for _,f in ipairs(args) do
+      f(count)
+    end
+  end
+end
+
 include('state_io')
 include('action_codes')
 
 Core = {}
 function Core.repeatLastAction()
   clearQuery()
-  doInput(getLastAction())
+  doInput(getLastAction(), getLastContext())
   return DO_NOT_STORE_LAST
 end
 

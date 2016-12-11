@@ -6,7 +6,7 @@ Special keys:
   <alt>
   <mod> (windows key)
 --]]
-return {
+mainBindings = {
   ['.'] = Core.repeatLastAction
 
   ,['<ctrl>a'] = runAction(ShowActionList)
@@ -17,12 +17,15 @@ return {
   ,mN = runAction(PrevMarker)
   ,gg = runAction(GoProjectBeginning)
   ,G = runAction(GoProjectEnd)
-  ,nm = runAction(NewMidiItem, PrevItem)
+  ,['<space>n'] = runAction(NewMidiItem, PrevItem)
   
   ,w = noStore(runAction(PrevTrack, SelectItemsInTrack))
   ,s = noStore(runAction(NextTrack, SelectItemsInTrack))
-  ,['<alt>w'] = noStore(runAction(PrevTrackKeepSelection))
-  ,['<alt>s'] = noStore(runAction(NextTrackKeepSelection))
+  ,['<ctrl>w'] = noStore(runAction(PrevTrackKeepSelection))
+  ,['<ctrl>s'] = noStore(runAction(NextTrackKeepSelection))
+  ,['<alt>w'] = noStore(runAction(PrevFolder))
+  ,['<alt>s'] = noStore(runAction(NextFolder))
+
 
   ,a = noStore(runAction(PrevMeasure))
   ,['<alt>a'] = noStore(times(4, runAction(PrevMeasure)))
@@ -42,19 +45,21 @@ return {
   -- ,iG = runAction(GrowItemLeft)
   -- ,is = runAction(ShrinkItemRight)
   -- ,iS = runAction(ShrinkItemLeft)
-  ,iZ= runAction(MoveItemLeftToEditCursor)
+  ,iZ = runAction(MoveItemLeftToEditCursor)
   ,iX = runAction(MoveItemRightToEditCursor)
   ,iz = runAction(TrimItemLeftToEditCursor)
   ,ix = runAction(TrimItemRightToEditCursor)
+  ,ic = runAction(CropToActiveTake)
 
-  ,td = runAction(DelteActiveTake)
+  ,dd = runAction(DelteActiveTake)
   ,['<'] = noStore(runAction(PrevTake))
   ,['>'] = noStore(runAction(NextTake))
 
   ,['L'] = runAction(ToggleLoop)
-  ,['<space>M'] = runAction(ToggleMetronome)
+  ,['<space>m'] = runAction(ToggleMetronome)
   ,['<ctrl>m'] = runAction(ToggleViewMixer)
-  ,['<space>r'] = runAction(ToggleRecording)
+  ,['<bs>'] = runAction(ToggleRecording)
+
 
   ,Q = noStore(runAction(ZoomHorizOut))
   ,E = noStore(runAction(ZoomHorizIn))
@@ -67,22 +72,35 @@ return {
   ,z = runAction(SetLoopStart)
   ,x = runAction(SetLoopEnd)
 
-  ,trd = runAction(CopyTrack, RemoveTrack, PrevTrack, NextTrack)
-  ,trn = runAction(AddTrack)
-  ,try = runAction(CopyTrack)
-  ,trp = runAction(PasteTrack)
-  ,trm = runAction(SetTrackMidiAllChannels)
+  ,td = runAction(CopyTrack, RemoveTrack, PrevTrack, NextTrack)
+  ,tn = runAction(AddTrack)
+  ,ty = runAction(CopyTrack)
+  ,tp = runAction(PasteTrack)
+  ,tP = runAction(PrevTrack, PasteTrack)
+  ,tm = runAction(SetTrackMidiAllChannels)
+  ,tz = runAction(CopyTrack, PasteTrack)
+  ,tZ = runAction(CopyTrack, PrevTrack, PasteTrack)
+  ,tl = runAction(IncreaseTrackHeight)
+  ,tL = runAction(DecreaseTrackHeight)
+  ,tS = runAction(SelectAllTracks)
+  ,['<alt>g<alt>g'] = runAction(SelectFirstTrack, NextTrack, PrevTrack)
+  ,['<space>p'] = runAction(SelectParentFolder)
+
+  ,o = chain(Group.Select, runAction(ScrollToSelectedTrack))
+  ,tc = runAction(ClearTrackSelection)
+  ,['<space>f'] = runAction(ScrollToSelectedTrack)
+  ,['<space><space>'] = runAction(ReaConsole_SelectTrack)
   -- ,trim = runActionWithCount(SetTrackInput_Mono)
   -- ,tris = runActionWithCount(SetTrackInput_Stereo)
-  ,['<space>f'] = runAction(CycleTrackFolderState)
+  ,tf = runAction(CycleTrackFolderState)
 
   ,['<alt>d'] = runAction(NextItem)
   ,['<alt>a'] = runAction(PrevItem)
 
-  ,['l'] = SetLoop
+  ,l = SetLoop
 
-  ,c = runAction(ExpandSelectedTrackCollapseOthers)
-  ,C = runAction(CollapseAllTracks)
+  ,['§'] = runAction(ExpandSelectedTrackCollapseOthers)
+  ,['<alt>§'] = runAction(CollapseAllTracks)
   
   ,r = runAction(ClearAllRecordArm, RecordArmCurrent)
   ,R = runAction(RecordArmCurrent)
@@ -101,12 +119,53 @@ return {
   ,fi = runAction(ViewFxChainInputCurrentTrack)
   ,fI = runAction(ClearFxChainInputCurrentTrack)
   ,fm = runAction(ViewFxChainMaster)
-  ,ff = runAction(SM_FloatFirstFxCurrentTrack)
+  ,ff = runAction(ClearAllRecordArm, RecordArmCurrent, SM_FloatFirstFxCurrentTrack)
 
   ,u = runAction(Undo)
   ,U = runAction(Redo)
 
   ,fs = runAction(SelectFxCurrentTrack_1)
 
-  ,p = runAction(Play)
+  ,['<cr>'] = runAction(Play)
+
+  ,['<space><cr>'] = runAction(SaveProject)
+  ,['<space>c'] = runAction(ReaConsole)
+  
+  ,['<space>t'] = runAction(ShowTrackManager)
+
+  ,['<num1>'] = runAction(TrackView.Load_1)
+  ,['<num2>'] = runAction(TrackView.Load_2)
+  ,['<num3>'] = runAction(TrackView.Load_3)
+  ,['<num4>'] = runAction(TrackView.Load_4)
+  ,['<num5>'] = runAction(TrackView.Load_5)
+  ,['<num6>'] = runAction(TrackView.Load_6)
+  ,['<num7>'] = runAction(TrackView.Load_7)
+  ,['<num8>'] = runAction(TrackView.Load_8)
+  ,['<num9>'] = runAction(TrackView.Load_9)
+  ,['<num0>'] = runAction(TrackView.Load_10)
+
+  ,['<alt><num1>'] = runAction(WindowSet.Load_1)
+  ,['<alt><num2>'] = runAction(WindowSet.Load_2)
+  ,['<alt><num3>'] = runAction(WindowSet.Load_3)
+  ,['<alt><num4>'] = runAction(WindowSet.Load_4)
+  ,['<alt><num5>'] = runAction(WindowSet.Load_5)
+  ,['<alt><num6>'] = runAction(WindowSet.Load_6)
+  ,['<alt><num7>'] = runAction(WindowSet.Load_7)
+  ,['<alt><num8>'] = runAction(WindowSet.Load_8)
+  ,['<alt><num9>'] = runAction(WindowSet.Load_9)
+  ,['<alt><num0>'] = runAction(WindowSet.Load_10)
+
+
 }
+
+midiBindings = {
+  q = MidiEditor.runAction(MidiEditor.CloseWindow)
+  ,['§'] = MidiEditor.runAction(MidiEditor.Quantize)
+}
+
+
+return {
+  main = mainBindings
+  ,midi = midiBindings
+}
+

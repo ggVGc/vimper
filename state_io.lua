@@ -7,6 +7,7 @@ local stateDir = scriptPath() .. "/state"
 local queryFile = stateDir .. "/query"
 local timeFile = stateDir .. "/last_time"
 local lastActionFile = stateDir .. "/last_action"
+local lastContextFile = stateDir .. "/last_context"
 
 function withFile(path, mode, fun)
   local f = io.open(path, mode)
@@ -64,3 +65,10 @@ function getLastAction()
   return readFile(lastActionFile)
 end
 
+function getLastContext()
+  return readFile(lastContextFile)
+end
+
+function setLastContext(c)
+  setState(lastContextFile, c)
+end

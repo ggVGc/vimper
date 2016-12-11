@@ -92,7 +92,9 @@ function shortenKeys(t)
 end
 
 function stripNumbers(str)
-  return string.gsub(str, '%d', '')
+  -- return string.gsub(str, '%d', '')
+  return str:gsub("[0-9]*(.-)$", "%1")
+
 end
 
 function getCount(str)
@@ -111,7 +113,7 @@ end
 
 
 
-function doInput(ch, dontStore)
+function doInput(ch, context)
   timeoutState()
   local st = getQuery() or ''
   local actions = mergeInclude(scriptPath()..'actions.lua', bindingsPath)
@@ -120,12 +122,14 @@ function doInput(ch, dontStore)
   local curCount = getCount(shortenSpecial(originalQuery))
   local query =  stripNumbers(originalQuery)
   log(query .. " | " .. ch)
-  local actionRet = tryTriggerAction(actions, query, curCount)
+  local actionRet = tryTriggerAction(actions[context], query, curCount)
+  log(context)
   if actionRet and actionRet ~= DO_NOT_STORE_LAST then
     setLastAction(originalQuery)
+    setLastContext(context)
   end
 
-  if ch == "<esc>" or actionRet or tooLong(actions, query) then
+  if ch == "<esc>" or actionRet or tooLong(actions[context], query) then
     log 'clearQuery'
     clearQuery()
   else

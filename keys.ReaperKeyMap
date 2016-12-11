@@ -1,342 +1,872 @@
-SCR 4 0 "vimper_0" "Script: [vimper] 0" ./vimper/mapper_scripts/0.lua
-SCR 4 0 "vimper_1" "Script: [vimper] 1" ./vimper/mapper_scripts/1.lua
-SCR 4 0 "vimper_2" "Script: [vimper] 2" ./vimper/mapper_scripts/2.lua
-SCR 4 0 "vimper_3" "Script: [vimper] 3" ./vimper/mapper_scripts/3.lua
-SCR 4 0 "vimper_4" "Script: [vimper] 4" ./vimper/mapper_scripts/4.lua
-SCR 4 0 "vimper_5" "Script: [vimper] 5" ./vimper/mapper_scripts/5.lua
-SCR 4 0 "vimper_6" "Script: [vimper] 6" ./vimper/mapper_scripts/6.lua
-SCR 4 0 "vimper_7" "Script: [vimper] 7" ./vimper/mapper_scripts/7.lua
-SCR 4 0 "vimper_8" "Script: [vimper] 8" ./vimper/mapper_scripts/8.lua
-SCR 4 0 "vimper_9" "Script: [vimper] 9" ./vimper/mapper_scripts/9.lua
-SCR 4 0 "vimper_a" "Script: [vimper] a" ./vimper/mapper_scripts/a.lua
-SCR 4 0 "vimper_big_a" "Script: [vimper] big_a" ./vimper/mapper_scripts/big_a.lua
-SCR 4 0 "vimper_ctrl_big_a" "Script: [vimper] ctrl_big_a" ./vimper/mapper_scripts/ctrl_big_a.lua
-SCR 4 0 "vimper_ctrl_a" "Script: [vimper] ctrl_a" ./vimper/mapper_scripts/ctrl_a.lua
-SCR 4 0 "vimper_mod_a" "Script: [vimper] mod_a" ./vimper/mapper_scripts/mod_a.lua
-SCR 4 0 "vimper_alt_a" "Script: [vimper] alt_a" ./vimper/mapper_scripts/alt_a.lua
-SCR 4 0 "vimper_b" "Script: [vimper] b" ./vimper/mapper_scripts/b.lua
-SCR 4 0 "vimper_big_b" "Script: [vimper] big_b" ./vimper/mapper_scripts/big_b.lua
-SCR 4 0 "vimper_ctrl_big_b" "Script: [vimper] ctrl_big_b" ./vimper/mapper_scripts/ctrl_big_b.lua
-SCR 4 0 "vimper_ctrl_b" "Script: [vimper] ctrl_b" ./vimper/mapper_scripts/ctrl_b.lua
-SCR 4 0 "vimper_mod_b" "Script: [vimper] mod_b" ./vimper/mapper_scripts/mod_b.lua
-SCR 4 0 "vimper_alt_b" "Script: [vimper] alt_b" ./vimper/mapper_scripts/alt_b.lua
-SCR 4 0 "vimper_c" "Script: [vimper] c" ./vimper/mapper_scripts/c.lua
-SCR 4 0 "vimper_big_c" "Script: [vimper] big_c" ./vimper/mapper_scripts/big_c.lua
-SCR 4 0 "vimper_ctrl_big_c" "Script: [vimper] ctrl_big_c" ./vimper/mapper_scripts/ctrl_big_c.lua
-SCR 4 0 "vimper_ctrl_c" "Script: [vimper] ctrl_c" ./vimper/mapper_scripts/ctrl_c.lua
-SCR 4 0 "vimper_mod_c" "Script: [vimper] mod_c" ./vimper/mapper_scripts/mod_c.lua
-SCR 4 0 "vimper_alt_c" "Script: [vimper] alt_c" ./vimper/mapper_scripts/alt_c.lua
-SCR 4 0 "vimper_d" "Script: [vimper] d" ./vimper/mapper_scripts/d.lua
-SCR 4 0 "vimper_big_d" "Script: [vimper] big_d" ./vimper/mapper_scripts/big_d.lua
-SCR 4 0 "vimper_ctrl_big_d" "Script: [vimper] ctrl_big_d" ./vimper/mapper_scripts/ctrl_big_d.lua
-SCR 4 0 "vimper_ctrl_d" "Script: [vimper] ctrl_d" ./vimper/mapper_scripts/ctrl_d.lua
-SCR 4 0 "vimper_mod_d" "Script: [vimper] mod_d" ./vimper/mapper_scripts/mod_d.lua
-SCR 4 0 "vimper_alt_d" "Script: [vimper] alt_d" ./vimper/mapper_scripts/alt_d.lua
-SCR 4 0 "vimper_e" "Script: [vimper] e" ./vimper/mapper_scripts/e.lua
-SCR 4 0 "vimper_big_e" "Script: [vimper] big_e" ./vimper/mapper_scripts/big_e.lua
-SCR 4 0 "vimper_ctrl_big_e" "Script: [vimper] ctrl_big_e" ./vimper/mapper_scripts/ctrl_big_e.lua
-SCR 4 0 "vimper_ctrl_e" "Script: [vimper] ctrl_e" ./vimper/mapper_scripts/ctrl_e.lua
-SCR 4 0 "vimper_mod_e" "Script: [vimper] mod_e" ./vimper/mapper_scripts/mod_e.lua
-SCR 4 0 "vimper_alt_e" "Script: [vimper] alt_e" ./vimper/mapper_scripts/alt_e.lua
-SCR 4 0 "vimper_f" "Script: [vimper] f" ./vimper/mapper_scripts/f.lua
-SCR 4 0 "vimper_big_f" "Script: [vimper] big_f" ./vimper/mapper_scripts/big_f.lua
-SCR 4 0 "vimper_ctrl_big_f" "Script: [vimper] ctrl_big_f" ./vimper/mapper_scripts/ctrl_big_f.lua
-SCR 4 0 "vimper_ctrl_f" "Script: [vimper] ctrl_f" ./vimper/mapper_scripts/ctrl_f.lua
-SCR 4 0 "vimper_mod_f" "Script: [vimper] mod_f" ./vimper/mapper_scripts/mod_f.lua
-SCR 4 0 "vimper_alt_f" "Script: [vimper] alt_f" ./vimper/mapper_scripts/alt_f.lua
-SCR 4 0 "vimper_g" "Script: [vimper] g" ./vimper/mapper_scripts/g.lua
-SCR 4 0 "vimper_big_g" "Script: [vimper] big_g" ./vimper/mapper_scripts/big_g.lua
-SCR 4 0 "vimper_ctrl_big_g" "Script: [vimper] ctrl_big_g" ./vimper/mapper_scripts/ctrl_big_g.lua
-SCR 4 0 "vimper_ctrl_g" "Script: [vimper] ctrl_g" ./vimper/mapper_scripts/ctrl_g.lua
-SCR 4 0 "vimper_mod_g" "Script: [vimper] mod_g" ./vimper/mapper_scripts/mod_g.lua
-SCR 4 0 "vimper_alt_g" "Script: [vimper] alt_g" ./vimper/mapper_scripts/alt_g.lua
-SCR 4 0 "vimper_h" "Script: [vimper] h" ./vimper/mapper_scripts/h.lua
-SCR 4 0 "vimper_big_h" "Script: [vimper] big_h" ./vimper/mapper_scripts/big_h.lua
-SCR 4 0 "vimper_ctrl_big_h" "Script: [vimper] ctrl_big_h" ./vimper/mapper_scripts/ctrl_big_h.lua
-SCR 4 0 "vimper_ctrl_h" "Script: [vimper] ctrl_h" ./vimper/mapper_scripts/ctrl_h.lua
-SCR 4 0 "vimper_mod_h" "Script: [vimper] mod_h" ./vimper/mapper_scripts/mod_h.lua
-SCR 4 0 "vimper_alt_h" "Script: [vimper] alt_h" ./vimper/mapper_scripts/alt_h.lua
-SCR 4 0 "vimper_i" "Script: [vimper] i" ./vimper/mapper_scripts/i.lua
-SCR 4 0 "vimper_big_i" "Script: [vimper] big_i" ./vimper/mapper_scripts/big_i.lua
-SCR 4 0 "vimper_ctrl_big_i" "Script: [vimper] ctrl_big_i" ./vimper/mapper_scripts/ctrl_big_i.lua
-SCR 4 0 "vimper_ctrl_i" "Script: [vimper] ctrl_i" ./vimper/mapper_scripts/ctrl_i.lua
-SCR 4 0 "vimper_mod_i" "Script: [vimper] mod_i" ./vimper/mapper_scripts/mod_i.lua
-SCR 4 0 "vimper_alt_i" "Script: [vimper] alt_i" ./vimper/mapper_scripts/alt_i.lua
-SCR 4 0 "vimper_j" "Script: [vimper] j" ./vimper/mapper_scripts/j.lua
-SCR 4 0 "vimper_big_j" "Script: [vimper] big_j" ./vimper/mapper_scripts/big_j.lua
-SCR 4 0 "vimper_ctrl_big_j" "Script: [vimper] ctrl_big_j" ./vimper/mapper_scripts/ctrl_big_j.lua
-SCR 4 0 "vimper_ctrl_j" "Script: [vimper] ctrl_j" ./vimper/mapper_scripts/ctrl_j.lua
-SCR 4 0 "vimper_mod_j" "Script: [vimper] mod_j" ./vimper/mapper_scripts/mod_j.lua
-SCR 4 0 "vimper_alt_j" "Script: [vimper] alt_j" ./vimper/mapper_scripts/alt_j.lua
-SCR 4 0 "vimper_k" "Script: [vimper] k" ./vimper/mapper_scripts/k.lua
-SCR 4 0 "vimper_big_k" "Script: [vimper] big_k" ./vimper/mapper_scripts/big_k.lua
-SCR 4 0 "vimper_ctrl_big_k" "Script: [vimper] ctrl_big_k" ./vimper/mapper_scripts/ctrl_big_k.lua
-SCR 4 0 "vimper_ctrl_k" "Script: [vimper] ctrl_k" ./vimper/mapper_scripts/ctrl_k.lua
-SCR 4 0 "vimper_mod_k" "Script: [vimper] mod_k" ./vimper/mapper_scripts/mod_k.lua
-SCR 4 0 "vimper_alt_k" "Script: [vimper] alt_k" ./vimper/mapper_scripts/alt_k.lua
-SCR 4 0 "vimper_l" "Script: [vimper] l" ./vimper/mapper_scripts/l.lua
-SCR 4 0 "vimper_big_l" "Script: [vimper] big_l" ./vimper/mapper_scripts/big_l.lua
-SCR 4 0 "vimper_ctrl_big_l" "Script: [vimper] ctrl_big_l" ./vimper/mapper_scripts/ctrl_big_l.lua
-SCR 4 0 "vimper_ctrl_l" "Script: [vimper] ctrl_l" ./vimper/mapper_scripts/ctrl_l.lua
-SCR 4 0 "vimper_mod_l" "Script: [vimper] mod_l" ./vimper/mapper_scripts/mod_l.lua
-SCR 4 0 "vimper_alt_l" "Script: [vimper] alt_l" ./vimper/mapper_scripts/alt_l.lua
-SCR 4 0 "vimper_m" "Script: [vimper] m" ./vimper/mapper_scripts/m.lua
-SCR 4 0 "vimper_big_m" "Script: [vimper] big_m" ./vimper/mapper_scripts/big_m.lua
-SCR 4 0 "vimper_ctrl_big_m" "Script: [vimper] ctrl_big_m" ./vimper/mapper_scripts/ctrl_big_m.lua
-SCR 4 0 "vimper_ctrl_m" "Script: [vimper] ctrl_m" ./vimper/mapper_scripts/ctrl_m.lua
-SCR 4 0 "vimper_mod_m" "Script: [vimper] mod_m" ./vimper/mapper_scripts/mod_m.lua
-SCR 4 0 "vimper_alt_m" "Script: [vimper] alt_m" ./vimper/mapper_scripts/alt_m.lua
-SCR 4 0 "vimper_n" "Script: [vimper] n" ./vimper/mapper_scripts/n.lua
-SCR 4 0 "vimper_big_n" "Script: [vimper] big_n" ./vimper/mapper_scripts/big_n.lua
-SCR 4 0 "vimper_ctrl_big_n" "Script: [vimper] ctrl_big_n" ./vimper/mapper_scripts/ctrl_big_n.lua
-SCR 4 0 "vimper_ctrl_n" "Script: [vimper] ctrl_n" ./vimper/mapper_scripts/ctrl_n.lua
-SCR 4 0 "vimper_mod_n" "Script: [vimper] mod_n" ./vimper/mapper_scripts/mod_n.lua
-SCR 4 0 "vimper_alt_n" "Script: [vimper] alt_n" ./vimper/mapper_scripts/alt_n.lua
-SCR 4 0 "vimper_o" "Script: [vimper] o" ./vimper/mapper_scripts/o.lua
-SCR 4 0 "vimper_big_o" "Script: [vimper] big_o" ./vimper/mapper_scripts/big_o.lua
-SCR 4 0 "vimper_ctrl_big_o" "Script: [vimper] ctrl_big_o" ./vimper/mapper_scripts/ctrl_big_o.lua
-SCR 4 0 "vimper_ctrl_o" "Script: [vimper] ctrl_o" ./vimper/mapper_scripts/ctrl_o.lua
-SCR 4 0 "vimper_mod_o" "Script: [vimper] mod_o" ./vimper/mapper_scripts/mod_o.lua
-SCR 4 0 "vimper_alt_o" "Script: [vimper] alt_o" ./vimper/mapper_scripts/alt_o.lua
-SCR 4 0 "vimper_p" "Script: [vimper] p" ./vimper/mapper_scripts/p.lua
-SCR 4 0 "vimper_big_p" "Script: [vimper] big_p" ./vimper/mapper_scripts/big_p.lua
-SCR 4 0 "vimper_ctrl_big_p" "Script: [vimper] ctrl_big_p" ./vimper/mapper_scripts/ctrl_big_p.lua
-SCR 4 0 "vimper_ctrl_p" "Script: [vimper] ctrl_p" ./vimper/mapper_scripts/ctrl_p.lua
-SCR 4 0 "vimper_mod_p" "Script: [vimper] mod_p" ./vimper/mapper_scripts/mod_p.lua
-SCR 4 0 "vimper_alt_p" "Script: [vimper] alt_p" ./vimper/mapper_scripts/alt_p.lua
-SCR 4 0 "vimper_q" "Script: [vimper] q" ./vimper/mapper_scripts/q.lua
-SCR 4 0 "vimper_big_q" "Script: [vimper] big_q" ./vimper/mapper_scripts/big_q.lua
-SCR 4 0 "vimper_ctrl_big_q" "Script: [vimper] ctrl_big_q" ./vimper/mapper_scripts/ctrl_big_q.lua
-SCR 4 0 "vimper_ctrl_q" "Script: [vimper] ctrl_q" ./vimper/mapper_scripts/ctrl_q.lua
-SCR 4 0 "vimper_mod_q" "Script: [vimper] mod_q" ./vimper/mapper_scripts/mod_q.lua
-SCR 4 0 "vimper_alt_q" "Script: [vimper] alt_q" ./vimper/mapper_scripts/alt_q.lua
-SCR 4 0 "vimper_r" "Script: [vimper] r" ./vimper/mapper_scripts/r.lua
-SCR 4 0 "vimper_big_r" "Script: [vimper] big_r" ./vimper/mapper_scripts/big_r.lua
-SCR 4 0 "vimper_ctrl_big_r" "Script: [vimper] ctrl_big_r" ./vimper/mapper_scripts/ctrl_big_r.lua
-SCR 4 0 "vimper_ctrl_r" "Script: [vimper] ctrl_r" ./vimper/mapper_scripts/ctrl_r.lua
-SCR 4 0 "vimper_mod_r" "Script: [vimper] mod_r" ./vimper/mapper_scripts/mod_r.lua
-SCR 4 0 "vimper_alt_r" "Script: [vimper] alt_r" ./vimper/mapper_scripts/alt_r.lua
-SCR 4 0 "vimper_s" "Script: [vimper] s" ./vimper/mapper_scripts/s.lua
-SCR 4 0 "vimper_big_s" "Script: [vimper] big_s" ./vimper/mapper_scripts/big_s.lua
-SCR 4 0 "vimper_ctrl_big_s" "Script: [vimper] ctrl_big_s" ./vimper/mapper_scripts/ctrl_big_s.lua
-SCR 4 0 "vimper_ctrl_s" "Script: [vimper] ctrl_s" ./vimper/mapper_scripts/ctrl_s.lua
-SCR 4 0 "vimper_mod_s" "Script: [vimper] mod_s" ./vimper/mapper_scripts/mod_s.lua
-SCR 4 0 "vimper_alt_s" "Script: [vimper] alt_s" ./vimper/mapper_scripts/alt_s.lua
-SCR 4 0 "vimper_t" "Script: [vimper] t" ./vimper/mapper_scripts/t.lua
-SCR 4 0 "vimper_big_t" "Script: [vimper] big_t" ./vimper/mapper_scripts/big_t.lua
-SCR 4 0 "vimper_ctrl_big_t" "Script: [vimper] ctrl_big_t" ./vimper/mapper_scripts/ctrl_big_t.lua
-SCR 4 0 "vimper_ctrl_t" "Script: [vimper] ctrl_t" ./vimper/mapper_scripts/ctrl_t.lua
-SCR 4 0 "vimper_mod_t" "Script: [vimper] mod_t" ./vimper/mapper_scripts/mod_t.lua
-SCR 4 0 "vimper_alt_t" "Script: [vimper] alt_t" ./vimper/mapper_scripts/alt_t.lua
-SCR 4 0 "vimper_u" "Script: [vimper] u" ./vimper/mapper_scripts/u.lua
-SCR 4 0 "vimper_big_u" "Script: [vimper] big_u" ./vimper/mapper_scripts/big_u.lua
-SCR 4 0 "vimper_ctrl_big_u" "Script: [vimper] ctrl_big_u" ./vimper/mapper_scripts/ctrl_big_u.lua
-SCR 4 0 "vimper_ctrl_u" "Script: [vimper] ctrl_u" ./vimper/mapper_scripts/ctrl_u.lua
-SCR 4 0 "vimper_mod_u" "Script: [vimper] mod_u" ./vimper/mapper_scripts/mod_u.lua
-SCR 4 0 "vimper_alt_u" "Script: [vimper] alt_u" ./vimper/mapper_scripts/alt_u.lua
-SCR 4 0 "vimper_v" "Script: [vimper] v" ./vimper/mapper_scripts/v.lua
-SCR 4 0 "vimper_big_v" "Script: [vimper] big_v" ./vimper/mapper_scripts/big_v.lua
-SCR 4 0 "vimper_ctrl_big_v" "Script: [vimper] ctrl_big_v" ./vimper/mapper_scripts/ctrl_big_v.lua
-SCR 4 0 "vimper_ctrl_v" "Script: [vimper] ctrl_v" ./vimper/mapper_scripts/ctrl_v.lua
-SCR 4 0 "vimper_mod_v" "Script: [vimper] mod_v" ./vimper/mapper_scripts/mod_v.lua
-SCR 4 0 "vimper_alt_v" "Script: [vimper] alt_v" ./vimper/mapper_scripts/alt_v.lua
-SCR 4 0 "vimper_w" "Script: [vimper] w" ./vimper/mapper_scripts/w.lua
-SCR 4 0 "vimper_big_w" "Script: [vimper] big_w" ./vimper/mapper_scripts/big_w.lua
-SCR 4 0 "vimper_ctrl_big_w" "Script: [vimper] ctrl_big_w" ./vimper/mapper_scripts/ctrl_big_w.lua
-SCR 4 0 "vimper_ctrl_w" "Script: [vimper] ctrl_w" ./vimper/mapper_scripts/ctrl_w.lua
-SCR 4 0 "vimper_mod_w" "Script: [vimper] mod_w" ./vimper/mapper_scripts/mod_w.lua
-SCR 4 0 "vimper_alt_w" "Script: [vimper] alt_w" ./vimper/mapper_scripts/alt_w.lua
-SCR 4 0 "vimper_x" "Script: [vimper] x" ./vimper/mapper_scripts/x.lua
-SCR 4 0 "vimper_big_x" "Script: [vimper] big_x" ./vimper/mapper_scripts/big_x.lua
-SCR 4 0 "vimper_ctrl_big_x" "Script: [vimper] ctrl_big_x" ./vimper/mapper_scripts/ctrl_big_x.lua
-SCR 4 0 "vimper_ctrl_x" "Script: [vimper] ctrl_x" ./vimper/mapper_scripts/ctrl_x.lua
-SCR 4 0 "vimper_mod_x" "Script: [vimper] mod_x" ./vimper/mapper_scripts/mod_x.lua
-SCR 4 0 "vimper_alt_x" "Script: [vimper] alt_x" ./vimper/mapper_scripts/alt_x.lua
-SCR 4 0 "vimper_y" "Script: [vimper] y" ./vimper/mapper_scripts/y.lua
-SCR 4 0 "vimper_big_y" "Script: [vimper] big_y" ./vimper/mapper_scripts/big_y.lua
-SCR 4 0 "vimper_ctrl_big_y" "Script: [vimper] ctrl_big_y" ./vimper/mapper_scripts/ctrl_big_y.lua
-SCR 4 0 "vimper_ctrl_y" "Script: [vimper] ctrl_y" ./vimper/mapper_scripts/ctrl_y.lua
-SCR 4 0 "vimper_mod_y" "Script: [vimper] mod_y" ./vimper/mapper_scripts/mod_y.lua
-SCR 4 0 "vimper_alt_y" "Script: [vimper] alt_y" ./vimper/mapper_scripts/alt_y.lua
-SCR 4 0 "vimper_z" "Script: [vimper] z" ./vimper/mapper_scripts/z.lua
-SCR 4 0 "vimper_big_z" "Script: [vimper] big_z" ./vimper/mapper_scripts/big_z.lua
-SCR 4 0 "vimper_ctrl_big_z" "Script: [vimper] ctrl_big_z" ./vimper/mapper_scripts/ctrl_big_z.lua
-SCR 4 0 "vimper_ctrl_z" "Script: [vimper] ctrl_z" ./vimper/mapper_scripts/ctrl_z.lua
-SCR 4 0 "vimper_mod_z" "Script: [vimper] mod_z" ./vimper/mapper_scripts/mod_z.lua
-SCR 4 0 "vimper_alt_z" "Script: [vimper] alt_z" ./vimper/mapper_scripts/alt_z.lua
-SCR 4 0 "vimper_esc" "Script: [vimper] esc" ./vimper/mapper_scripts/esc.lua
-SCR 4 0 "vimper_space" "Script: [vimper] space" ./vimper/mapper_scripts/space.lua
-SCR 4 0 "vimper_period" "Script: [vimper] period" ./vimper/mapper_scripts/period.lua
-SCR 4 0 "vimper_left_shift" "Script: [vimper] left_shift" ./vimper/mapper_scripts/left_shift.lua
-SCR 4 0 "vimper_right_shift" "Script: [vimper] right_shift" ./vimper/mapper_scripts/right_shift.lua
-KEY 1 48 _vimper_0 0
-KEY 1 49 _vimper_1 0
-KEY 1 50 _vimper_2 0
-KEY 1 51 _vimper_3 0
-KEY 1 52 _vimper_4 0
-KEY 1 53 _vimper_5 0
-KEY 1 54 _vimper_6 0
-KEY 1 55 _vimper_7 0
-KEY 1 56 _vimper_8 0
-KEY 1 57 _vimper_9 0
-KEY 1 65 _vimper_a 0
-KEY 5 65 _vimper_big_a 0
-KEY 37 65 _vimper_ctrl_big_a 0
-KEY 33 65 _vimper_ctrl_a 0
-KEY 9 65 _vimper_mod_a 0
-KEY 17 65 _vimper_alt_a 0
-KEY 1 66 _vimper_b 0
-KEY 5 66 _vimper_big_b 0
-KEY 37 66 _vimper_ctrl_big_b 0
-KEY 33 66 _vimper_ctrl_b 0
-KEY 9 66 _vimper_mod_b 0
-KEY 17 66 _vimper_alt_b 0
-KEY 1 67 _vimper_c 0
-KEY 5 67 _vimper_big_c 0
-KEY 37 67 _vimper_ctrl_big_c 0
-KEY 33 67 _vimper_ctrl_c 0
-KEY 9 67 _vimper_mod_c 0
-KEY 17 67 _vimper_alt_c 0
-KEY 1 68 _vimper_d 0
-KEY 5 68 _vimper_big_d 0
-KEY 37 68 _vimper_ctrl_big_d 0
-KEY 33 68 _vimper_ctrl_d 0
-KEY 9 68 _vimper_mod_d 0
-KEY 17 68 _vimper_alt_d 0
-KEY 1 69 _vimper_e 0
-KEY 5 69 _vimper_big_e 0
-KEY 37 69 _vimper_ctrl_big_e 0
-KEY 33 69 _vimper_ctrl_e 0
-KEY 9 69 _vimper_mod_e 0
-KEY 17 69 _vimper_alt_e 0
-KEY 1 70 _vimper_f 0
-KEY 5 70 _vimper_big_f 0
-KEY 37 70 _vimper_ctrl_big_f 0
-KEY 33 70 _vimper_ctrl_f 0
-KEY 9 70 _vimper_mod_f 0
-KEY 17 70 _vimper_alt_f 0
-KEY 1 71 _vimper_g 0
-KEY 5 71 _vimper_big_g 0
-KEY 37 71 _vimper_ctrl_big_g 0
-KEY 33 71 _vimper_ctrl_g 0
-KEY 9 71 _vimper_mod_g 0
-KEY 17 71 _vimper_alt_g 0
-KEY 1 72 _vimper_h 0
-KEY 5 72 _vimper_big_h 0
-KEY 37 72 _vimper_ctrl_big_h 0
-KEY 33 72 _vimper_ctrl_h 0
-KEY 9 72 _vimper_mod_h 0
-KEY 17 72 _vimper_alt_h 0
-KEY 1 73 _vimper_i 0
-KEY 5 73 _vimper_big_i 0
-KEY 37 73 _vimper_ctrl_big_i 0
-KEY 33 73 _vimper_ctrl_i 0
-KEY 9 73 _vimper_mod_i 0
-KEY 17 73 _vimper_alt_i 0
-KEY 1 74 _vimper_j 0
-KEY 5 74 _vimper_big_j 0
-KEY 37 74 _vimper_ctrl_big_j 0
-KEY 33 74 _vimper_ctrl_j 0
-KEY 9 74 _vimper_mod_j 0
-KEY 17 74 _vimper_alt_j 0
-KEY 1 75 _vimper_k 0
-KEY 5 75 _vimper_big_k 0
-KEY 37 75 _vimper_ctrl_big_k 0
-KEY 33 75 _vimper_ctrl_k 0
-KEY 9 75 _vimper_mod_k 0
-KEY 17 75 _vimper_alt_k 0
-KEY 1 76 _vimper_l 0
-KEY 5 76 _vimper_big_l 0
-KEY 37 76 _vimper_ctrl_big_l 0
-KEY 33 76 _vimper_ctrl_l 0
-KEY 9 76 _vimper_mod_l 0
-KEY 17 76 _vimper_alt_l 0
-KEY 1 77 _vimper_m 0
-KEY 5 77 _vimper_big_m 0
-KEY 37 77 _vimper_ctrl_big_m 0
-KEY 33 77 _vimper_ctrl_m 0
-KEY 9 77 _vimper_mod_m 0
-KEY 17 77 _vimper_alt_m 0
-KEY 1 78 _vimper_n 0
-KEY 5 78 _vimper_big_n 0
-KEY 37 78 _vimper_ctrl_big_n 0
-KEY 33 78 _vimper_ctrl_n 0
-KEY 9 78 _vimper_mod_n 0
-KEY 17 78 _vimper_alt_n 0
-KEY 1 79 _vimper_o 0
-KEY 5 79 _vimper_big_o 0
-KEY 37 79 _vimper_ctrl_big_o 0
-KEY 33 79 _vimper_ctrl_o 0
-KEY 9 79 _vimper_mod_o 0
-KEY 17 79 _vimper_alt_o 0
-KEY 1 80 _vimper_p 0
-KEY 5 80 _vimper_big_p 0
-KEY 37 80 _vimper_ctrl_big_p 0
-KEY 33 80 _vimper_ctrl_p 0
-KEY 9 80 _vimper_mod_p 0
-KEY 17 80 _vimper_alt_p 0
-KEY 1 81 _vimper_q 0
-KEY 5 81 _vimper_big_q 0
-KEY 37 81 _vimper_ctrl_big_q 0
-KEY 33 81 _vimper_ctrl_q 0
-KEY 9 81 _vimper_mod_q 0
-KEY 17 81 _vimper_alt_q 0
-KEY 1 82 _vimper_r 0
-KEY 5 82 _vimper_big_r 0
-KEY 37 82 _vimper_ctrl_big_r 0
-KEY 33 82 _vimper_ctrl_r 0
-KEY 9 82 _vimper_mod_r 0
-KEY 17 82 _vimper_alt_r 0
-KEY 1 83 _vimper_s 0
-KEY 5 83 _vimper_big_s 0
-KEY 37 83 _vimper_ctrl_big_s 0
-KEY 33 83 _vimper_ctrl_s 0
-KEY 9 83 _vimper_mod_s 0
-KEY 17 83 _vimper_alt_s 0
-KEY 1 84 _vimper_t 0
-KEY 5 84 _vimper_big_t 0
-KEY 37 84 _vimper_ctrl_big_t 0
-KEY 33 84 _vimper_ctrl_t 0
-KEY 9 84 _vimper_mod_t 0
-KEY 17 84 _vimper_alt_t 0
-KEY 1 85 _vimper_u 0
-KEY 5 85 _vimper_big_u 0
-KEY 37 85 _vimper_ctrl_big_u 0
-KEY 33 85 _vimper_ctrl_u 0
-KEY 9 85 _vimper_mod_u 0
-KEY 17 85 _vimper_alt_u 0
-KEY 1 86 _vimper_v 0
-KEY 5 86 _vimper_big_v 0
-KEY 37 86 _vimper_ctrl_big_v 0
-KEY 33 86 _vimper_ctrl_v 0
-KEY 9 86 _vimper_mod_v 0
-KEY 17 86 _vimper_alt_v 0
-KEY 1 87 _vimper_w 0
-KEY 5 87 _vimper_big_w 0
-KEY 37 87 _vimper_ctrl_big_w 0
-KEY 33 87 _vimper_ctrl_w 0
-KEY 9 87 _vimper_mod_w 0
-KEY 17 87 _vimper_alt_w 0
-KEY 1 88 _vimper_x 0
-KEY 5 88 _vimper_big_x 0
-KEY 37 88 _vimper_ctrl_big_x 0
-KEY 33 88 _vimper_ctrl_x 0
-KEY 9 88 _vimper_mod_x 0
-KEY 17 88 _vimper_alt_x 0
-KEY 1 89 _vimper_y 0
-KEY 5 89 _vimper_big_y 0
-KEY 37 89 _vimper_ctrl_big_y 0
-KEY 33 89 _vimper_ctrl_y 0
-KEY 9 89 _vimper_mod_y 0
-KEY 17 89 _vimper_alt_y 0
-KEY 1 90 _vimper_z 0
-KEY 5 90 _vimper_big_z 0
-KEY 37 90 _vimper_ctrl_big_z 0
-KEY 33 90 _vimper_ctrl_z 0
-KEY 9 90 _vimper_mod_z 0
-KEY 17 90 _vimper_alt_z 0
-KEY 1 27 _vimper_esc 0
-KEY 1 32 _vimper_space 0
-KEY 0 46 _vimper_period 0
-KEY 0 60 _vimper_left_shift 0
-KEY 0 62 _vimper_right_shift 0
+SCR 4 0 "vimper_0main" "Script: [vimper] [main] 0" ./vimper/mapper_scripts/_0main.lua
+SCR 4 32060 "vimper_0midi" "Script: [vimper] [midi] 0" ./vimper/mapper_scripts/_0midi.lua
+SCR 4 0 "vimper_num_0main" "Script: [vimper] [main] num_0" ./vimper/mapper_scripts/_num_0main.lua
+SCR 4 32060 "vimper_num_0midi" "Script: [vimper] [midi] num_0" ./vimper/mapper_scripts/_num_0midi.lua
+SCR 4 0 "vimper_alt_num_0main" "Script: [vimper] [main] alt_num_0" ./vimper/mapper_scripts/_alt_num_0main.lua
+SCR 4 32060 "vimper_alt_num_0midi" "Script: [vimper] [midi] alt_num_0" ./vimper/mapper_scripts/_alt_num_0midi.lua
+SCR 4 0 "vimper_ctrl_num_0main" "Script: [vimper] [main] ctrl_num_0" ./vimper/mapper_scripts/_ctrl_num_0main.lua
+SCR 4 32060 "vimper_ctrl_num_0midi" "Script: [vimper] [midi] ctrl_num_0" ./vimper/mapper_scripts/_ctrl_num_0midi.lua
+SCR 4 0 "vimper_1main" "Script: [vimper] [main] 1" ./vimper/mapper_scripts/_1main.lua
+SCR 4 32060 "vimper_1midi" "Script: [vimper] [midi] 1" ./vimper/mapper_scripts/_1midi.lua
+SCR 4 0 "vimper_num_1main" "Script: [vimper] [main] num_1" ./vimper/mapper_scripts/_num_1main.lua
+SCR 4 32060 "vimper_num_1midi" "Script: [vimper] [midi] num_1" ./vimper/mapper_scripts/_num_1midi.lua
+SCR 4 0 "vimper_alt_num_1main" "Script: [vimper] [main] alt_num_1" ./vimper/mapper_scripts/_alt_num_1main.lua
+SCR 4 32060 "vimper_alt_num_1midi" "Script: [vimper] [midi] alt_num_1" ./vimper/mapper_scripts/_alt_num_1midi.lua
+SCR 4 0 "vimper_ctrl_num_1main" "Script: [vimper] [main] ctrl_num_1" ./vimper/mapper_scripts/_ctrl_num_1main.lua
+SCR 4 32060 "vimper_ctrl_num_1midi" "Script: [vimper] [midi] ctrl_num_1" ./vimper/mapper_scripts/_ctrl_num_1midi.lua
+SCR 4 0 "vimper_2main" "Script: [vimper] [main] 2" ./vimper/mapper_scripts/_2main.lua
+SCR 4 32060 "vimper_2midi" "Script: [vimper] [midi] 2" ./vimper/mapper_scripts/_2midi.lua
+SCR 4 0 "vimper_num_2main" "Script: [vimper] [main] num_2" ./vimper/mapper_scripts/_num_2main.lua
+SCR 4 32060 "vimper_num_2midi" "Script: [vimper] [midi] num_2" ./vimper/mapper_scripts/_num_2midi.lua
+SCR 4 0 "vimper_alt_num_2main" "Script: [vimper] [main] alt_num_2" ./vimper/mapper_scripts/_alt_num_2main.lua
+SCR 4 32060 "vimper_alt_num_2midi" "Script: [vimper] [midi] alt_num_2" ./vimper/mapper_scripts/_alt_num_2midi.lua
+SCR 4 0 "vimper_ctrl_num_2main" "Script: [vimper] [main] ctrl_num_2" ./vimper/mapper_scripts/_ctrl_num_2main.lua
+SCR 4 32060 "vimper_ctrl_num_2midi" "Script: [vimper] [midi] ctrl_num_2" ./vimper/mapper_scripts/_ctrl_num_2midi.lua
+SCR 4 0 "vimper_3main" "Script: [vimper] [main] 3" ./vimper/mapper_scripts/_3main.lua
+SCR 4 32060 "vimper_3midi" "Script: [vimper] [midi] 3" ./vimper/mapper_scripts/_3midi.lua
+SCR 4 0 "vimper_num_3main" "Script: [vimper] [main] num_3" ./vimper/mapper_scripts/_num_3main.lua
+SCR 4 32060 "vimper_num_3midi" "Script: [vimper] [midi] num_3" ./vimper/mapper_scripts/_num_3midi.lua
+SCR 4 0 "vimper_alt_num_3main" "Script: [vimper] [main] alt_num_3" ./vimper/mapper_scripts/_alt_num_3main.lua
+SCR 4 32060 "vimper_alt_num_3midi" "Script: [vimper] [midi] alt_num_3" ./vimper/mapper_scripts/_alt_num_3midi.lua
+SCR 4 0 "vimper_ctrl_num_3main" "Script: [vimper] [main] ctrl_num_3" ./vimper/mapper_scripts/_ctrl_num_3main.lua
+SCR 4 32060 "vimper_ctrl_num_3midi" "Script: [vimper] [midi] ctrl_num_3" ./vimper/mapper_scripts/_ctrl_num_3midi.lua
+SCR 4 0 "vimper_4main" "Script: [vimper] [main] 4" ./vimper/mapper_scripts/_4main.lua
+SCR 4 32060 "vimper_4midi" "Script: [vimper] [midi] 4" ./vimper/mapper_scripts/_4midi.lua
+SCR 4 0 "vimper_num_4main" "Script: [vimper] [main] num_4" ./vimper/mapper_scripts/_num_4main.lua
+SCR 4 32060 "vimper_num_4midi" "Script: [vimper] [midi] num_4" ./vimper/mapper_scripts/_num_4midi.lua
+SCR 4 0 "vimper_alt_num_4main" "Script: [vimper] [main] alt_num_4" ./vimper/mapper_scripts/_alt_num_4main.lua
+SCR 4 32060 "vimper_alt_num_4midi" "Script: [vimper] [midi] alt_num_4" ./vimper/mapper_scripts/_alt_num_4midi.lua
+SCR 4 0 "vimper_ctrl_num_4main" "Script: [vimper] [main] ctrl_num_4" ./vimper/mapper_scripts/_ctrl_num_4main.lua
+SCR 4 32060 "vimper_ctrl_num_4midi" "Script: [vimper] [midi] ctrl_num_4" ./vimper/mapper_scripts/_ctrl_num_4midi.lua
+SCR 4 0 "vimper_5main" "Script: [vimper] [main] 5" ./vimper/mapper_scripts/_5main.lua
+SCR 4 32060 "vimper_5midi" "Script: [vimper] [midi] 5" ./vimper/mapper_scripts/_5midi.lua
+SCR 4 0 "vimper_num_5main" "Script: [vimper] [main] num_5" ./vimper/mapper_scripts/_num_5main.lua
+SCR 4 32060 "vimper_num_5midi" "Script: [vimper] [midi] num_5" ./vimper/mapper_scripts/_num_5midi.lua
+SCR 4 0 "vimper_alt_num_5main" "Script: [vimper] [main] alt_num_5" ./vimper/mapper_scripts/_alt_num_5main.lua
+SCR 4 32060 "vimper_alt_num_5midi" "Script: [vimper] [midi] alt_num_5" ./vimper/mapper_scripts/_alt_num_5midi.lua
+SCR 4 0 "vimper_ctrl_num_5main" "Script: [vimper] [main] ctrl_num_5" ./vimper/mapper_scripts/_ctrl_num_5main.lua
+SCR 4 32060 "vimper_ctrl_num_5midi" "Script: [vimper] [midi] ctrl_num_5" ./vimper/mapper_scripts/_ctrl_num_5midi.lua
+SCR 4 0 "vimper_6main" "Script: [vimper] [main] 6" ./vimper/mapper_scripts/_6main.lua
+SCR 4 32060 "vimper_6midi" "Script: [vimper] [midi] 6" ./vimper/mapper_scripts/_6midi.lua
+SCR 4 0 "vimper_num_6main" "Script: [vimper] [main] num_6" ./vimper/mapper_scripts/_num_6main.lua
+SCR 4 32060 "vimper_num_6midi" "Script: [vimper] [midi] num_6" ./vimper/mapper_scripts/_num_6midi.lua
+SCR 4 0 "vimper_alt_num_6main" "Script: [vimper] [main] alt_num_6" ./vimper/mapper_scripts/_alt_num_6main.lua
+SCR 4 32060 "vimper_alt_num_6midi" "Script: [vimper] [midi] alt_num_6" ./vimper/mapper_scripts/_alt_num_6midi.lua
+SCR 4 0 "vimper_ctrl_num_6main" "Script: [vimper] [main] ctrl_num_6" ./vimper/mapper_scripts/_ctrl_num_6main.lua
+SCR 4 32060 "vimper_ctrl_num_6midi" "Script: [vimper] [midi] ctrl_num_6" ./vimper/mapper_scripts/_ctrl_num_6midi.lua
+SCR 4 0 "vimper_7main" "Script: [vimper] [main] 7" ./vimper/mapper_scripts/_7main.lua
+SCR 4 32060 "vimper_7midi" "Script: [vimper] [midi] 7" ./vimper/mapper_scripts/_7midi.lua
+SCR 4 0 "vimper_num_7main" "Script: [vimper] [main] num_7" ./vimper/mapper_scripts/_num_7main.lua
+SCR 4 32060 "vimper_num_7midi" "Script: [vimper] [midi] num_7" ./vimper/mapper_scripts/_num_7midi.lua
+SCR 4 0 "vimper_alt_num_7main" "Script: [vimper] [main] alt_num_7" ./vimper/mapper_scripts/_alt_num_7main.lua
+SCR 4 32060 "vimper_alt_num_7midi" "Script: [vimper] [midi] alt_num_7" ./vimper/mapper_scripts/_alt_num_7midi.lua
+SCR 4 0 "vimper_ctrl_num_7main" "Script: [vimper] [main] ctrl_num_7" ./vimper/mapper_scripts/_ctrl_num_7main.lua
+SCR 4 32060 "vimper_ctrl_num_7midi" "Script: [vimper] [midi] ctrl_num_7" ./vimper/mapper_scripts/_ctrl_num_7midi.lua
+SCR 4 0 "vimper_8main" "Script: [vimper] [main] 8" ./vimper/mapper_scripts/_8main.lua
+SCR 4 32060 "vimper_8midi" "Script: [vimper] [midi] 8" ./vimper/mapper_scripts/_8midi.lua
+SCR 4 0 "vimper_num_8main" "Script: [vimper] [main] num_8" ./vimper/mapper_scripts/_num_8main.lua
+SCR 4 32060 "vimper_num_8midi" "Script: [vimper] [midi] num_8" ./vimper/mapper_scripts/_num_8midi.lua
+SCR 4 0 "vimper_alt_num_8main" "Script: [vimper] [main] alt_num_8" ./vimper/mapper_scripts/_alt_num_8main.lua
+SCR 4 32060 "vimper_alt_num_8midi" "Script: [vimper] [midi] alt_num_8" ./vimper/mapper_scripts/_alt_num_8midi.lua
+SCR 4 0 "vimper_ctrl_num_8main" "Script: [vimper] [main] ctrl_num_8" ./vimper/mapper_scripts/_ctrl_num_8main.lua
+SCR 4 32060 "vimper_ctrl_num_8midi" "Script: [vimper] [midi] ctrl_num_8" ./vimper/mapper_scripts/_ctrl_num_8midi.lua
+SCR 4 0 "vimper_9main" "Script: [vimper] [main] 9" ./vimper/mapper_scripts/_9main.lua
+SCR 4 32060 "vimper_9midi" "Script: [vimper] [midi] 9" ./vimper/mapper_scripts/_9midi.lua
+SCR 4 0 "vimper_num_9main" "Script: [vimper] [main] num_9" ./vimper/mapper_scripts/_num_9main.lua
+SCR 4 32060 "vimper_num_9midi" "Script: [vimper] [midi] num_9" ./vimper/mapper_scripts/_num_9midi.lua
+SCR 4 0 "vimper_alt_num_9main" "Script: [vimper] [main] alt_num_9" ./vimper/mapper_scripts/_alt_num_9main.lua
+SCR 4 32060 "vimper_alt_num_9midi" "Script: [vimper] [midi] alt_num_9" ./vimper/mapper_scripts/_alt_num_9midi.lua
+SCR 4 0 "vimper_ctrl_num_9main" "Script: [vimper] [main] ctrl_num_9" ./vimper/mapper_scripts/_ctrl_num_9main.lua
+SCR 4 32060 "vimper_ctrl_num_9midi" "Script: [vimper] [midi] ctrl_num_9" ./vimper/mapper_scripts/_ctrl_num_9midi.lua
+SCR 4 0 "vimper_amain" "Script: [vimper] [main] a" ./vimper/mapper_scripts/_amain.lua
+SCR 4 32060 "vimper_amidi" "Script: [vimper] [midi] a" ./vimper/mapper_scripts/_amidi.lua
+SCR 4 0 "vimper_big_amain" "Script: [vimper] [main] big_a" ./vimper/mapper_scripts/_big_amain.lua
+SCR 4 32060 "vimper_big_amidi" "Script: [vimper] [midi] big_a" ./vimper/mapper_scripts/_big_amidi.lua
+SCR 4 0 "vimper_ctrl_big_amain" "Script: [vimper] [main] ctrl_big_a" ./vimper/mapper_scripts/_ctrl_big_amain.lua
+SCR 4 32060 "vimper_ctrl_big_amidi" "Script: [vimper] [midi] ctrl_big_a" ./vimper/mapper_scripts/_ctrl_big_amidi.lua
+SCR 4 0 "vimper_ctrl_amain" "Script: [vimper] [main] ctrl_a" ./vimper/mapper_scripts/_ctrl_amain.lua
+SCR 4 32060 "vimper_ctrl_amidi" "Script: [vimper] [midi] ctrl_a" ./vimper/mapper_scripts/_ctrl_amidi.lua
+SCR 4 0 "vimper_mod_amain" "Script: [vimper] [main] mod_a" ./vimper/mapper_scripts/_mod_amain.lua
+SCR 4 32060 "vimper_mod_amidi" "Script: [vimper] [midi] mod_a" ./vimper/mapper_scripts/_mod_amidi.lua
+SCR 4 0 "vimper_alt_amain" "Script: [vimper] [main] alt_a" ./vimper/mapper_scripts/_alt_amain.lua
+SCR 4 32060 "vimper_alt_amidi" "Script: [vimper] [midi] alt_a" ./vimper/mapper_scripts/_alt_amidi.lua
+SCR 4 0 "vimper_bmain" "Script: [vimper] [main] b" ./vimper/mapper_scripts/_bmain.lua
+SCR 4 32060 "vimper_bmidi" "Script: [vimper] [midi] b" ./vimper/mapper_scripts/_bmidi.lua
+SCR 4 0 "vimper_big_bmain" "Script: [vimper] [main] big_b" ./vimper/mapper_scripts/_big_bmain.lua
+SCR 4 32060 "vimper_big_bmidi" "Script: [vimper] [midi] big_b" ./vimper/mapper_scripts/_big_bmidi.lua
+SCR 4 0 "vimper_ctrl_big_bmain" "Script: [vimper] [main] ctrl_big_b" ./vimper/mapper_scripts/_ctrl_big_bmain.lua
+SCR 4 32060 "vimper_ctrl_big_bmidi" "Script: [vimper] [midi] ctrl_big_b" ./vimper/mapper_scripts/_ctrl_big_bmidi.lua
+SCR 4 0 "vimper_ctrl_bmain" "Script: [vimper] [main] ctrl_b" ./vimper/mapper_scripts/_ctrl_bmain.lua
+SCR 4 32060 "vimper_ctrl_bmidi" "Script: [vimper] [midi] ctrl_b" ./vimper/mapper_scripts/_ctrl_bmidi.lua
+SCR 4 0 "vimper_mod_bmain" "Script: [vimper] [main] mod_b" ./vimper/mapper_scripts/_mod_bmain.lua
+SCR 4 32060 "vimper_mod_bmidi" "Script: [vimper] [midi] mod_b" ./vimper/mapper_scripts/_mod_bmidi.lua
+SCR 4 0 "vimper_alt_bmain" "Script: [vimper] [main] alt_b" ./vimper/mapper_scripts/_alt_bmain.lua
+SCR 4 32060 "vimper_alt_bmidi" "Script: [vimper] [midi] alt_b" ./vimper/mapper_scripts/_alt_bmidi.lua
+SCR 4 0 "vimper_cmain" "Script: [vimper] [main] c" ./vimper/mapper_scripts/_cmain.lua
+SCR 4 32060 "vimper_cmidi" "Script: [vimper] [midi] c" ./vimper/mapper_scripts/_cmidi.lua
+SCR 4 0 "vimper_big_cmain" "Script: [vimper] [main] big_c" ./vimper/mapper_scripts/_big_cmain.lua
+SCR 4 32060 "vimper_big_cmidi" "Script: [vimper] [midi] big_c" ./vimper/mapper_scripts/_big_cmidi.lua
+SCR 4 0 "vimper_ctrl_big_cmain" "Script: [vimper] [main] ctrl_big_c" ./vimper/mapper_scripts/_ctrl_big_cmain.lua
+SCR 4 32060 "vimper_ctrl_big_cmidi" "Script: [vimper] [midi] ctrl_big_c" ./vimper/mapper_scripts/_ctrl_big_cmidi.lua
+SCR 4 0 "vimper_ctrl_cmain" "Script: [vimper] [main] ctrl_c" ./vimper/mapper_scripts/_ctrl_cmain.lua
+SCR 4 32060 "vimper_ctrl_cmidi" "Script: [vimper] [midi] ctrl_c" ./vimper/mapper_scripts/_ctrl_cmidi.lua
+SCR 4 0 "vimper_mod_cmain" "Script: [vimper] [main] mod_c" ./vimper/mapper_scripts/_mod_cmain.lua
+SCR 4 32060 "vimper_mod_cmidi" "Script: [vimper] [midi] mod_c" ./vimper/mapper_scripts/_mod_cmidi.lua
+SCR 4 0 "vimper_alt_cmain" "Script: [vimper] [main] alt_c" ./vimper/mapper_scripts/_alt_cmain.lua
+SCR 4 32060 "vimper_alt_cmidi" "Script: [vimper] [midi] alt_c" ./vimper/mapper_scripts/_alt_cmidi.lua
+SCR 4 0 "vimper_dmain" "Script: [vimper] [main] d" ./vimper/mapper_scripts/_dmain.lua
+SCR 4 32060 "vimper_dmidi" "Script: [vimper] [midi] d" ./vimper/mapper_scripts/_dmidi.lua
+SCR 4 0 "vimper_big_dmain" "Script: [vimper] [main] big_d" ./vimper/mapper_scripts/_big_dmain.lua
+SCR 4 32060 "vimper_big_dmidi" "Script: [vimper] [midi] big_d" ./vimper/mapper_scripts/_big_dmidi.lua
+SCR 4 0 "vimper_ctrl_big_dmain" "Script: [vimper] [main] ctrl_big_d" ./vimper/mapper_scripts/_ctrl_big_dmain.lua
+SCR 4 32060 "vimper_ctrl_big_dmidi" "Script: [vimper] [midi] ctrl_big_d" ./vimper/mapper_scripts/_ctrl_big_dmidi.lua
+SCR 4 0 "vimper_ctrl_dmain" "Script: [vimper] [main] ctrl_d" ./vimper/mapper_scripts/_ctrl_dmain.lua
+SCR 4 32060 "vimper_ctrl_dmidi" "Script: [vimper] [midi] ctrl_d" ./vimper/mapper_scripts/_ctrl_dmidi.lua
+SCR 4 0 "vimper_mod_dmain" "Script: [vimper] [main] mod_d" ./vimper/mapper_scripts/_mod_dmain.lua
+SCR 4 32060 "vimper_mod_dmidi" "Script: [vimper] [midi] mod_d" ./vimper/mapper_scripts/_mod_dmidi.lua
+SCR 4 0 "vimper_alt_dmain" "Script: [vimper] [main] alt_d" ./vimper/mapper_scripts/_alt_dmain.lua
+SCR 4 32060 "vimper_alt_dmidi" "Script: [vimper] [midi] alt_d" ./vimper/mapper_scripts/_alt_dmidi.lua
+SCR 4 0 "vimper_emain" "Script: [vimper] [main] e" ./vimper/mapper_scripts/_emain.lua
+SCR 4 32060 "vimper_emidi" "Script: [vimper] [midi] e" ./vimper/mapper_scripts/_emidi.lua
+SCR 4 0 "vimper_big_emain" "Script: [vimper] [main] big_e" ./vimper/mapper_scripts/_big_emain.lua
+SCR 4 32060 "vimper_big_emidi" "Script: [vimper] [midi] big_e" ./vimper/mapper_scripts/_big_emidi.lua
+SCR 4 0 "vimper_ctrl_big_emain" "Script: [vimper] [main] ctrl_big_e" ./vimper/mapper_scripts/_ctrl_big_emain.lua
+SCR 4 32060 "vimper_ctrl_big_emidi" "Script: [vimper] [midi] ctrl_big_e" ./vimper/mapper_scripts/_ctrl_big_emidi.lua
+SCR 4 0 "vimper_ctrl_emain" "Script: [vimper] [main] ctrl_e" ./vimper/mapper_scripts/_ctrl_emain.lua
+SCR 4 32060 "vimper_ctrl_emidi" "Script: [vimper] [midi] ctrl_e" ./vimper/mapper_scripts/_ctrl_emidi.lua
+SCR 4 0 "vimper_mod_emain" "Script: [vimper] [main] mod_e" ./vimper/mapper_scripts/_mod_emain.lua
+SCR 4 32060 "vimper_mod_emidi" "Script: [vimper] [midi] mod_e" ./vimper/mapper_scripts/_mod_emidi.lua
+SCR 4 0 "vimper_alt_emain" "Script: [vimper] [main] alt_e" ./vimper/mapper_scripts/_alt_emain.lua
+SCR 4 32060 "vimper_alt_emidi" "Script: [vimper] [midi] alt_e" ./vimper/mapper_scripts/_alt_emidi.lua
+SCR 4 0 "vimper_fmain" "Script: [vimper] [main] f" ./vimper/mapper_scripts/_fmain.lua
+SCR 4 32060 "vimper_fmidi" "Script: [vimper] [midi] f" ./vimper/mapper_scripts/_fmidi.lua
+SCR 4 0 "vimper_big_fmain" "Script: [vimper] [main] big_f" ./vimper/mapper_scripts/_big_fmain.lua
+SCR 4 32060 "vimper_big_fmidi" "Script: [vimper] [midi] big_f" ./vimper/mapper_scripts/_big_fmidi.lua
+SCR 4 0 "vimper_ctrl_big_fmain" "Script: [vimper] [main] ctrl_big_f" ./vimper/mapper_scripts/_ctrl_big_fmain.lua
+SCR 4 32060 "vimper_ctrl_big_fmidi" "Script: [vimper] [midi] ctrl_big_f" ./vimper/mapper_scripts/_ctrl_big_fmidi.lua
+SCR 4 0 "vimper_ctrl_fmain" "Script: [vimper] [main] ctrl_f" ./vimper/mapper_scripts/_ctrl_fmain.lua
+SCR 4 32060 "vimper_ctrl_fmidi" "Script: [vimper] [midi] ctrl_f" ./vimper/mapper_scripts/_ctrl_fmidi.lua
+SCR 4 0 "vimper_mod_fmain" "Script: [vimper] [main] mod_f" ./vimper/mapper_scripts/_mod_fmain.lua
+SCR 4 32060 "vimper_mod_fmidi" "Script: [vimper] [midi] mod_f" ./vimper/mapper_scripts/_mod_fmidi.lua
+SCR 4 0 "vimper_alt_fmain" "Script: [vimper] [main] alt_f" ./vimper/mapper_scripts/_alt_fmain.lua
+SCR 4 32060 "vimper_alt_fmidi" "Script: [vimper] [midi] alt_f" ./vimper/mapper_scripts/_alt_fmidi.lua
+SCR 4 0 "vimper_gmain" "Script: [vimper] [main] g" ./vimper/mapper_scripts/_gmain.lua
+SCR 4 32060 "vimper_gmidi" "Script: [vimper] [midi] g" ./vimper/mapper_scripts/_gmidi.lua
+SCR 4 0 "vimper_big_gmain" "Script: [vimper] [main] big_g" ./vimper/mapper_scripts/_big_gmain.lua
+SCR 4 32060 "vimper_big_gmidi" "Script: [vimper] [midi] big_g" ./vimper/mapper_scripts/_big_gmidi.lua
+SCR 4 0 "vimper_ctrl_big_gmain" "Script: [vimper] [main] ctrl_big_g" ./vimper/mapper_scripts/_ctrl_big_gmain.lua
+SCR 4 32060 "vimper_ctrl_big_gmidi" "Script: [vimper] [midi] ctrl_big_g" ./vimper/mapper_scripts/_ctrl_big_gmidi.lua
+SCR 4 0 "vimper_ctrl_gmain" "Script: [vimper] [main] ctrl_g" ./vimper/mapper_scripts/_ctrl_gmain.lua
+SCR 4 32060 "vimper_ctrl_gmidi" "Script: [vimper] [midi] ctrl_g" ./vimper/mapper_scripts/_ctrl_gmidi.lua
+SCR 4 0 "vimper_mod_gmain" "Script: [vimper] [main] mod_g" ./vimper/mapper_scripts/_mod_gmain.lua
+SCR 4 32060 "vimper_mod_gmidi" "Script: [vimper] [midi] mod_g" ./vimper/mapper_scripts/_mod_gmidi.lua
+SCR 4 0 "vimper_alt_gmain" "Script: [vimper] [main] alt_g" ./vimper/mapper_scripts/_alt_gmain.lua
+SCR 4 32060 "vimper_alt_gmidi" "Script: [vimper] [midi] alt_g" ./vimper/mapper_scripts/_alt_gmidi.lua
+SCR 4 0 "vimper_hmain" "Script: [vimper] [main] h" ./vimper/mapper_scripts/_hmain.lua
+SCR 4 32060 "vimper_hmidi" "Script: [vimper] [midi] h" ./vimper/mapper_scripts/_hmidi.lua
+SCR 4 0 "vimper_big_hmain" "Script: [vimper] [main] big_h" ./vimper/mapper_scripts/_big_hmain.lua
+SCR 4 32060 "vimper_big_hmidi" "Script: [vimper] [midi] big_h" ./vimper/mapper_scripts/_big_hmidi.lua
+SCR 4 0 "vimper_ctrl_big_hmain" "Script: [vimper] [main] ctrl_big_h" ./vimper/mapper_scripts/_ctrl_big_hmain.lua
+SCR 4 32060 "vimper_ctrl_big_hmidi" "Script: [vimper] [midi] ctrl_big_h" ./vimper/mapper_scripts/_ctrl_big_hmidi.lua
+SCR 4 0 "vimper_ctrl_hmain" "Script: [vimper] [main] ctrl_h" ./vimper/mapper_scripts/_ctrl_hmain.lua
+SCR 4 32060 "vimper_ctrl_hmidi" "Script: [vimper] [midi] ctrl_h" ./vimper/mapper_scripts/_ctrl_hmidi.lua
+SCR 4 0 "vimper_mod_hmain" "Script: [vimper] [main] mod_h" ./vimper/mapper_scripts/_mod_hmain.lua
+SCR 4 32060 "vimper_mod_hmidi" "Script: [vimper] [midi] mod_h" ./vimper/mapper_scripts/_mod_hmidi.lua
+SCR 4 0 "vimper_alt_hmain" "Script: [vimper] [main] alt_h" ./vimper/mapper_scripts/_alt_hmain.lua
+SCR 4 32060 "vimper_alt_hmidi" "Script: [vimper] [midi] alt_h" ./vimper/mapper_scripts/_alt_hmidi.lua
+SCR 4 0 "vimper_imain" "Script: [vimper] [main] i" ./vimper/mapper_scripts/_imain.lua
+SCR 4 32060 "vimper_imidi" "Script: [vimper] [midi] i" ./vimper/mapper_scripts/_imidi.lua
+SCR 4 0 "vimper_big_imain" "Script: [vimper] [main] big_i" ./vimper/mapper_scripts/_big_imain.lua
+SCR 4 32060 "vimper_big_imidi" "Script: [vimper] [midi] big_i" ./vimper/mapper_scripts/_big_imidi.lua
+SCR 4 0 "vimper_ctrl_big_imain" "Script: [vimper] [main] ctrl_big_i" ./vimper/mapper_scripts/_ctrl_big_imain.lua
+SCR 4 32060 "vimper_ctrl_big_imidi" "Script: [vimper] [midi] ctrl_big_i" ./vimper/mapper_scripts/_ctrl_big_imidi.lua
+SCR 4 0 "vimper_ctrl_imain" "Script: [vimper] [main] ctrl_i" ./vimper/mapper_scripts/_ctrl_imain.lua
+SCR 4 32060 "vimper_ctrl_imidi" "Script: [vimper] [midi] ctrl_i" ./vimper/mapper_scripts/_ctrl_imidi.lua
+SCR 4 0 "vimper_mod_imain" "Script: [vimper] [main] mod_i" ./vimper/mapper_scripts/_mod_imain.lua
+SCR 4 32060 "vimper_mod_imidi" "Script: [vimper] [midi] mod_i" ./vimper/mapper_scripts/_mod_imidi.lua
+SCR 4 0 "vimper_alt_imain" "Script: [vimper] [main] alt_i" ./vimper/mapper_scripts/_alt_imain.lua
+SCR 4 32060 "vimper_alt_imidi" "Script: [vimper] [midi] alt_i" ./vimper/mapper_scripts/_alt_imidi.lua
+SCR 4 0 "vimper_jmain" "Script: [vimper] [main] j" ./vimper/mapper_scripts/_jmain.lua
+SCR 4 32060 "vimper_jmidi" "Script: [vimper] [midi] j" ./vimper/mapper_scripts/_jmidi.lua
+SCR 4 0 "vimper_big_jmain" "Script: [vimper] [main] big_j" ./vimper/mapper_scripts/_big_jmain.lua
+SCR 4 32060 "vimper_big_jmidi" "Script: [vimper] [midi] big_j" ./vimper/mapper_scripts/_big_jmidi.lua
+SCR 4 0 "vimper_ctrl_big_jmain" "Script: [vimper] [main] ctrl_big_j" ./vimper/mapper_scripts/_ctrl_big_jmain.lua
+SCR 4 32060 "vimper_ctrl_big_jmidi" "Script: [vimper] [midi] ctrl_big_j" ./vimper/mapper_scripts/_ctrl_big_jmidi.lua
+SCR 4 0 "vimper_ctrl_jmain" "Script: [vimper] [main] ctrl_j" ./vimper/mapper_scripts/_ctrl_jmain.lua
+SCR 4 32060 "vimper_ctrl_jmidi" "Script: [vimper] [midi] ctrl_j" ./vimper/mapper_scripts/_ctrl_jmidi.lua
+SCR 4 0 "vimper_mod_jmain" "Script: [vimper] [main] mod_j" ./vimper/mapper_scripts/_mod_jmain.lua
+SCR 4 32060 "vimper_mod_jmidi" "Script: [vimper] [midi] mod_j" ./vimper/mapper_scripts/_mod_jmidi.lua
+SCR 4 0 "vimper_alt_jmain" "Script: [vimper] [main] alt_j" ./vimper/mapper_scripts/_alt_jmain.lua
+SCR 4 32060 "vimper_alt_jmidi" "Script: [vimper] [midi] alt_j" ./vimper/mapper_scripts/_alt_jmidi.lua
+SCR 4 0 "vimper_kmain" "Script: [vimper] [main] k" ./vimper/mapper_scripts/_kmain.lua
+SCR 4 32060 "vimper_kmidi" "Script: [vimper] [midi] k" ./vimper/mapper_scripts/_kmidi.lua
+SCR 4 0 "vimper_big_kmain" "Script: [vimper] [main] big_k" ./vimper/mapper_scripts/_big_kmain.lua
+SCR 4 32060 "vimper_big_kmidi" "Script: [vimper] [midi] big_k" ./vimper/mapper_scripts/_big_kmidi.lua
+SCR 4 0 "vimper_ctrl_big_kmain" "Script: [vimper] [main] ctrl_big_k" ./vimper/mapper_scripts/_ctrl_big_kmain.lua
+SCR 4 32060 "vimper_ctrl_big_kmidi" "Script: [vimper] [midi] ctrl_big_k" ./vimper/mapper_scripts/_ctrl_big_kmidi.lua
+SCR 4 0 "vimper_ctrl_kmain" "Script: [vimper] [main] ctrl_k" ./vimper/mapper_scripts/_ctrl_kmain.lua
+SCR 4 32060 "vimper_ctrl_kmidi" "Script: [vimper] [midi] ctrl_k" ./vimper/mapper_scripts/_ctrl_kmidi.lua
+SCR 4 0 "vimper_mod_kmain" "Script: [vimper] [main] mod_k" ./vimper/mapper_scripts/_mod_kmain.lua
+SCR 4 32060 "vimper_mod_kmidi" "Script: [vimper] [midi] mod_k" ./vimper/mapper_scripts/_mod_kmidi.lua
+SCR 4 0 "vimper_alt_kmain" "Script: [vimper] [main] alt_k" ./vimper/mapper_scripts/_alt_kmain.lua
+SCR 4 32060 "vimper_alt_kmidi" "Script: [vimper] [midi] alt_k" ./vimper/mapper_scripts/_alt_kmidi.lua
+SCR 4 0 "vimper_lmain" "Script: [vimper] [main] l" ./vimper/mapper_scripts/_lmain.lua
+SCR 4 32060 "vimper_lmidi" "Script: [vimper] [midi] l" ./vimper/mapper_scripts/_lmidi.lua
+SCR 4 0 "vimper_big_lmain" "Script: [vimper] [main] big_l" ./vimper/mapper_scripts/_big_lmain.lua
+SCR 4 32060 "vimper_big_lmidi" "Script: [vimper] [midi] big_l" ./vimper/mapper_scripts/_big_lmidi.lua
+SCR 4 0 "vimper_ctrl_big_lmain" "Script: [vimper] [main] ctrl_big_l" ./vimper/mapper_scripts/_ctrl_big_lmain.lua
+SCR 4 32060 "vimper_ctrl_big_lmidi" "Script: [vimper] [midi] ctrl_big_l" ./vimper/mapper_scripts/_ctrl_big_lmidi.lua
+SCR 4 0 "vimper_ctrl_lmain" "Script: [vimper] [main] ctrl_l" ./vimper/mapper_scripts/_ctrl_lmain.lua
+SCR 4 32060 "vimper_ctrl_lmidi" "Script: [vimper] [midi] ctrl_l" ./vimper/mapper_scripts/_ctrl_lmidi.lua
+SCR 4 0 "vimper_mod_lmain" "Script: [vimper] [main] mod_l" ./vimper/mapper_scripts/_mod_lmain.lua
+SCR 4 32060 "vimper_mod_lmidi" "Script: [vimper] [midi] mod_l" ./vimper/mapper_scripts/_mod_lmidi.lua
+SCR 4 0 "vimper_alt_lmain" "Script: [vimper] [main] alt_l" ./vimper/mapper_scripts/_alt_lmain.lua
+SCR 4 32060 "vimper_alt_lmidi" "Script: [vimper] [midi] alt_l" ./vimper/mapper_scripts/_alt_lmidi.lua
+SCR 4 0 "vimper_mmain" "Script: [vimper] [main] m" ./vimper/mapper_scripts/_mmain.lua
+SCR 4 32060 "vimper_mmidi" "Script: [vimper] [midi] m" ./vimper/mapper_scripts/_mmidi.lua
+SCR 4 0 "vimper_big_mmain" "Script: [vimper] [main] big_m" ./vimper/mapper_scripts/_big_mmain.lua
+SCR 4 32060 "vimper_big_mmidi" "Script: [vimper] [midi] big_m" ./vimper/mapper_scripts/_big_mmidi.lua
+SCR 4 0 "vimper_ctrl_big_mmain" "Script: [vimper] [main] ctrl_big_m" ./vimper/mapper_scripts/_ctrl_big_mmain.lua
+SCR 4 32060 "vimper_ctrl_big_mmidi" "Script: [vimper] [midi] ctrl_big_m" ./vimper/mapper_scripts/_ctrl_big_mmidi.lua
+SCR 4 0 "vimper_ctrl_mmain" "Script: [vimper] [main] ctrl_m" ./vimper/mapper_scripts/_ctrl_mmain.lua
+SCR 4 32060 "vimper_ctrl_mmidi" "Script: [vimper] [midi] ctrl_m" ./vimper/mapper_scripts/_ctrl_mmidi.lua
+SCR 4 0 "vimper_mod_mmain" "Script: [vimper] [main] mod_m" ./vimper/mapper_scripts/_mod_mmain.lua
+SCR 4 32060 "vimper_mod_mmidi" "Script: [vimper] [midi] mod_m" ./vimper/mapper_scripts/_mod_mmidi.lua
+SCR 4 0 "vimper_alt_mmain" "Script: [vimper] [main] alt_m" ./vimper/mapper_scripts/_alt_mmain.lua
+SCR 4 32060 "vimper_alt_mmidi" "Script: [vimper] [midi] alt_m" ./vimper/mapper_scripts/_alt_mmidi.lua
+SCR 4 0 "vimper_nmain" "Script: [vimper] [main] n" ./vimper/mapper_scripts/_nmain.lua
+SCR 4 32060 "vimper_nmidi" "Script: [vimper] [midi] n" ./vimper/mapper_scripts/_nmidi.lua
+SCR 4 0 "vimper_big_nmain" "Script: [vimper] [main] big_n" ./vimper/mapper_scripts/_big_nmain.lua
+SCR 4 32060 "vimper_big_nmidi" "Script: [vimper] [midi] big_n" ./vimper/mapper_scripts/_big_nmidi.lua
+SCR 4 0 "vimper_ctrl_big_nmain" "Script: [vimper] [main] ctrl_big_n" ./vimper/mapper_scripts/_ctrl_big_nmain.lua
+SCR 4 32060 "vimper_ctrl_big_nmidi" "Script: [vimper] [midi] ctrl_big_n" ./vimper/mapper_scripts/_ctrl_big_nmidi.lua
+SCR 4 0 "vimper_ctrl_nmain" "Script: [vimper] [main] ctrl_n" ./vimper/mapper_scripts/_ctrl_nmain.lua
+SCR 4 32060 "vimper_ctrl_nmidi" "Script: [vimper] [midi] ctrl_n" ./vimper/mapper_scripts/_ctrl_nmidi.lua
+SCR 4 0 "vimper_mod_nmain" "Script: [vimper] [main] mod_n" ./vimper/mapper_scripts/_mod_nmain.lua
+SCR 4 32060 "vimper_mod_nmidi" "Script: [vimper] [midi] mod_n" ./vimper/mapper_scripts/_mod_nmidi.lua
+SCR 4 0 "vimper_alt_nmain" "Script: [vimper] [main] alt_n" ./vimper/mapper_scripts/_alt_nmain.lua
+SCR 4 32060 "vimper_alt_nmidi" "Script: [vimper] [midi] alt_n" ./vimper/mapper_scripts/_alt_nmidi.lua
+SCR 4 0 "vimper_omain" "Script: [vimper] [main] o" ./vimper/mapper_scripts/_omain.lua
+SCR 4 32060 "vimper_omidi" "Script: [vimper] [midi] o" ./vimper/mapper_scripts/_omidi.lua
+SCR 4 0 "vimper_big_omain" "Script: [vimper] [main] big_o" ./vimper/mapper_scripts/_big_omain.lua
+SCR 4 32060 "vimper_big_omidi" "Script: [vimper] [midi] big_o" ./vimper/mapper_scripts/_big_omidi.lua
+SCR 4 0 "vimper_ctrl_big_omain" "Script: [vimper] [main] ctrl_big_o" ./vimper/mapper_scripts/_ctrl_big_omain.lua
+SCR 4 32060 "vimper_ctrl_big_omidi" "Script: [vimper] [midi] ctrl_big_o" ./vimper/mapper_scripts/_ctrl_big_omidi.lua
+SCR 4 0 "vimper_ctrl_omain" "Script: [vimper] [main] ctrl_o" ./vimper/mapper_scripts/_ctrl_omain.lua
+SCR 4 32060 "vimper_ctrl_omidi" "Script: [vimper] [midi] ctrl_o" ./vimper/mapper_scripts/_ctrl_omidi.lua
+SCR 4 0 "vimper_mod_omain" "Script: [vimper] [main] mod_o" ./vimper/mapper_scripts/_mod_omain.lua
+SCR 4 32060 "vimper_mod_omidi" "Script: [vimper] [midi] mod_o" ./vimper/mapper_scripts/_mod_omidi.lua
+SCR 4 0 "vimper_alt_omain" "Script: [vimper] [main] alt_o" ./vimper/mapper_scripts/_alt_omain.lua
+SCR 4 32060 "vimper_alt_omidi" "Script: [vimper] [midi] alt_o" ./vimper/mapper_scripts/_alt_omidi.lua
+SCR 4 0 "vimper_pmain" "Script: [vimper] [main] p" ./vimper/mapper_scripts/_pmain.lua
+SCR 4 32060 "vimper_pmidi" "Script: [vimper] [midi] p" ./vimper/mapper_scripts/_pmidi.lua
+SCR 4 0 "vimper_big_pmain" "Script: [vimper] [main] big_p" ./vimper/mapper_scripts/_big_pmain.lua
+SCR 4 32060 "vimper_big_pmidi" "Script: [vimper] [midi] big_p" ./vimper/mapper_scripts/_big_pmidi.lua
+SCR 4 0 "vimper_ctrl_big_pmain" "Script: [vimper] [main] ctrl_big_p" ./vimper/mapper_scripts/_ctrl_big_pmain.lua
+SCR 4 32060 "vimper_ctrl_big_pmidi" "Script: [vimper] [midi] ctrl_big_p" ./vimper/mapper_scripts/_ctrl_big_pmidi.lua
+SCR 4 0 "vimper_ctrl_pmain" "Script: [vimper] [main] ctrl_p" ./vimper/mapper_scripts/_ctrl_pmain.lua
+SCR 4 32060 "vimper_ctrl_pmidi" "Script: [vimper] [midi] ctrl_p" ./vimper/mapper_scripts/_ctrl_pmidi.lua
+SCR 4 0 "vimper_mod_pmain" "Script: [vimper] [main] mod_p" ./vimper/mapper_scripts/_mod_pmain.lua
+SCR 4 32060 "vimper_mod_pmidi" "Script: [vimper] [midi] mod_p" ./vimper/mapper_scripts/_mod_pmidi.lua
+SCR 4 0 "vimper_alt_pmain" "Script: [vimper] [main] alt_p" ./vimper/mapper_scripts/_alt_pmain.lua
+SCR 4 32060 "vimper_alt_pmidi" "Script: [vimper] [midi] alt_p" ./vimper/mapper_scripts/_alt_pmidi.lua
+SCR 4 0 "vimper_qmain" "Script: [vimper] [main] q" ./vimper/mapper_scripts/_qmain.lua
+SCR 4 32060 "vimper_qmidi" "Script: [vimper] [midi] q" ./vimper/mapper_scripts/_qmidi.lua
+SCR 4 0 "vimper_big_qmain" "Script: [vimper] [main] big_q" ./vimper/mapper_scripts/_big_qmain.lua
+SCR 4 32060 "vimper_big_qmidi" "Script: [vimper] [midi] big_q" ./vimper/mapper_scripts/_big_qmidi.lua
+SCR 4 0 "vimper_ctrl_big_qmain" "Script: [vimper] [main] ctrl_big_q" ./vimper/mapper_scripts/_ctrl_big_qmain.lua
+SCR 4 32060 "vimper_ctrl_big_qmidi" "Script: [vimper] [midi] ctrl_big_q" ./vimper/mapper_scripts/_ctrl_big_qmidi.lua
+SCR 4 0 "vimper_ctrl_qmain" "Script: [vimper] [main] ctrl_q" ./vimper/mapper_scripts/_ctrl_qmain.lua
+SCR 4 32060 "vimper_ctrl_qmidi" "Script: [vimper] [midi] ctrl_q" ./vimper/mapper_scripts/_ctrl_qmidi.lua
+SCR 4 0 "vimper_mod_qmain" "Script: [vimper] [main] mod_q" ./vimper/mapper_scripts/_mod_qmain.lua
+SCR 4 32060 "vimper_mod_qmidi" "Script: [vimper] [midi] mod_q" ./vimper/mapper_scripts/_mod_qmidi.lua
+SCR 4 0 "vimper_alt_qmain" "Script: [vimper] [main] alt_q" ./vimper/mapper_scripts/_alt_qmain.lua
+SCR 4 32060 "vimper_alt_qmidi" "Script: [vimper] [midi] alt_q" ./vimper/mapper_scripts/_alt_qmidi.lua
+SCR 4 0 "vimper_rmain" "Script: [vimper] [main] r" ./vimper/mapper_scripts/_rmain.lua
+SCR 4 32060 "vimper_rmidi" "Script: [vimper] [midi] r" ./vimper/mapper_scripts/_rmidi.lua
+SCR 4 0 "vimper_big_rmain" "Script: [vimper] [main] big_r" ./vimper/mapper_scripts/_big_rmain.lua
+SCR 4 32060 "vimper_big_rmidi" "Script: [vimper] [midi] big_r" ./vimper/mapper_scripts/_big_rmidi.lua
+SCR 4 0 "vimper_ctrl_big_rmain" "Script: [vimper] [main] ctrl_big_r" ./vimper/mapper_scripts/_ctrl_big_rmain.lua
+SCR 4 32060 "vimper_ctrl_big_rmidi" "Script: [vimper] [midi] ctrl_big_r" ./vimper/mapper_scripts/_ctrl_big_rmidi.lua
+SCR 4 0 "vimper_ctrl_rmain" "Script: [vimper] [main] ctrl_r" ./vimper/mapper_scripts/_ctrl_rmain.lua
+SCR 4 32060 "vimper_ctrl_rmidi" "Script: [vimper] [midi] ctrl_r" ./vimper/mapper_scripts/_ctrl_rmidi.lua
+SCR 4 0 "vimper_mod_rmain" "Script: [vimper] [main] mod_r" ./vimper/mapper_scripts/_mod_rmain.lua
+SCR 4 32060 "vimper_mod_rmidi" "Script: [vimper] [midi] mod_r" ./vimper/mapper_scripts/_mod_rmidi.lua
+SCR 4 0 "vimper_alt_rmain" "Script: [vimper] [main] alt_r" ./vimper/mapper_scripts/_alt_rmain.lua
+SCR 4 32060 "vimper_alt_rmidi" "Script: [vimper] [midi] alt_r" ./vimper/mapper_scripts/_alt_rmidi.lua
+SCR 4 0 "vimper_smain" "Script: [vimper] [main] s" ./vimper/mapper_scripts/_smain.lua
+SCR 4 32060 "vimper_smidi" "Script: [vimper] [midi] s" ./vimper/mapper_scripts/_smidi.lua
+SCR 4 0 "vimper_big_smain" "Script: [vimper] [main] big_s" ./vimper/mapper_scripts/_big_smain.lua
+SCR 4 32060 "vimper_big_smidi" "Script: [vimper] [midi] big_s" ./vimper/mapper_scripts/_big_smidi.lua
+SCR 4 0 "vimper_ctrl_big_smain" "Script: [vimper] [main] ctrl_big_s" ./vimper/mapper_scripts/_ctrl_big_smain.lua
+SCR 4 32060 "vimper_ctrl_big_smidi" "Script: [vimper] [midi] ctrl_big_s" ./vimper/mapper_scripts/_ctrl_big_smidi.lua
+SCR 4 0 "vimper_ctrl_smain" "Script: [vimper] [main] ctrl_s" ./vimper/mapper_scripts/_ctrl_smain.lua
+SCR 4 32060 "vimper_ctrl_smidi" "Script: [vimper] [midi] ctrl_s" ./vimper/mapper_scripts/_ctrl_smidi.lua
+SCR 4 0 "vimper_mod_smain" "Script: [vimper] [main] mod_s" ./vimper/mapper_scripts/_mod_smain.lua
+SCR 4 32060 "vimper_mod_smidi" "Script: [vimper] [midi] mod_s" ./vimper/mapper_scripts/_mod_smidi.lua
+SCR 4 0 "vimper_alt_smain" "Script: [vimper] [main] alt_s" ./vimper/mapper_scripts/_alt_smain.lua
+SCR 4 32060 "vimper_alt_smidi" "Script: [vimper] [midi] alt_s" ./vimper/mapper_scripts/_alt_smidi.lua
+SCR 4 0 "vimper_tmain" "Script: [vimper] [main] t" ./vimper/mapper_scripts/_tmain.lua
+SCR 4 32060 "vimper_tmidi" "Script: [vimper] [midi] t" ./vimper/mapper_scripts/_tmidi.lua
+SCR 4 0 "vimper_big_tmain" "Script: [vimper] [main] big_t" ./vimper/mapper_scripts/_big_tmain.lua
+SCR 4 32060 "vimper_big_tmidi" "Script: [vimper] [midi] big_t" ./vimper/mapper_scripts/_big_tmidi.lua
+SCR 4 0 "vimper_ctrl_big_tmain" "Script: [vimper] [main] ctrl_big_t" ./vimper/mapper_scripts/_ctrl_big_tmain.lua
+SCR 4 32060 "vimper_ctrl_big_tmidi" "Script: [vimper] [midi] ctrl_big_t" ./vimper/mapper_scripts/_ctrl_big_tmidi.lua
+SCR 4 0 "vimper_ctrl_tmain" "Script: [vimper] [main] ctrl_t" ./vimper/mapper_scripts/_ctrl_tmain.lua
+SCR 4 32060 "vimper_ctrl_tmidi" "Script: [vimper] [midi] ctrl_t" ./vimper/mapper_scripts/_ctrl_tmidi.lua
+SCR 4 0 "vimper_mod_tmain" "Script: [vimper] [main] mod_t" ./vimper/mapper_scripts/_mod_tmain.lua
+SCR 4 32060 "vimper_mod_tmidi" "Script: [vimper] [midi] mod_t" ./vimper/mapper_scripts/_mod_tmidi.lua
+SCR 4 0 "vimper_alt_tmain" "Script: [vimper] [main] alt_t" ./vimper/mapper_scripts/_alt_tmain.lua
+SCR 4 32060 "vimper_alt_tmidi" "Script: [vimper] [midi] alt_t" ./vimper/mapper_scripts/_alt_tmidi.lua
+SCR 4 0 "vimper_umain" "Script: [vimper] [main] u" ./vimper/mapper_scripts/_umain.lua
+SCR 4 32060 "vimper_umidi" "Script: [vimper] [midi] u" ./vimper/mapper_scripts/_umidi.lua
+SCR 4 0 "vimper_big_umain" "Script: [vimper] [main] big_u" ./vimper/mapper_scripts/_big_umain.lua
+SCR 4 32060 "vimper_big_umidi" "Script: [vimper] [midi] big_u" ./vimper/mapper_scripts/_big_umidi.lua
+SCR 4 0 "vimper_ctrl_big_umain" "Script: [vimper] [main] ctrl_big_u" ./vimper/mapper_scripts/_ctrl_big_umain.lua
+SCR 4 32060 "vimper_ctrl_big_umidi" "Script: [vimper] [midi] ctrl_big_u" ./vimper/mapper_scripts/_ctrl_big_umidi.lua
+SCR 4 0 "vimper_ctrl_umain" "Script: [vimper] [main] ctrl_u" ./vimper/mapper_scripts/_ctrl_umain.lua
+SCR 4 32060 "vimper_ctrl_umidi" "Script: [vimper] [midi] ctrl_u" ./vimper/mapper_scripts/_ctrl_umidi.lua
+SCR 4 0 "vimper_mod_umain" "Script: [vimper] [main] mod_u" ./vimper/mapper_scripts/_mod_umain.lua
+SCR 4 32060 "vimper_mod_umidi" "Script: [vimper] [midi] mod_u" ./vimper/mapper_scripts/_mod_umidi.lua
+SCR 4 0 "vimper_alt_umain" "Script: [vimper] [main] alt_u" ./vimper/mapper_scripts/_alt_umain.lua
+SCR 4 32060 "vimper_alt_umidi" "Script: [vimper] [midi] alt_u" ./vimper/mapper_scripts/_alt_umidi.lua
+SCR 4 0 "vimper_vmain" "Script: [vimper] [main] v" ./vimper/mapper_scripts/_vmain.lua
+SCR 4 32060 "vimper_vmidi" "Script: [vimper] [midi] v" ./vimper/mapper_scripts/_vmidi.lua
+SCR 4 0 "vimper_big_vmain" "Script: [vimper] [main] big_v" ./vimper/mapper_scripts/_big_vmain.lua
+SCR 4 32060 "vimper_big_vmidi" "Script: [vimper] [midi] big_v" ./vimper/mapper_scripts/_big_vmidi.lua
+SCR 4 0 "vimper_ctrl_big_vmain" "Script: [vimper] [main] ctrl_big_v" ./vimper/mapper_scripts/_ctrl_big_vmain.lua
+SCR 4 32060 "vimper_ctrl_big_vmidi" "Script: [vimper] [midi] ctrl_big_v" ./vimper/mapper_scripts/_ctrl_big_vmidi.lua
+SCR 4 0 "vimper_ctrl_vmain" "Script: [vimper] [main] ctrl_v" ./vimper/mapper_scripts/_ctrl_vmain.lua
+SCR 4 32060 "vimper_ctrl_vmidi" "Script: [vimper] [midi] ctrl_v" ./vimper/mapper_scripts/_ctrl_vmidi.lua
+SCR 4 0 "vimper_mod_vmain" "Script: [vimper] [main] mod_v" ./vimper/mapper_scripts/_mod_vmain.lua
+SCR 4 32060 "vimper_mod_vmidi" "Script: [vimper] [midi] mod_v" ./vimper/mapper_scripts/_mod_vmidi.lua
+SCR 4 0 "vimper_alt_vmain" "Script: [vimper] [main] alt_v" ./vimper/mapper_scripts/_alt_vmain.lua
+SCR 4 32060 "vimper_alt_vmidi" "Script: [vimper] [midi] alt_v" ./vimper/mapper_scripts/_alt_vmidi.lua
+SCR 4 0 "vimper_wmain" "Script: [vimper] [main] w" ./vimper/mapper_scripts/_wmain.lua
+SCR 4 32060 "vimper_wmidi" "Script: [vimper] [midi] w" ./vimper/mapper_scripts/_wmidi.lua
+SCR 4 0 "vimper_big_wmain" "Script: [vimper] [main] big_w" ./vimper/mapper_scripts/_big_wmain.lua
+SCR 4 32060 "vimper_big_wmidi" "Script: [vimper] [midi] big_w" ./vimper/mapper_scripts/_big_wmidi.lua
+SCR 4 0 "vimper_ctrl_big_wmain" "Script: [vimper] [main] ctrl_big_w" ./vimper/mapper_scripts/_ctrl_big_wmain.lua
+SCR 4 32060 "vimper_ctrl_big_wmidi" "Script: [vimper] [midi] ctrl_big_w" ./vimper/mapper_scripts/_ctrl_big_wmidi.lua
+SCR 4 0 "vimper_ctrl_wmain" "Script: [vimper] [main] ctrl_w" ./vimper/mapper_scripts/_ctrl_wmain.lua
+SCR 4 32060 "vimper_ctrl_wmidi" "Script: [vimper] [midi] ctrl_w" ./vimper/mapper_scripts/_ctrl_wmidi.lua
+SCR 4 0 "vimper_mod_wmain" "Script: [vimper] [main] mod_w" ./vimper/mapper_scripts/_mod_wmain.lua
+SCR 4 32060 "vimper_mod_wmidi" "Script: [vimper] [midi] mod_w" ./vimper/mapper_scripts/_mod_wmidi.lua
+SCR 4 0 "vimper_alt_wmain" "Script: [vimper] [main] alt_w" ./vimper/mapper_scripts/_alt_wmain.lua
+SCR 4 32060 "vimper_alt_wmidi" "Script: [vimper] [midi] alt_w" ./vimper/mapper_scripts/_alt_wmidi.lua
+SCR 4 0 "vimper_xmain" "Script: [vimper] [main] x" ./vimper/mapper_scripts/_xmain.lua
+SCR 4 32060 "vimper_xmidi" "Script: [vimper] [midi] x" ./vimper/mapper_scripts/_xmidi.lua
+SCR 4 0 "vimper_big_xmain" "Script: [vimper] [main] big_x" ./vimper/mapper_scripts/_big_xmain.lua
+SCR 4 32060 "vimper_big_xmidi" "Script: [vimper] [midi] big_x" ./vimper/mapper_scripts/_big_xmidi.lua
+SCR 4 0 "vimper_ctrl_big_xmain" "Script: [vimper] [main] ctrl_big_x" ./vimper/mapper_scripts/_ctrl_big_xmain.lua
+SCR 4 32060 "vimper_ctrl_big_xmidi" "Script: [vimper] [midi] ctrl_big_x" ./vimper/mapper_scripts/_ctrl_big_xmidi.lua
+SCR 4 0 "vimper_ctrl_xmain" "Script: [vimper] [main] ctrl_x" ./vimper/mapper_scripts/_ctrl_xmain.lua
+SCR 4 32060 "vimper_ctrl_xmidi" "Script: [vimper] [midi] ctrl_x" ./vimper/mapper_scripts/_ctrl_xmidi.lua
+SCR 4 0 "vimper_mod_xmain" "Script: [vimper] [main] mod_x" ./vimper/mapper_scripts/_mod_xmain.lua
+SCR 4 32060 "vimper_mod_xmidi" "Script: [vimper] [midi] mod_x" ./vimper/mapper_scripts/_mod_xmidi.lua
+SCR 4 0 "vimper_alt_xmain" "Script: [vimper] [main] alt_x" ./vimper/mapper_scripts/_alt_xmain.lua
+SCR 4 32060 "vimper_alt_xmidi" "Script: [vimper] [midi] alt_x" ./vimper/mapper_scripts/_alt_xmidi.lua
+SCR 4 0 "vimper_ymain" "Script: [vimper] [main] y" ./vimper/mapper_scripts/_ymain.lua
+SCR 4 32060 "vimper_ymidi" "Script: [vimper] [midi] y" ./vimper/mapper_scripts/_ymidi.lua
+SCR 4 0 "vimper_big_ymain" "Script: [vimper] [main] big_y" ./vimper/mapper_scripts/_big_ymain.lua
+SCR 4 32060 "vimper_big_ymidi" "Script: [vimper] [midi] big_y" ./vimper/mapper_scripts/_big_ymidi.lua
+SCR 4 0 "vimper_ctrl_big_ymain" "Script: [vimper] [main] ctrl_big_y" ./vimper/mapper_scripts/_ctrl_big_ymain.lua
+SCR 4 32060 "vimper_ctrl_big_ymidi" "Script: [vimper] [midi] ctrl_big_y" ./vimper/mapper_scripts/_ctrl_big_ymidi.lua
+SCR 4 0 "vimper_ctrl_ymain" "Script: [vimper] [main] ctrl_y" ./vimper/mapper_scripts/_ctrl_ymain.lua
+SCR 4 32060 "vimper_ctrl_ymidi" "Script: [vimper] [midi] ctrl_y" ./vimper/mapper_scripts/_ctrl_ymidi.lua
+SCR 4 0 "vimper_mod_ymain" "Script: [vimper] [main] mod_y" ./vimper/mapper_scripts/_mod_ymain.lua
+SCR 4 32060 "vimper_mod_ymidi" "Script: [vimper] [midi] mod_y" ./vimper/mapper_scripts/_mod_ymidi.lua
+SCR 4 0 "vimper_alt_ymain" "Script: [vimper] [main] alt_y" ./vimper/mapper_scripts/_alt_ymain.lua
+SCR 4 32060 "vimper_alt_ymidi" "Script: [vimper] [midi] alt_y" ./vimper/mapper_scripts/_alt_ymidi.lua
+SCR 4 0 "vimper_zmain" "Script: [vimper] [main] z" ./vimper/mapper_scripts/_zmain.lua
+SCR 4 32060 "vimper_zmidi" "Script: [vimper] [midi] z" ./vimper/mapper_scripts/_zmidi.lua
+SCR 4 0 "vimper_big_zmain" "Script: [vimper] [main] big_z" ./vimper/mapper_scripts/_big_zmain.lua
+SCR 4 32060 "vimper_big_zmidi" "Script: [vimper] [midi] big_z" ./vimper/mapper_scripts/_big_zmidi.lua
+SCR 4 0 "vimper_ctrl_big_zmain" "Script: [vimper] [main] ctrl_big_z" ./vimper/mapper_scripts/_ctrl_big_zmain.lua
+SCR 4 32060 "vimper_ctrl_big_zmidi" "Script: [vimper] [midi] ctrl_big_z" ./vimper/mapper_scripts/_ctrl_big_zmidi.lua
+SCR 4 0 "vimper_ctrl_zmain" "Script: [vimper] [main] ctrl_z" ./vimper/mapper_scripts/_ctrl_zmain.lua
+SCR 4 32060 "vimper_ctrl_zmidi" "Script: [vimper] [midi] ctrl_z" ./vimper/mapper_scripts/_ctrl_zmidi.lua
+SCR 4 0 "vimper_mod_zmain" "Script: [vimper] [main] mod_z" ./vimper/mapper_scripts/_mod_zmain.lua
+SCR 4 32060 "vimper_mod_zmidi" "Script: [vimper] [midi] mod_z" ./vimper/mapper_scripts/_mod_zmidi.lua
+SCR 4 0 "vimper_alt_zmain" "Script: [vimper] [main] alt_z" ./vimper/mapper_scripts/_alt_zmain.lua
+SCR 4 32060 "vimper_alt_zmidi" "Script: [vimper] [midi] alt_z" ./vimper/mapper_scripts/_alt_zmidi.lua
+SCR 4 0 "vimper_escmain" "Script: [vimper] [main] esc" ./vimper/mapper_scripts/_escmain.lua
+SCR 4 32060 "vimper_escmidi" "Script: [vimper] [midi] esc" ./vimper/mapper_scripts/_escmidi.lua
+SCR 4 0 "vimper_spacemain" "Script: [vimper] [main] space" ./vimper/mapper_scripts/_spacemain.lua
+SCR 4 32060 "vimper_spacemidi" "Script: [vimper] [midi] space" ./vimper/mapper_scripts/_spacemidi.lua
+SCR 4 0 "vimper_periodmain" "Script: [vimper] [main] period" ./vimper/mapper_scripts/_periodmain.lua
+SCR 4 32060 "vimper_periodmidi" "Script: [vimper] [midi] period" ./vimper/mapper_scripts/_periodmidi.lua
+SCR 4 0 "vimper_left_shiftmain" "Script: [vimper] [main] left_shift" ./vimper/mapper_scripts/_left_shiftmain.lua
+SCR 4 32060 "vimper_left_shiftmidi" "Script: [vimper] [midi] left_shift" ./vimper/mapper_scripts/_left_shiftmidi.lua
+SCR 4 0 "vimper_right_shiftmain" "Script: [vimper] [main] right_shift" ./vimper/mapper_scripts/_right_shiftmain.lua
+SCR 4 32060 "vimper_right_shiftmidi" "Script: [vimper] [midi] right_shift" ./vimper/mapper_scripts/_right_shiftmidi.lua
+SCR 4 0 "vimper_colonmain" "Script: [vimper] [main] colon" ./vimper/mapper_scripts/_colonmain.lua
+SCR 4 32060 "vimper_colonmidi" "Script: [vimper] [midi] colon" ./vimper/mapper_scripts/_colonmidi.lua
+SCR 4 0 "vimper_crmain" "Script: [vimper] [main] cr" ./vimper/mapper_scripts/_crmain.lua
+SCR 4 32060 "vimper_crmidi" "Script: [vimper] [midi] cr" ./vimper/mapper_scripts/_crmidi.lua
+SCR 4 0 "vimper_tabmain" "Script: [vimper] [main] tab" ./vimper/mapper_scripts/_tabmain.lua
+SCR 4 32060 "vimper_tabmidi" "Script: [vimper] [midi] tab" ./vimper/mapper_scripts/_tabmidi.lua
+SCR 4 0 "vimper_backspacemain" "Script: [vimper] [main] backspace" ./vimper/mapper_scripts/_backspacemain.lua
+SCR 4 32060 "vimper_backspacemidi" "Script: [vimper] [midi] backspace" ./vimper/mapper_scripts/_backspacemidi.lua
+SCR 4 0 "vimper_commamain" "Script: [vimper] [main] comma" ./vimper/mapper_scripts/_commamain.lua
+SCR 4 32060 "vimper_commamidi" "Script: [vimper] [midi] comma" ./vimper/mapper_scripts/_commamidi.lua
+SCR 4 0 "vimper_hyphenmain" "Script: [vimper] [main] hyphen" ./vimper/mapper_scripts/_hyphenmain.lua
+SCR 4 32060 "vimper_hyphenmidi" "Script: [vimper] [midi] hyphen" ./vimper/mapper_scripts/_hyphenmidi.lua
+SCR 4 0 "vimper_underscoremain" "Script: [vimper] [main] underscore" ./vimper/mapper_scripts/_underscoremain.lua
+SCR 4 32060 "vimper_underscoremidi" "Script: [vimper] [midi] underscore" ./vimper/mapper_scripts/_underscoremidi.lua
+SCR 4 0 "vimper_semicolonmain" "Script: [vimper] [main] semicolon" ./vimper/mapper_scripts/_semicolonmain.lua
+SCR 4 32060 "vimper_semicolonmidi" "Script: [vimper] [midi] semicolon" ./vimper/mapper_scripts/_semicolonmidi.lua
+SCR 4 0 "vimper_questionmarkmain" "Script: [vimper] [main] questionmark" ./vimper/mapper_scripts/_questionmarkmain.lua
+SCR 4 32060 "vimper_questionmarkmidi" "Script: [vimper] [midi] questionmark" ./vimper/mapper_scripts/_questionmarkmidi.lua
+SCR 4 0 "vimper_plusmain" "Script: [vimper] [main] plus" ./vimper/mapper_scripts/_plusmain.lua
+SCR 4 32060 "vimper_plusmidi" "Script: [vimper] [midi] plus" ./vimper/mapper_scripts/_plusmidi.lua
+SCR 4 0 "vimper_backslashmain" "Script: [vimper] [main] backslash" ./vimper/mapper_scripts/_backslashmain.lua
+SCR 4 32060 "vimper_backslashmidi" "Script: [vimper] [midi] backslash" ./vimper/mapper_scripts/_backslashmidi.lua
+SCR 4 0 "vimper_slashmain" "Script: [vimper] [main] slash" ./vimper/mapper_scripts/_slashmain.lua
+SCR 4 32060 "vimper_slashmidi" "Script: [vimper] [midi] slash" ./vimper/mapper_scripts/_slashmidi.lua
+SCR 4 0 "vimper_numbersignmain" "Script: [vimper] [main] numbersign" ./vimper/mapper_scripts/_numbersignmain.lua
+SCR 4 32060 "vimper_numbersignmidi" "Script: [vimper] [midi] numbersign" ./vimper/mapper_scripts/_numbersignmidi.lua
+SCR 4 0 "vimper_atmain" "Script: [vimper] [main] at" ./vimper/mapper_scripts/_atmain.lua
+SCR 4 32060 "vimper_atmidi" "Script: [vimper] [midi] at" ./vimper/mapper_scripts/_atmidi.lua
+SCR 4 0 "vimper_sectionsignmain" "Script: [vimper] [main] sectionsign" ./vimper/mapper_scripts/_sectionsignmain.lua
+SCR 4 32060 "vimper_sectionsignmidi" "Script: [vimper] [midi] sectionsign" ./vimper/mapper_scripts/_sectionsignmidi.lua
+SCR 4 0 "vimper_tildemain" "Script: [vimper] [main] tilde" ./vimper/mapper_scripts/_tildemain.lua
+SCR 4 32060 "vimper_tildemidi" "Script: [vimper] [midi] tilde" ./vimper/mapper_scripts/_tildemidi.lua
+SCR 4 0 "vimper_plusminusmain" "Script: [vimper] [main] plusminus" ./vimper/mapper_scripts/_plusminusmain.lua
+SCR 4 32060 "vimper_plusminusmidi" "Script: [vimper] [midi] plusminus" ./vimper/mapper_scripts/_plusminusmidi.lua
+KEY 1 48 _vimper_0main 0
+KEY 1 48 _vimper_0midi 32060
+KEY 1 96 _vimper_num_0main 0
+KEY 1 96 _vimper_num_0midi 32060
+KEY 17 96 _vimper_alt_num_0main 0
+KEY 17 96 _vimper_alt_num_0midi 32060
+KEY 33 96 _vimper_ctrl_num_0main 0
+KEY 33 96 _vimper_ctrl_num_0midi 32060
+KEY 1 49 _vimper_1main 0
+KEY 1 49 _vimper_1midi 32060
+KEY 1 97 _vimper_num_1main 0
+KEY 1 97 _vimper_num_1midi 32060
+KEY 17 97 _vimper_alt_num_1main 0
+KEY 17 97 _vimper_alt_num_1midi 32060
+KEY 33 97 _vimper_ctrl_num_1main 0
+KEY 33 97 _vimper_ctrl_num_1midi 32060
+KEY 1 50 _vimper_2main 0
+KEY 1 50 _vimper_2midi 32060
+KEY 1 98 _vimper_num_2main 0
+KEY 1 98 _vimper_num_2midi 32060
+KEY 17 98 _vimper_alt_num_2main 0
+KEY 17 98 _vimper_alt_num_2midi 32060
+KEY 33 98 _vimper_ctrl_num_2main 0
+KEY 33 98 _vimper_ctrl_num_2midi 32060
+KEY 1 51 _vimper_3main 0
+KEY 1 51 _vimper_3midi 32060
+KEY 1 99 _vimper_num_3main 0
+KEY 1 99 _vimper_num_3midi 32060
+KEY 17 99 _vimper_alt_num_3main 0
+KEY 17 99 _vimper_alt_num_3midi 32060
+KEY 33 99 _vimper_ctrl_num_3main 0
+KEY 33 99 _vimper_ctrl_num_3midi 32060
+KEY 1 52 _vimper_4main 0
+KEY 1 52 _vimper_4midi 32060
+KEY 1 100 _vimper_num_4main 0
+KEY 1 100 _vimper_num_4midi 32060
+KEY 17 100 _vimper_alt_num_4main 0
+KEY 17 100 _vimper_alt_num_4midi 32060
+KEY 33 100 _vimper_ctrl_num_4main 0
+KEY 33 100 _vimper_ctrl_num_4midi 32060
+KEY 1 53 _vimper_5main 0
+KEY 1 53 _vimper_5midi 32060
+KEY 1 101 _vimper_num_5main 0
+KEY 1 101 _vimper_num_5midi 32060
+KEY 17 101 _vimper_alt_num_5main 0
+KEY 17 101 _vimper_alt_num_5midi 32060
+KEY 33 101 _vimper_ctrl_num_5main 0
+KEY 33 101 _vimper_ctrl_num_5midi 32060
+KEY 1 54 _vimper_6main 0
+KEY 1 54 _vimper_6midi 32060
+KEY 1 102 _vimper_num_6main 0
+KEY 1 102 _vimper_num_6midi 32060
+KEY 17 102 _vimper_alt_num_6main 0
+KEY 17 102 _vimper_alt_num_6midi 32060
+KEY 33 102 _vimper_ctrl_num_6main 0
+KEY 33 102 _vimper_ctrl_num_6midi 32060
+KEY 1 55 _vimper_7main 0
+KEY 1 55 _vimper_7midi 32060
+KEY 1 103 _vimper_num_7main 0
+KEY 1 103 _vimper_num_7midi 32060
+KEY 17 103 _vimper_alt_num_7main 0
+KEY 17 103 _vimper_alt_num_7midi 32060
+KEY 33 103 _vimper_ctrl_num_7main 0
+KEY 33 103 _vimper_ctrl_num_7midi 32060
+KEY 1 56 _vimper_8main 0
+KEY 1 56 _vimper_8midi 32060
+KEY 1 104 _vimper_num_8main 0
+KEY 1 104 _vimper_num_8midi 32060
+KEY 17 104 _vimper_alt_num_8main 0
+KEY 17 104 _vimper_alt_num_8midi 32060
+KEY 33 104 _vimper_ctrl_num_8main 0
+KEY 33 104 _vimper_ctrl_num_8midi 32060
+KEY 1 57 _vimper_9main 0
+KEY 1 57 _vimper_9midi 32060
+KEY 1 105 _vimper_num_9main 0
+KEY 1 105 _vimper_num_9midi 32060
+KEY 17 105 _vimper_alt_num_9main 0
+KEY 17 105 _vimper_alt_num_9midi 32060
+KEY 33 105 _vimper_ctrl_num_9main 0
+KEY 33 105 _vimper_ctrl_num_9midi 32060
+KEY 1 65 _vimper_amain 0
+KEY 1 65 _vimper_amidi 32060
+KEY 5 65 _vimper_big_amain 0
+KEY 5 65 _vimper_big_amidi 32060
+KEY 37 65 _vimper_ctrl_big_amain 0
+KEY 37 65 _vimper_ctrl_big_amidi 32060
+KEY 33 65 _vimper_ctrl_amain 0
+KEY 33 65 _vimper_ctrl_amidi 32060
+KEY 9 65 _vimper_mod_amain 0
+KEY 9 65 _vimper_mod_amidi 32060
+KEY 17 65 _vimper_alt_amain 0
+KEY 17 65 _vimper_alt_amidi 32060
+KEY 1 66 _vimper_bmain 0
+KEY 1 66 _vimper_bmidi 32060
+KEY 5 66 _vimper_big_bmain 0
+KEY 5 66 _vimper_big_bmidi 32060
+KEY 37 66 _vimper_ctrl_big_bmain 0
+KEY 37 66 _vimper_ctrl_big_bmidi 32060
+KEY 33 66 _vimper_ctrl_bmain 0
+KEY 33 66 _vimper_ctrl_bmidi 32060
+KEY 9 66 _vimper_mod_bmain 0
+KEY 9 66 _vimper_mod_bmidi 32060
+KEY 17 66 _vimper_alt_bmain 0
+KEY 17 66 _vimper_alt_bmidi 32060
+KEY 1 67 _vimper_cmain 0
+KEY 1 67 _vimper_cmidi 32060
+KEY 5 67 _vimper_big_cmain 0
+KEY 5 67 _vimper_big_cmidi 32060
+KEY 37 67 _vimper_ctrl_big_cmain 0
+KEY 37 67 _vimper_ctrl_big_cmidi 32060
+KEY 33 67 _vimper_ctrl_cmain 0
+KEY 33 67 _vimper_ctrl_cmidi 32060
+KEY 9 67 _vimper_mod_cmain 0
+KEY 9 67 _vimper_mod_cmidi 32060
+KEY 17 67 _vimper_alt_cmain 0
+KEY 17 67 _vimper_alt_cmidi 32060
+KEY 1 68 _vimper_dmain 0
+KEY 1 68 _vimper_dmidi 32060
+KEY 5 68 _vimper_big_dmain 0
+KEY 5 68 _vimper_big_dmidi 32060
+KEY 37 68 _vimper_ctrl_big_dmain 0
+KEY 37 68 _vimper_ctrl_big_dmidi 32060
+KEY 33 68 _vimper_ctrl_dmain 0
+KEY 33 68 _vimper_ctrl_dmidi 32060
+KEY 9 68 _vimper_mod_dmain 0
+KEY 9 68 _vimper_mod_dmidi 32060
+KEY 17 68 _vimper_alt_dmain 0
+KEY 17 68 _vimper_alt_dmidi 32060
+KEY 1 69 _vimper_emain 0
+KEY 1 69 _vimper_emidi 32060
+KEY 5 69 _vimper_big_emain 0
+KEY 5 69 _vimper_big_emidi 32060
+KEY 37 69 _vimper_ctrl_big_emain 0
+KEY 37 69 _vimper_ctrl_big_emidi 32060
+KEY 33 69 _vimper_ctrl_emain 0
+KEY 33 69 _vimper_ctrl_emidi 32060
+KEY 9 69 _vimper_mod_emain 0
+KEY 9 69 _vimper_mod_emidi 32060
+KEY 17 69 _vimper_alt_emain 0
+KEY 17 69 _vimper_alt_emidi 32060
+KEY 1 70 _vimper_fmain 0
+KEY 1 70 _vimper_fmidi 32060
+KEY 5 70 _vimper_big_fmain 0
+KEY 5 70 _vimper_big_fmidi 32060
+KEY 37 70 _vimper_ctrl_big_fmain 0
+KEY 37 70 _vimper_ctrl_big_fmidi 32060
+KEY 33 70 _vimper_ctrl_fmain 0
+KEY 33 70 _vimper_ctrl_fmidi 32060
+KEY 9 70 _vimper_mod_fmain 0
+KEY 9 70 _vimper_mod_fmidi 32060
+KEY 17 70 _vimper_alt_fmain 0
+KEY 17 70 _vimper_alt_fmidi 32060
+KEY 1 71 _vimper_gmain 0
+KEY 1 71 _vimper_gmidi 32060
+KEY 5 71 _vimper_big_gmain 0
+KEY 5 71 _vimper_big_gmidi 32060
+KEY 37 71 _vimper_ctrl_big_gmain 0
+KEY 37 71 _vimper_ctrl_big_gmidi 32060
+KEY 33 71 _vimper_ctrl_gmain 0
+KEY 33 71 _vimper_ctrl_gmidi 32060
+KEY 9 71 _vimper_mod_gmain 0
+KEY 9 71 _vimper_mod_gmidi 32060
+KEY 17 71 _vimper_alt_gmain 0
+KEY 17 71 _vimper_alt_gmidi 32060
+KEY 1 72 _vimper_hmain 0
+KEY 1 72 _vimper_hmidi 32060
+KEY 5 72 _vimper_big_hmain 0
+KEY 5 72 _vimper_big_hmidi 32060
+KEY 37 72 _vimper_ctrl_big_hmain 0
+KEY 37 72 _vimper_ctrl_big_hmidi 32060
+KEY 33 72 _vimper_ctrl_hmain 0
+KEY 33 72 _vimper_ctrl_hmidi 32060
+KEY 9 72 _vimper_mod_hmain 0
+KEY 9 72 _vimper_mod_hmidi 32060
+KEY 17 72 _vimper_alt_hmain 0
+KEY 17 72 _vimper_alt_hmidi 32060
+KEY 1 73 _vimper_imain 0
+KEY 1 73 _vimper_imidi 32060
+KEY 5 73 _vimper_big_imain 0
+KEY 5 73 _vimper_big_imidi 32060
+KEY 37 73 _vimper_ctrl_big_imain 0
+KEY 37 73 _vimper_ctrl_big_imidi 32060
+KEY 33 73 _vimper_ctrl_imain 0
+KEY 33 73 _vimper_ctrl_imidi 32060
+KEY 9 73 _vimper_mod_imain 0
+KEY 9 73 _vimper_mod_imidi 32060
+KEY 17 73 _vimper_alt_imain 0
+KEY 17 73 _vimper_alt_imidi 32060
+KEY 1 74 _vimper_jmain 0
+KEY 1 74 _vimper_jmidi 32060
+KEY 5 74 _vimper_big_jmain 0
+KEY 5 74 _vimper_big_jmidi 32060
+KEY 37 74 _vimper_ctrl_big_jmain 0
+KEY 37 74 _vimper_ctrl_big_jmidi 32060
+KEY 33 74 _vimper_ctrl_jmain 0
+KEY 33 74 _vimper_ctrl_jmidi 32060
+KEY 9 74 _vimper_mod_jmain 0
+KEY 9 74 _vimper_mod_jmidi 32060
+KEY 17 74 _vimper_alt_jmain 0
+KEY 17 74 _vimper_alt_jmidi 32060
+KEY 1 75 _vimper_kmain 0
+KEY 1 75 _vimper_kmidi 32060
+KEY 5 75 _vimper_big_kmain 0
+KEY 5 75 _vimper_big_kmidi 32060
+KEY 37 75 _vimper_ctrl_big_kmain 0
+KEY 37 75 _vimper_ctrl_big_kmidi 32060
+KEY 33 75 _vimper_ctrl_kmain 0
+KEY 33 75 _vimper_ctrl_kmidi 32060
+KEY 9 75 _vimper_mod_kmain 0
+KEY 9 75 _vimper_mod_kmidi 32060
+KEY 17 75 _vimper_alt_kmain 0
+KEY 17 75 _vimper_alt_kmidi 32060
+KEY 1 76 _vimper_lmain 0
+KEY 1 76 _vimper_lmidi 32060
+KEY 5 76 _vimper_big_lmain 0
+KEY 5 76 _vimper_big_lmidi 32060
+KEY 37 76 _vimper_ctrl_big_lmain 0
+KEY 37 76 _vimper_ctrl_big_lmidi 32060
+KEY 33 76 _vimper_ctrl_lmain 0
+KEY 33 76 _vimper_ctrl_lmidi 32060
+KEY 9 76 _vimper_mod_lmain 0
+KEY 9 76 _vimper_mod_lmidi 32060
+KEY 17 76 _vimper_alt_lmain 0
+KEY 17 76 _vimper_alt_lmidi 32060
+KEY 1 77 _vimper_mmain 0
+KEY 1 77 _vimper_mmidi 32060
+KEY 5 77 _vimper_big_mmain 0
+KEY 5 77 _vimper_big_mmidi 32060
+KEY 37 77 _vimper_ctrl_big_mmain 0
+KEY 37 77 _vimper_ctrl_big_mmidi 32060
+KEY 33 77 _vimper_ctrl_mmain 0
+KEY 33 77 _vimper_ctrl_mmidi 32060
+KEY 9 77 _vimper_mod_mmain 0
+KEY 9 77 _vimper_mod_mmidi 32060
+KEY 17 77 _vimper_alt_mmain 0
+KEY 17 77 _vimper_alt_mmidi 32060
+KEY 1 78 _vimper_nmain 0
+KEY 1 78 _vimper_nmidi 32060
+KEY 5 78 _vimper_big_nmain 0
+KEY 5 78 _vimper_big_nmidi 32060
+KEY 37 78 _vimper_ctrl_big_nmain 0
+KEY 37 78 _vimper_ctrl_big_nmidi 32060
+KEY 33 78 _vimper_ctrl_nmain 0
+KEY 33 78 _vimper_ctrl_nmidi 32060
+KEY 9 78 _vimper_mod_nmain 0
+KEY 9 78 _vimper_mod_nmidi 32060
+KEY 17 78 _vimper_alt_nmain 0
+KEY 17 78 _vimper_alt_nmidi 32060
+KEY 1 79 _vimper_omain 0
+KEY 1 79 _vimper_omidi 32060
+KEY 5 79 _vimper_big_omain 0
+KEY 5 79 _vimper_big_omidi 32060
+KEY 37 79 _vimper_ctrl_big_omain 0
+KEY 37 79 _vimper_ctrl_big_omidi 32060
+KEY 33 79 _vimper_ctrl_omain 0
+KEY 33 79 _vimper_ctrl_omidi 32060
+KEY 9 79 _vimper_mod_omain 0
+KEY 9 79 _vimper_mod_omidi 32060
+KEY 17 79 _vimper_alt_omain 0
+KEY 17 79 _vimper_alt_omidi 32060
+KEY 1 80 _vimper_pmain 0
+KEY 1 80 _vimper_pmidi 32060
+KEY 5 80 _vimper_big_pmain 0
+KEY 5 80 _vimper_big_pmidi 32060
+KEY 37 80 _vimper_ctrl_big_pmain 0
+KEY 37 80 _vimper_ctrl_big_pmidi 32060
+KEY 33 80 _vimper_ctrl_pmain 0
+KEY 33 80 _vimper_ctrl_pmidi 32060
+KEY 9 80 _vimper_mod_pmain 0
+KEY 9 80 _vimper_mod_pmidi 32060
+KEY 17 80 _vimper_alt_pmain 0
+KEY 17 80 _vimper_alt_pmidi 32060
+KEY 1 81 _vimper_qmain 0
+KEY 1 81 _vimper_qmidi 32060
+KEY 5 81 _vimper_big_qmain 0
+KEY 5 81 _vimper_big_qmidi 32060
+KEY 37 81 _vimper_ctrl_big_qmain 0
+KEY 37 81 _vimper_ctrl_big_qmidi 32060
+KEY 33 81 _vimper_ctrl_qmain 0
+KEY 33 81 _vimper_ctrl_qmidi 32060
+KEY 9 81 _vimper_mod_qmain 0
+KEY 9 81 _vimper_mod_qmidi 32060
+KEY 17 81 _vimper_alt_qmain 0
+KEY 17 81 _vimper_alt_qmidi 32060
+KEY 1 82 _vimper_rmain 0
+KEY 1 82 _vimper_rmidi 32060
+KEY 5 82 _vimper_big_rmain 0
+KEY 5 82 _vimper_big_rmidi 32060
+KEY 37 82 _vimper_ctrl_big_rmain 0
+KEY 37 82 _vimper_ctrl_big_rmidi 32060
+KEY 33 82 _vimper_ctrl_rmain 0
+KEY 33 82 _vimper_ctrl_rmidi 32060
+KEY 9 82 _vimper_mod_rmain 0
+KEY 9 82 _vimper_mod_rmidi 32060
+KEY 17 82 _vimper_alt_rmain 0
+KEY 17 82 _vimper_alt_rmidi 32060
+KEY 1 83 _vimper_smain 0
+KEY 1 83 _vimper_smidi 32060
+KEY 5 83 _vimper_big_smain 0
+KEY 5 83 _vimper_big_smidi 32060
+KEY 37 83 _vimper_ctrl_big_smain 0
+KEY 37 83 _vimper_ctrl_big_smidi 32060
+KEY 33 83 _vimper_ctrl_smain 0
+KEY 33 83 _vimper_ctrl_smidi 32060
+KEY 9 83 _vimper_mod_smain 0
+KEY 9 83 _vimper_mod_smidi 32060
+KEY 17 83 _vimper_alt_smain 0
+KEY 17 83 _vimper_alt_smidi 32060
+KEY 1 84 _vimper_tmain 0
+KEY 1 84 _vimper_tmidi 32060
+KEY 5 84 _vimper_big_tmain 0
+KEY 5 84 _vimper_big_tmidi 32060
+KEY 37 84 _vimper_ctrl_big_tmain 0
+KEY 37 84 _vimper_ctrl_big_tmidi 32060
+KEY 33 84 _vimper_ctrl_tmain 0
+KEY 33 84 _vimper_ctrl_tmidi 32060
+KEY 9 84 _vimper_mod_tmain 0
+KEY 9 84 _vimper_mod_tmidi 32060
+KEY 17 84 _vimper_alt_tmain 0
+KEY 17 84 _vimper_alt_tmidi 32060
+KEY 1 85 _vimper_umain 0
+KEY 1 85 _vimper_umidi 32060
+KEY 5 85 _vimper_big_umain 0
+KEY 5 85 _vimper_big_umidi 32060
+KEY 37 85 _vimper_ctrl_big_umain 0
+KEY 37 85 _vimper_ctrl_big_umidi 32060
+KEY 33 85 _vimper_ctrl_umain 0
+KEY 33 85 _vimper_ctrl_umidi 32060
+KEY 9 85 _vimper_mod_umain 0
+KEY 9 85 _vimper_mod_umidi 32060
+KEY 17 85 _vimper_alt_umain 0
+KEY 17 85 _vimper_alt_umidi 32060
+KEY 1 86 _vimper_vmain 0
+KEY 1 86 _vimper_vmidi 32060
+KEY 5 86 _vimper_big_vmain 0
+KEY 5 86 _vimper_big_vmidi 32060
+KEY 37 86 _vimper_ctrl_big_vmain 0
+KEY 37 86 _vimper_ctrl_big_vmidi 32060
+KEY 33 86 _vimper_ctrl_vmain 0
+KEY 33 86 _vimper_ctrl_vmidi 32060
+KEY 9 86 _vimper_mod_vmain 0
+KEY 9 86 _vimper_mod_vmidi 32060
+KEY 17 86 _vimper_alt_vmain 0
+KEY 17 86 _vimper_alt_vmidi 32060
+KEY 1 87 _vimper_wmain 0
+KEY 1 87 _vimper_wmidi 32060
+KEY 5 87 _vimper_big_wmain 0
+KEY 5 87 _vimper_big_wmidi 32060
+KEY 37 87 _vimper_ctrl_big_wmain 0
+KEY 37 87 _vimper_ctrl_big_wmidi 32060
+KEY 33 87 _vimper_ctrl_wmain 0
+KEY 33 87 _vimper_ctrl_wmidi 32060
+KEY 9 87 _vimper_mod_wmain 0
+KEY 9 87 _vimper_mod_wmidi 32060
+KEY 17 87 _vimper_alt_wmain 0
+KEY 17 87 _vimper_alt_wmidi 32060
+KEY 1 88 _vimper_xmain 0
+KEY 1 88 _vimper_xmidi 32060
+KEY 5 88 _vimper_big_xmain 0
+KEY 5 88 _vimper_big_xmidi 32060
+KEY 37 88 _vimper_ctrl_big_xmain 0
+KEY 37 88 _vimper_ctrl_big_xmidi 32060
+KEY 33 88 _vimper_ctrl_xmain 0
+KEY 33 88 _vimper_ctrl_xmidi 32060
+KEY 9 88 _vimper_mod_xmain 0
+KEY 9 88 _vimper_mod_xmidi 32060
+KEY 17 88 _vimper_alt_xmain 0
+KEY 17 88 _vimper_alt_xmidi 32060
+KEY 1 89 _vimper_ymain 0
+KEY 1 89 _vimper_ymidi 32060
+KEY 5 89 _vimper_big_ymain 0
+KEY 5 89 _vimper_big_ymidi 32060
+KEY 37 89 _vimper_ctrl_big_ymain 0
+KEY 37 89 _vimper_ctrl_big_ymidi 32060
+KEY 33 89 _vimper_ctrl_ymain 0
+KEY 33 89 _vimper_ctrl_ymidi 32060
+KEY 9 89 _vimper_mod_ymain 0
+KEY 9 89 _vimper_mod_ymidi 32060
+KEY 17 89 _vimper_alt_ymain 0
+KEY 17 89 _vimper_alt_ymidi 32060
+KEY 1 90 _vimper_zmain 0
+KEY 1 90 _vimper_zmidi 32060
+KEY 5 90 _vimper_big_zmain 0
+KEY 5 90 _vimper_big_zmidi 32060
+KEY 37 90 _vimper_ctrl_big_zmain 0
+KEY 37 90 _vimper_ctrl_big_zmidi 32060
+KEY 33 90 _vimper_ctrl_zmain 0
+KEY 33 90 _vimper_ctrl_zmidi 32060
+KEY 9 90 _vimper_mod_zmain 0
+KEY 9 90 _vimper_mod_zmidi 32060
+KEY 17 90 _vimper_alt_zmain 0
+KEY 17 90 _vimper_alt_zmidi 32060
+KEY 1 27 _vimper_escmain 0
+KEY 1 27 _vimper_escmidi 32060
+KEY 1 32 _vimper_spacemain 0
+KEY 1 32 _vimper_spacemidi 32060
+KEY 0 46 _vimper_periodmain 0
+KEY 0 46 _vimper_periodmidi 32060
+KEY 0 60 _vimper_left_shiftmain 0
+KEY 0 60 _vimper_left_shiftmidi 32060
+KEY 0 62 _vimper_right_shiftmain 0
+KEY 0 62 _vimper_right_shiftmidi 32060
+KEY 0 58 _vimper_colonmain 0
+KEY 0 58 _vimper_colonmidi 32060
+KEY 1 13 _vimper_crmain 0
+KEY 1 13 _vimper_crmidi 32060
+KEY 1 9 _vimper_tabmain 0
+KEY 1 9 _vimper_tabmidi 32060
+KEY 1 8 _vimper_backspacemain 0
+KEY 1 8 _vimper_backspacemidi 32060
+KEY 0 44 _vimper_commamain 0
+KEY 0 44 _vimper_commamidi 32060
+KEY 0 35 _vimper_hyphenmain 0
+KEY 0 35 _vimper_hyphenmidi 32060
+KEY 0 95 _vimper_underscoremain 0
+KEY 0 95 _vimper_underscoremidi 32060
+KEY 0 59 _vimper_semicolonmain 0
+KEY 0 59 _vimper_semicolonmidi 32060
+KEY 0 63 _vimper_questionmarkmain 0
+KEY 0 63 _vimper_questionmarkmidi 32060
+KEY 0 43 _vimper_plusmain 0
+KEY 0 43 _vimper_plusmidi 32060
+KEY 0 92 _vimper_backslashmain 0
+KEY 0 92 _vimper_backslashmidi 32060
+KEY 0 47 _vimper_slashmain 0
+KEY 0 47 _vimper_slashmidi 32060
+KEY 0 35 _vimper_numbersignmain 0
+KEY 0 35 _vimper_numbersignmidi 32060
+KEY 0 64 _vimper_atmain 0
+KEY 0 64 _vimper_atmidi 32060
+KEY 0 167 _vimper_sectionsignmain 0
+KEY 0 167 _vimper_sectionsignmidi 32060
+KEY 0 126 _vimper_tildemain 0
+KEY 0 126 _vimper_tildemidi 32060
+KEY 0 177 _vimper_plusminusmain 0
+KEY 0 177 _vimper_plusminusmidi 32060
