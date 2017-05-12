@@ -124,6 +124,12 @@ SelectParentFolder = externalAction('_SWS_SELPARENTS')
 MaximizeTrack = 40113
 GoToLoopStart = 40632
 GoToLoopEnd = 40633
+NextPreset_FX1 = externalAction('_S&M_NEXT_PRESET_FX1')
+PrevPreset_FX1 = externalAction('_S&M_PREVIOUS_PRESET_FX1')
+ToggleBypasFX = externalAction('_S&M_FXBYPALL')
+GlueItems = 41588
+MoveToStartOfItem = 41173
+MoveToEndOfItem= 41174
 
 WindowSet = {}
 WindowSet.Load_1 = 40454

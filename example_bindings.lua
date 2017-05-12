@@ -25,7 +25,7 @@ mainBindings = {
   ,mN = runAction(PrevMarker)
   ,gg = runAction(GoProjectBeginning)
   ,G = runAction(GoProjectEnd)
-  ,['<space>n'] = runAction(NewMidiItem, PrevItem)
+  ,['n'] = runAction(NewMidiItem, PrevItem)
   
   ,w = noStore(runAction(PrevTrack, SelectItemsInTrack))
   ,s = noStore(runAction(NextTrack, SelectItemsInTrack))
@@ -36,19 +36,20 @@ mainBindings = {
 
 
   ,q = noStore(runAction(PrevMeasure))
-  ,['<alt>a'] = noStore(times(4, runAction(PrevMeasure)))
   ,e = noStore(runAction(NextMeasure))
-  ,['<alt>d'] = noStore(times(4, runAction(NextMeasure)))
+  ,['<alt>q'] = noStore(times(4, runAction(PrevMeasure)))
+  ,['<alt>e'] = noStore(times(4, runAction(NextMeasure)))
+  ,['<alt>a'] = noStore(runAction(BackOneBeat))
+  ,['<alt>d'] = noStore(runAction(ForwardOneBeat))
+  ,['d'] = runAction(NextItem)
+  ,['a'] = runAction(PrevItem)
 
-  ,['<alt>q'] = noStore(runAction(BackOneBeat))
-  ,['<alt>e'] = noStore(runAction(ForwardOneBeat))
-
-  ,iy = runAction(CopyItem)
-  ,ip = runAction(PasteItem)
-  ,is = runAction(SplitItem, PrevItem, NextItem)
-  ,id = runAction(CopyItem, DeleteItem)
-  ,ix = runAction(CutItem)
-  ,il = runAction(SetLoopPointsToItem)
+  ,['<space>y'] = runAction(CopyItem)
+  ,['<space>p'] = runAction(PasteItem)
+  ,['<space>s'] = runAction(SplitItem, PrevItem, NextItem)
+  ,['<space>d'] = runAction(CopyItem, DeleteItem)
+  ,['<space>x'] = runAction(CutItem)
+  ,['<space>l'] = runAction(SetLoopPointsToItem)
   -- ,ig = runAction(GrowItemRight)
   -- ,iG = runAction(GrowItemLeft)
   -- ,is = runAction(ShrinkItemRight)
@@ -67,15 +68,16 @@ mainBindings = {
   ,['<space>m'] = runAction(ToggleMetronome)
   ,['<ctrl>m'] = runAction(ToggleViewMixer)
 
+  ,['<'] = runAction(PrevPreset_FX1)
+  ,['>'] = runAction(NextPreset_FX1)
 
-  ,Q = noStore(runAction(ZoomHorizOut))
-  ,E = noStore(runAction(ZoomHorizIn))
+  ,['§'] = noStore(runAction(ZoomHorizIn))
+  ,['±'] = noStore(runAction(ZoomHorizOut))
   -- ,D = runAction(ZoomVertOut)
   -- ,E = runAction(ZoomVertIn)
-  ,['<space>z'] = runAction(ZoomProject)
+  ,['<space>§'] = runAction(ZoomProject)
   ,['<ctrl>t'] = runAction(IncreaseBPM)
   ,['<ctrl>T'] = runAction(DecreaseBPM)
-
 
   ,['`'] = runAction(MaximizeTrack)
 
@@ -92,37 +94,39 @@ mainBindings = {
   ,tZ = runAction(CopyTrack, PrevTrack, PasteTrack)
   ,tl = runAction(IncreaseTrackHeight)
   ,tL = runAction(DecreaseTrackHeight)
-  ,tS = runAction(SelectAllTracks)
-  ,['<space>g'] = runAction(SelectFirstTrack, NextTrack, PrevTrack)
-  ,['<space>p'] = runAction(SelectParentFolder)
+  ,V = runAction(SelectAllTracks)
+  ,['<space>g'] = runAction(GlueItems)
+  ,['<alt>g'] = runAction(SelectFirstTrack, NextTrack, PrevTrack)
+  ,['<space>t'] = runAction(SelectParentFolder)
 
   ,['<space>-'] = runAction(GoToLoopStart)
   ,['<space>='] = runAction(GoToLoopEnd)
 
   ,o = chain(Group.Select, runAction(ScrollToSelectedTrack))
-  ,tc = runAction(ClearTrackSelection)
-  ,['<space>f'] = runAction(ScrollToSelectedTrack)
+  ,['<space>o'] = runAction(ScrollToSelectedTrack)
   ,['<space><space>'] = runAction(ReaConsole_SelectTrack)
   -- ,trim = runActionWithCount(SetTrackInput_Mono)
   -- ,tris = runActionWithCount(SetTrackInput_Stereo)
   ,tf = runAction(CycleTrackFolderState)
 
-  ,k = runAction(NextItem)
-  ,j = runAction(PrevItem)
+  ,['<tab>'] = runAction(ToggleBypasFX)
 
   ,l = SetLoop
 
-  ,['§'] = runAction(ExpandSelectedTrackCollapseOthers)
-  ,['<space>§'] = runAction(CollapseAllTracks)
+  -- ,['§'] = runAction(ExpandSelectedTrackCollapseOthers)
+  -- ,['<space>§'] = runAction(CollapseAllTracks)
   
   ,r = runAction(ClearAllRecordArm, RecordArmCurrent)
   ,R = runAction(RecordArmCurrent)
   ,['<space>r'] = runAction(ClearAllRecordArm)
   ,['<space>R'] = runAction(SWS_RenameCurrentTrack)
 
-  ,['<space>e'] = runAction(OpenMidiEditor)
+  ,['<ctrl>e'] = runAction(OpenMidiEditor)
 
-  ,['<space>q'] = runAction(ToggleFloatingWindows)
+  ,['<space>q'] = runAction(MoveToStartOfItem)
+  ,['<space>e'] = runAction(MoveToEndOfItem)
+
+  ,['<ctrl>q'] = runAction(ToggleFloatingWindows)
 
   ,m = runAction(ToggleTrackMute)
   ,M = runAction(UnmuteAllTracks)
@@ -140,7 +144,7 @@ mainBindings = {
   ,['<space><cr>'] = runAction(SaveProject)
   ,['<space>c'] = runAction(ReaConsole)
   
-  ,['<space>t'] = runAction(ShowTrackManager)
+  ,['<ctrl>t'] = runAction(ShowTrackManager)
 
   ,['<num1>'] = runAction(TrackView.Load_1)
   ,['<num2>'] = runAction(TrackView.Load_2)
@@ -168,8 +172,8 @@ mainBindings = {
 }
 
 midiBindings = {
-  -- q = MidiEditor.runAction(MidiEditor.CloseWindow)
-  ['§'] = MidiEditor.runAction(MidiEditor.Quantize)
+  ['<space>q'] = MidiEditor.runAction(MidiEditor.CloseWindow)
+  ,['§'] = MidiEditor.runAction(MidiEditor.Quantize)
   ,n = MidiEditor.runAction(MidiEditor.InsertNote)
   ,['<alt>e'] = MidiEditor.runAction(MidiEditor.SelectNextNote)
   ,['<alt>q'] = MidiEditor.runAction(MidiEditor.SelectPrevNote)

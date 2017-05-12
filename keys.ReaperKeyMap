@@ -498,6 +498,8 @@ SCR 4 0 "vimper_pipemain" "Script: [vimper] [main] pipe" ./vimper/mapper_scripts
 SCR 4 32060 "vimper_pipemidi" "Script: [vimper] [midi] pipe" ./vimper/mapper_scripts/_pipemidi.lua
 SCR 4 0 "vimper_equalsmain" "Script: [vimper] [main] equals" ./vimper/mapper_scripts/_equalsmain.lua
 SCR 4 32060 "vimper_equalsmidi" "Script: [vimper] [midi] equals" ./vimper/mapper_scripts/_equalsmidi.lua
+SCR 4 0 "vimper_backtickmain" "Script: [vimper] [main] backtick" ./vimper/mapper_scripts/_backtickmain.lua
+SCR 4 32060 "vimper_backtickmidi" "Script: [vimper] [midi] backtick" ./vimper/mapper_scripts/_backtickmidi.lua
 KEY 1 48 _vimper_0main 0
 KEY 1 48 _vimper_0midi 32060
 KEY 1 96 _vimper_num_0main 0
@@ -998,3 +1000,5 @@ KEY 0 124 _vimper_pipemain 0
 KEY 0 124 _vimper_pipemidi 32060
 KEY 0 61 _vimper_equalsmain 0
 KEY 0 61 _vimper_equalsmidi 32060
+KEY 0 96 _vimper_backtickmain 0
+KEY 0 96 _vimper_backtickmidi 32060

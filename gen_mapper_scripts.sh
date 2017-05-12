@@ -130,6 +130,7 @@ gen "closewing" "}" 125 0
 gen "openwing" "{" 123 0
 gen "pipe" "|" 124 0
 gen "equals" "=" 61 0
+gen "backtick" "\`" 96 0
 
 
 
