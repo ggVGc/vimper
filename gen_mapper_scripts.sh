@@ -86,7 +86,7 @@ for (( i=0; i<${#numbers};i++ )) ; do
   gen "$c" "$c" $(( 48 + i ))
   gen "num_$c" "<num$c>" $(( 96 + i ))
   gen "alt_num_$c" "<num$c>" $(( 96 + i )) 17 "<alt>"
-  gen "ctrl_num_$c" "<num$c>" $(( 96 + i )) 33 "<ctrl>"
+  gen "ctrl_num_$c" "<num$c>" $(( 96 + i )) 9 "<ctrl>"
 done
 
 for (( i=0; i<${#letters};i++ )) ; do
@@ -97,8 +97,8 @@ for (( i=0; i<${#letters};i++ )) ; do
   gen "big_$c" "$upper" "$n" 5
   gen "ctrl_big_$c" "$upper" "$n" 37 "<ctrl>"
   gen "alt_big_$c" "$upper" "$n" 21 "<alt>"
-  gen "ctrl_$c" "$c" "$n"  33 "<ctrl>"
-  gen "mod_$c" "$c" "$n"  9 "<mod>"
+  gen "ctrl_$c" "$c" "$n"  9 "<ctrl>"
+  gen "mod_$c" "$c" "$n"  33 "<mod>"
   gen "alt_$c" "$c" "$n"  17 "<alt>"
 done
 
