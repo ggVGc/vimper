@@ -131,7 +131,7 @@ gen "openwing" "{" 123 0
 gen "pipe" "|" 124 0
 gen "equals" "=" 61 0
 gen "backtick" "\`" 96 0
-
+gen "hook" "¬" 223 5
 
 
 cat "$tmpScripts" "$tmpKeys" > "$keymapFile"
