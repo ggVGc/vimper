@@ -110,8 +110,11 @@ end
 
 function getCount(str)
   local count = 0
-  for d in str:gmatch '%d' do
-    count = count*10 + tonumber(d)
+  local firstNonNumInd = str:find("[^%d]")
+  if firstNonNumInd ~= nil and firstNonNumInd > 1 then
+    for d in str:sub(0, firstNonNumInd-1):gmatch '%d' do
+      count = count*10 + tonumber(d)
+    end
   end
   return count
 end

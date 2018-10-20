@@ -30,6 +30,7 @@ ZoomHorizOut = 1011
 ZoomVertIn = 40111
 ZoomVertOut =  40112
 ZoomProject = 40295
+ZoomTimeSelection = 40031
 SelectItemsInTrack = 40421
 ExpandSelectedTrackCollapseOthers = 40723
 CollapseAllTracks = 40727
